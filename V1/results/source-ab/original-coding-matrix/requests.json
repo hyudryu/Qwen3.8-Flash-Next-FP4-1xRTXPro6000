@@ -1,0 +1,974 @@
+[
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 0,
+    "language": "Python",
+    "prompt": "Coding exercise 81eda11682a1299505dc. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 1790,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 9.259465551993344,
+    "ttft_ms": 426.88904801616445,
+    "output_tokens": 1536,
+    "request_output_tps": 165.8843041615221,
+    "apparent_decode_tps": 173.7891110152334,
+    "concurrency": 4,
+    "output_sha256": "6f731379fa01df7e49b51c5533fcb465b87b7d1cb4e6a99e7f4aae61f6084964"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 0,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 77995ef2182dbd32c379. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 1775,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.765343352977652,
+    "ttft_ms": 426.69992498122156,
+    "output_tokens": 1536,
+    "request_output_tps": 175.23557699290916,
+    "apparent_decode_tps": 184.08482541477147,
+    "concurrency": 4,
+    "output_sha256": "c5e2ebbb1067b980f848441b542c93404f9eed5f77274c59514f074f1710aa03"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 0,
+    "language": "Rust",
+    "prompt": "Coding exercise 11822d6eb07c0006a70d. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 1786,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.847697927965783,
+    "ttft_ms": 426.8689669552259,
+    "output_tokens": 1536,
+    "request_output_tps": 173.60448022812972,
+    "apparent_decode_tps": 182.28840631839586,
+    "concurrency": 4,
+    "output_sha256": "af4b2f4be44fb7b78d4b905a4ee2ee333773440cfef74ed376e1755fc092c62f"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 0,
+    "language": "Go",
+    "prompt": "Coding exercise 2de5d26f0971385a73ad. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 1778,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 9.17953972495161,
+    "ttft_ms": 409.54688598867506,
+    "output_tokens": 1536,
+    "request_output_tps": 167.32865111143653,
+    "apparent_decode_tps": 175.02970539519958,
+    "concurrency": 4,
+    "output_sha256": "4e18da850b7495b97ff998616a8e872c1c05128f5a01674a67e261ef4a5cfe86"
+  },
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 1,
+    "language": "Python",
+    "prompt": "Coding exercise 7cf45647ee731490c110. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 255,
+      "total_tokens": 1791,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.97250521602109,
+    "ttft_ms": 428.3862280426547,
+    "output_tokens": 1536,
+    "request_output_tps": 171.18964692908233,
+    "apparent_decode_tps": 179.6571160651027,
+    "concurrency": 4,
+    "output_sha256": "e756fc9549202624c52d31313768d5ba521f6657afbf9030699ce9f70698d26c"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 1,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 92a86be9dff4ece71367. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 1772,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.755773718992714,
+    "ttft_ms": 428.09774196939543,
+    "output_tokens": 1536,
+    "request_output_tps": 175.4271009389111,
+    "apparent_decode_tps": 184.3278355048808,
+    "concurrency": 4,
+    "output_sha256": "35eb2048822b81dab662785b5f2afa39d1b9cb3b46d676ab93bd653a279322e8"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 1,
+    "language": "Rust",
+    "prompt": "Coding exercise 945426bcf9d3895137bb. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 1785,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.591152147040702,
+    "ttft_ms": 428.19804803002626,
+    "output_tokens": 1536,
+    "request_output_tps": 178.7885924624311,
+    "apparent_decode_tps": 188.04723398161698,
+    "concurrency": 4,
+    "output_sha256": "1ad3cf6cd8f6057af6ada0f61abaddb869d8fa9750238d045330307050d31aa0"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 1,
+    "language": "Go",
+    "prompt": "Coding exercise ef4d89ce207dbc31e52d. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 1775,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.891331264050677,
+    "ttft_ms": 411.5238070371561,
+    "output_tokens": 1536,
+    "request_output_tps": 172.75253326915583,
+    "apparent_decode_tps": 181.02003966670543,
+    "concurrency": 4,
+    "output_sha256": "7fd7d4e5e8d694c6ad389369e13399ba38d5f6eff600f3bd0ee9e160ef9bd5a6"
+  },
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 2,
+    "language": "Python",
+    "prompt": "Coding exercise ec965ea81779226d0922. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 1790,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.840279483993072,
+    "ttft_ms": 436.913936981,
+    "output_tokens": 1536,
+    "request_output_tps": 173.75016285188792,
+    "apparent_decode_tps": 182.66632311787174,
+    "concurrency": 4,
+    "output_sha256": "ac995c9f457d47f01f703853876839b9382d13c17d78529b9064e62aa5c9a010"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 2,
+    "language": "TypeScript",
+    "prompt": "Coding exercise df6df6da78c3d3dcc8c9. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 1771,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.773716577969026,
+    "ttft_ms": 436.84504996053874,
+    "output_tokens": 1536,
+    "request_output_tps": 175.06834034927982,
+    "apparent_decode_tps": 184.12356421006186,
+    "concurrency": 4,
+    "output_sha256": "0acf14e5f22774345a436c15163d5c4aad8d38d7308a0c3da58e7546dac5fcbc"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 2,
+    "language": "Rust",
+    "prompt": "Coding exercise a5f3ba3ecaa92019964c. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 1783,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 8.45622877200367,
+    "ttft_ms": 437.1233700076118,
+    "output_tokens": 1536,
+    "request_output_tps": 181.64125420604614,
+    "apparent_decode_tps": 191.42187303314364,
+    "concurrency": 4,
+    "output_sha256": "75ecdc1cacca3c13e668a2a9132073b74466289740295023fe0c5b68aa440975"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 2,
+    "language": "Go",
+    "prompt": "Coding exercise e197c5bb7307bc7336af. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 1776,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 9.056591542961542,
+    "ttft_ms": 418.6231219791807,
+    "output_tokens": 1536,
+    "request_output_tps": 169.6002290391162,
+    "apparent_decode_tps": 177.70451977036944,
+    "concurrency": 4,
+    "output_sha256": "6142082bfd4b99f036e5c94f296edadc681813accd6cd4c30769897ca693d07c"
+  },
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 0,
+    "language": "Python",
+    "prompt": "Coding exercise 81eda11682a1299505dc. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 1790,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.07566501997644,
+    "ttft_ms": 444.0605560084805,
+    "output_tokens": 1536,
+    "request_output_tps": 127.19796362842439,
+    "apparent_decode_tps": 131.96943953293066,
+    "concurrency": 8,
+    "output_sha256": "2f6889c716c655fd61daa8deb884fbab736c23341e5d8015f544357711a276be"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 0,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 77995ef2182dbd32c379. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 1775,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.338811941968743,
+    "ttft_ms": 444.8366930009797,
+    "output_tokens": 1536,
+    "request_output_tps": 124.48524276275829,
+    "apparent_decode_tps": 129.05734691070236,
+    "concurrency": 8,
+    "output_sha256": "3f158d9da2a63b0dc245ff6a6105c275a2c4734c5b79e92bc3a4c3bfe5cd1c05"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 0,
+    "language": "Rust",
+    "prompt": "Coding exercise 11822d6eb07c0006a70d. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 1786,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.051896110991947,
+    "ttft_ms": 444.09249495947734,
+    "output_tokens": 1536,
+    "request_output_tps": 127.44882513541494,
+    "apparent_decode_tps": 132.23940348892387,
+    "concurrency": 8,
+    "output_sha256": "1b23d0290ab3125a802ed84b2773eaa854c43c3ca57c30687829147b4ebeb8d9"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 0,
+    "language": "Go",
+    "prompt": "Coding exercise 2de5d26f0971385a73ad. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 1778,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.181850769964512,
+    "ttft_ms": 444.96905797859654,
+    "output_tokens": 1536,
+    "request_output_tps": 126.08921493170406,
+    "apparent_decode_tps": 130.7852855402662,
+    "concurrency": 8,
+    "output_sha256": "554c8493c49f8e2955c8a076cc7d02bd6842d521978e75c4dc54cda6c9eadc84"
+  },
+  {
+    "status": "ok",
+    "request": 4,
+    "round": 0,
+    "language": "Python",
+    "prompt": "Coding exercise 9908c567702755e30f70. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_4 in the tests.",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 1793,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 11.674752447986975,
+    "ttft_ms": 443.43955704243854,
+    "output_tokens": 1536,
+    "request_output_tps": 131.5659588366557,
+    "apparent_decode_tps": 136.67315138930047,
+    "concurrency": 8,
+    "output_sha256": "86f73693d1dc43d61471a6f4b60d74a0a1a1d3364960fb4d57c49e330ef6998d"
+  },
+  {
+    "status": "ok",
+    "request": 5,
+    "round": 0,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 8f9bc75a9fa7b210ffef. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_5 in the tests.",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 1773,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.201579733984545,
+    "ttft_ms": 444.5403959834948,
+    "output_tokens": 1536,
+    "request_output_tps": 125.88533890589954,
+    "apparent_decode_tps": 130.56115514121436,
+    "concurrency": 8,
+    "output_sha256": "49f926820a6e005404065e660667241b226ac35bd91aac0a07033fcf0fe6974c"
+  },
+  {
+    "status": "ok",
+    "request": 6,
+    "round": 0,
+    "language": "Rust",
+    "prompt": "Coding exercise f6b6f68cd1c5a7309538. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_6 in the tests.",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 1785,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 11.917506580997724,
+    "ttft_ms": 421.7918729991652,
+    "output_tokens": 1536,
+    "request_output_tps": 128.88602070915806,
+    "apparent_decode_tps": 133.52851925120123,
+    "concurrency": 8,
+    "output_sha256": "86560194c386e15225c2017a777e2006a0d137a2253690f51e2cbee7825b0b72"
+  },
+  {
+    "status": "ok",
+    "request": 7,
+    "round": 0,
+    "language": "Go",
+    "prompt": "Coding exercise 39819945262bc0417a27. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_7 in the tests.",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 1779,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.26934270199854,
+    "ttft_ms": 444.9004920315929,
+    "output_tokens": 1536,
+    "request_output_tps": 125.19008045555714,
+    "apparent_decode_tps": 129.81656082128103,
+    "concurrency": 8,
+    "output_sha256": "83b64c37dd2dbb53424b8103718c104f0c955b29e198e6508a9c1f3197c3bc03"
+  },
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 1,
+    "language": "Python",
+    "prompt": "Coding exercise 7cf45647ee731490c110. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 255,
+      "total_tokens": 1791,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.588745613000356,
+    "ttft_ms": 451.5873209456913,
+    "output_tokens": 1536,
+    "request_output_tps": 122.01374523080186,
+    "apparent_decode_tps": 126.47249988135826,
+    "concurrency": 8,
+    "output_sha256": "7719b15a060ba1bbf411992235baa4e488e2507a0a191a0d1a0f24dcc305257a"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 1,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 92a86be9dff4ece71367. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 1772,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.88308291498106,
+    "ttft_ms": 450.0779010122642,
+    "output_tokens": 1536,
+    "request_output_tps": 119.2261208079214,
+    "apparent_decode_tps": 123.46232612303746,
+    "concurrency": 8,
+    "output_sha256": "20de6256247836e663ce137e206ad04850613759e279bce7b57dcd9c123ea5be"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 1,
+    "language": "Rust",
+    "prompt": "Coding exercise 945426bcf9d3895137bb. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 1785,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.157211146957707,
+    "ttft_ms": 450.67137700971216,
+    "output_tokens": 1536,
+    "request_output_tps": 126.34476619947313,
+    "apparent_decode_tps": 131.12429807568634,
+    "concurrency": 8,
+    "output_sha256": "84203864efe37ea806cd6ec5441e48b71f3a6dff87b2fccb5d5105416680e5d5"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 1,
+    "language": "Go",
+    "prompt": "Coding exercise ef4d89ce207dbc31e52d. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 1775,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.395129456999712,
+    "ttft_ms": 450.8949320297688,
+    "output_tokens": 1536,
+    "request_output_tps": 123.91964160830916,
+    "apparent_decode_tps": 128.51635319793917,
+    "concurrency": 8,
+    "output_sha256": "01d88ce2b4ea6295dbf82ff68ea13e7842bae81afcc8f42459ef5f194dcc3c11"
+  },
+  {
+    "status": "ok",
+    "request": 4,
+    "round": 1,
+    "language": "Python",
+    "prompt": "Coding exercise ac78add7150ab039bd47. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_4 in the tests.",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 1787,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.821846638980787,
+    "ttft_ms": 450.94872498884797,
+    "output_tokens": 1536,
+    "request_output_tps": 119.7955367310568,
+    "apparent_decode_tps": 124.08268673731565,
+    "concurrency": 8,
+    "output_sha256": "2fff7aa66a18ba4dcff44ca7439d2831a84d5e3d1ee943a5e5fefa7b0d8d2e40"
+  },
+  {
+    "status": "ok",
+    "request": 5,
+    "round": 1,
+    "language": "TypeScript",
+    "prompt": "Coding exercise eb664dbdb93b71e60b88. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_5 in the tests.",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 1773,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.855637633008882,
+    "ttft_ms": 450.69341000635177,
+    "output_tokens": 1536,
+    "request_output_tps": 119.48065462393535,
+    "apparent_decode_tps": 123.74129184031054,
+    "concurrency": 8,
+    "output_sha256": "0b818fd793853e7ee4fdd01852cd2b5aa4a768080cb10ab4373f6e0db89db0a4"
+  },
+  {
+    "status": "ok",
+    "request": 6,
+    "round": 1,
+    "language": "Rust",
+    "prompt": "Coding exercise bde1069ce71abdd53958. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_6 in the tests.",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 1782,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.127951355010737,
+    "ttft_ms": 427.511518006213,
+    "output_tokens": 1536,
+    "request_output_tps": 126.64958450426109,
+    "apparent_decode_tps": 131.19362805047115,
+    "concurrency": 8,
+    "output_sha256": "24929c8512151992e974e7a6320a616b01d525c9f61e2798adaded47758e951d"
+  },
+  {
+    "status": "ok",
+    "request": 7,
+    "round": 1,
+    "language": "Go",
+    "prompt": "Coding exercise d98582be8c6d7550b071. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_7 in the tests.",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 1778,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.87051012297161,
+    "ttft_ms": 450.0348540022969,
+    "output_tokens": 1536,
+    "request_output_tps": 119.34258901350839,
+    "apparent_decode_tps": 123.5868985558287,
+    "concurrency": 8,
+    "output_sha256": "0fe9f02b653ffeac1e6dea64b61d992eb8cc4896910ebf65796ac62366e50e44"
+  },
+  {
+    "status": "ok",
+    "request": 0,
+    "round": 2,
+    "language": "Python",
+    "prompt": "Coding exercise ec965ea81779226d0922. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_0 in the tests.",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 1790,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.147397755994461,
+    "ttft_ms": 457.39331003278494,
+    "output_tokens": 1536,
+    "request_output_tps": 126.44683502209512,
+    "apparent_decode_tps": 131.31121883099087,
+    "concurrency": 8,
+    "output_sha256": "9c1a0e30ced0a78336e206195cb7e28de08c5cf47c17d57d8f805d4e731e90f1"
+  },
+  {
+    "status": "ok",
+    "request": 1,
+    "round": 2,
+    "language": "TypeScript",
+    "prompt": "Coding exercise df6df6da78c3d3dcc8c9. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_1 in the tests.",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 1771,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.226032350037713,
+    "ttft_ms": 458.5193370003253,
+    "output_tokens": 1536,
+    "request_output_tps": 125.63356255108077,
+    "apparent_decode_tps": 130.4449527741486,
+    "concurrency": 8,
+    "output_sha256": "394caf5f33af54b6913dc9fe2318fda0380b6399e8168f464418a9448d8183eb"
+  },
+  {
+    "status": "ok",
+    "request": 2,
+    "round": 2,
+    "language": "Rust",
+    "prompt": "Coding exercise a5f3ba3ecaa92019964c. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_2 in the tests.",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 1783,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.299135587993078,
+    "ttft_ms": 436.10901496140286,
+    "output_tokens": 1536,
+    "request_output_tps": 124.88682550174553,
+    "apparent_decode_tps": 129.3942104214535,
+    "concurrency": 8,
+    "output_sha256": "75575f6a0c5f8193aa9623c1f2aa1d8b823c8b6e4d24b1431f066927e3a8d8d9"
+  },
+  {
+    "status": "ok",
+    "request": 3,
+    "round": 2,
+    "language": "Go",
+    "prompt": "Coding exercise e197c5bb7307bc7336af. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_3 in the tests.",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 1776,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.457270210026763,
+    "ttft_ms": 458.1078620394692,
+    "output_tokens": 1536,
+    "request_output_tps": 123.30149174766115,
+    "apparent_decode_tps": 127.92591835429674,
+    "concurrency": 8,
+    "output_sha256": "4009f93f17363a1f27524eea9b507b7548f7e10dcf674cc853b44908ff3fdad7"
+  },
+  {
+    "status": "ok",
+    "request": 4,
+    "round": 2,
+    "language": "Python",
+    "prompt": "Coding exercise eac654bad21aa8299dc8. Language: Python.\n\nImplement a production-quality asyncio TTL cache with async get_or_load, per-key single-flight loading, bounded LRU eviction, injectable monotonic clock, cancellation-safe loading, exception propagation, invalidate, and clear. Use only the standard library. Include unittest.IsolatedAsyncioTestCase tests for concurrent callers, failed loaders, TTL expiry, cancellation and eviction.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_4 in the tests.",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 1787,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.225791247969028,
+    "ttft_ms": 458.085899008438,
+    "output_tokens": 1536,
+    "request_output_tps": 125.63604014220047,
+    "apparent_decode_tps": 130.4433567262493,
+    "concurrency": 8,
+    "output_sha256": "40db7f19d2418b958dbe95603ce9727fd0feb0972d075a7cc0ab797c03ae2ef0"
+  },
+  {
+    "status": "ok",
+    "request": 5,
+    "round": 2,
+    "language": "TypeScript",
+    "prompt": "Coding exercise 56cd17c63726612477aa. Language: TypeScript.\n\nImplement a strongly typed bounded asynchronous work queue. Support concurrency limits, backpressure, AbortSignal cancellation, graceful drain, ordered result collection, and a close method. Avoid dependencies. Include executable tests using node:test and demonstrate concurrent producers. Carefully distinguish pending and running cancellation.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_5 in the tests.",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 1775,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.351973873970564,
+    "ttft_ms": 457.916896964889,
+    "output_tokens": 1536,
+    "request_output_tps": 124.35259462755405,
+    "apparent_decode_tps": 129.05711790689494,
+    "concurrency": 8,
+    "output_sha256": "ece0a222c57614a1f2b4c15d91b13a8a0852c9bc205f941e5c1c31794f0e7655"
+  },
+  {
+    "status": "ok",
+    "request": 6,
+    "round": 2,
+    "language": "Rust",
+    "prompt": "Coding exercise c6ef7e2b4e249c8febda. Language: Rust.\n\nImplement a bounded thread-safe LRU cache with TTL using only the Rust standard library. Support get, insert, remove, len, deterministic injectable clock for tests, and safe shared access with Arc and Mutex. Avoid unsafe code. Explain ownership choices briefly and include unit tests for expiry, replacement, eviction and concurrent access.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_6 in the tests.",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 1782,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.244976732996292,
+    "ttft_ms": 458.3400909905322,
+    "output_tokens": 1536,
+    "request_output_tps": 125.43919302524861,
+    "apparent_decode_tps": 130.23254116588797,
+    "concurrency": 8,
+    "output_sha256": "069820ff068addd3a19299104544fc625fddef430c91f247b0181caed286afb8"
+  },
+  {
+    "status": "ok",
+    "request": 7,
+    "round": 2,
+    "language": "Go",
+    "prompt": "Coding exercise 4c3bd0793592e5629162. Language: Go.\n\nImplement a bounded worker pool with context cancellation, task submission with backpressure, panic recovery, graceful shutdown, and deterministic result delivery. Avoid goroutine leaks and data races. Use only the Go standard library. Include tests for concurrency bounds, cancellation, shutdown, panic propagation and rejected submissions.\n\nReturn an actual implementation and substantive tests, not a design sketch. Start with code. State the public API clearly in comments and handle edge cases explicitly. Keep all code self-contained. Include imports, type definitions, constructors, helper methods and tests. Prefer understandable correct code to clever tricks. Use concise comments where concurrency invariants matter. Do not use placeholder implementations, ellipses, TODOs, pseudocode, or third-party packages. Consider zero and negative capacity, repeated close, loader/task failures, canceled waiters, and resources released during cleanup. Avoid sleeping in tests when deterministic synchronization is possible. Explain any remaining tradeoffs after the code.\n\nUse a distinct example key or task label example_7 in the tests.",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 1779,
+      "completion_tokens": 1536,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "created_cache_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "finish_reason": "length",
+    "elapsed_s": 12.433832743030507,
+    "ttft_ms": 458.16053403541446,
+    "output_tokens": 1536,
+    "request_output_tps": 123.53391200802253,
+    "apparent_decode_tps": 128.17692274116263,
+    "concurrency": 8,
+    "output_sha256": "c6d435b5c2456865286eae75c00878ec572f11da950c0f3e56ae515708736501"
+  }
+]

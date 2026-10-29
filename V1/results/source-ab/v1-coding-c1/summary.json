@@ -1,0 +1,32 @@
+{
+  "gpu_count": 1,
+  "summaries": [
+    {
+      "concurrency": 1,
+      "median_aggregate_output_tps": 266.8976510397706,
+      "pooled_aggregate_output_tps": 265.9569700155853,
+      "round_tps": [
+        273.1373241610556,
+        266.65979994517204,
+        267.20029358097594,
+        251.95709667980515,
+        275.8191776952241,
+        267.1355021343691,
+        269.5325056118887,
+        269.17468643209577,
+        266.5468167595823,
+        261.557965795276,
+        258.83898485405626,
+        265.61298792169686
+      ],
+      "requests": 12,
+      "total_output_tokens": 18432,
+      "mean_prompt_tokens": 254.41666666666666,
+      "min_prompt_tokens": 252,
+      "max_prompt_tokens": 257,
+      "length_capped_requests": 12,
+      "median_apparent_decode_tps": 277.5814684914619
+    }
+  ],
+  "quality_validation": "Generation throughput only; generated coding tests were not executed."
+}

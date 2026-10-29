@@ -1,0 +1,22 @@
+{
+  "base_url": "http://127.0.0.1:8001",
+  "model": "qwen3.8-flash-next",
+  "label": "v1",
+  "output": "V1/results/source-ab/v1-legacy-c1",
+  "workload": "V1/benchmarks/legacy-workload.json",
+  "concurrency": [
+    1
+  ],
+  "input_lengths": [
+    1024,
+    8192
+  ],
+  "output_lengths": [
+    1024
+  ],
+  "repeats": 10,
+  "warmups": 2,
+  "prefill_only": false,
+  "cold_prefix_confirmed": false,
+  "started_unix": 1793279520.016507
+}

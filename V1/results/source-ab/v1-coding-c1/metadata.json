@@ -1,0 +1,17 @@
+{
+  "gpu_count": 1,
+  "concurrency": [
+    1
+  ],
+  "rounds": 12,
+  "max_output_tokens": 1536,
+  "natural_eos": true,
+  "thinking": false,
+  "base_url": "http://127.0.0.1:8001",
+  "model": "qwen3.8-flash-next",
+  "cache_salt": "53b9ca473992c3ff7f25bc346f949d78233757001d9c46d0917be5ad7b8282c4",
+  "power_limits": "GPU0: 450W",
+  "started_unix": 1793279378.5645468,
+  "aggregate_definition": "Sum of completion tokens / simultaneous-batch wall time, including prompt processing and client/transport overhead; gateway overhead applies only when the base URL is a gateway.",
+  "workload": "V1/benchmarks/legacy-workload.json"
+}

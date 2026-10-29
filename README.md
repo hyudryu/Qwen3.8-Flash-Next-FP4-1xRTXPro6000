@@ -1,6 +1,33 @@
 # Qwen3.8 Flash-Next FP4 on one RTX PRO 6000
 
-**V1: source-level TP1 inference optimizations** for [nvidia/Qwen3.8-Flash-Next-FP4-Local](https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local), tested on one NVIDIA RTX PRO 6000 Blackwell Workstation Edition, 96 GB. The tested machine has 128 GB system RAM. This release contains actual CUDA/CuTe and Triton changes plus hash-checked inference integration patches. No TP2 results or two-GPU aggregate numbers are used here.
+**V1: experimental TP1 kernel changes; a consistent serving speedup has not been established** for [nvidia/Qwen3.8-Flash-Next-FP4-Local](https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local), tested on one NVIDIA RTX PRO 6000 Blackwell Workstation Edition, 96 GB. The tested machine has 128 GB system RAM. This release contains actual CUDA/CuTe and Triton changes plus hash-checked inference integration patches. No TP2 results or two-GPU aggregate numbers are used here.
+
+## Fresh original source versus V1: one GPU at 450W
+
+The original setup was actually restored and benchmarked, followed by V1 on the same GPU0. The other deployment remained stopped. Source hashes verified all four original/modified integration files. Effective launch options and vLLM/b12x/OMP/CUDA environment matched; both loaded the exact same checkpoint revision with MTP3. Original uses the repository reference and V1 the same pinned local snapshot, documented in the [protocol audit](V1/results/source-ab/protocol-audit.json).
+
+| Short coding workload | Original output tok/s | V1 output tok/s | V1 change |
+|---|---:|---:|---:|
+| C1 | 268.44 | 266.90 | -0.58% |
+| C4 | 678.39 | 664.88 | -1.99% |
+| C8 | 986.34 | 958.25 | -2.85% |
+
+C1 has 12 measured requests per variant; C4/C8 each have three measured batches. Prompts are exactly paired, 235–257 input tokens, output capped at 1,536, thinking disabled. All measured outputs reached the cap and all cached-token counts were zero. Counters verified the single engine completed exactly each batch. Throughput includes prompt processing and client/streaming overhead, measured directly against the engine.
+
+The earlier saved token-ID workload was also rerun without regenerating prompts:
+
+| Earlier C1 workload | Original output tok/s | V1 output tok/s | V1 change |
+|---|---:|---:|---:|
+| 1,024 input / 1,024 output | 217.70 | 224.00 | +2.90% |
+| 8,192 input / 1,024 output | 236.65 | 218.92 | -7.49% |
+
+The earlier workload uses 10 measured requests plus two warmups per length/variant, fixed prompt IDs and forced 1,024-token output (`ignore_eos=true`). Coding tests use natural EOS with an output cap. These are different workloads and must not be compared as a source speedup.
+
+**The fresh test does not show a consistent end-to-end improvement.** Coding medians were lower with V1. On the earlier prompts, 1K improved while 8K regressed; both older-prompt conditional paired confidence intervals included zero. Tests are sequential single blocks, so the small-sample intervals exclude run-level/thermal drift and cannot establish a general causal gain. MTP acceptance and full generated outputs vary; full-generation bitwise equality and functional coding quality were not established.
+
+Coding C1's accepted-draft fraction was 71.59% originally versus 70.21% with V1. Its verification-step proxy improved about 1.34%, but actual output throughput did not improve. This proxy is neither token throughput nor pure GPU kernel time and does not change the negative serving conclusion.
+
+The [full comparison](V1/results/source-ab/comparison.json) includes every round, conditional paired intervals, source audits, output hashes, relevant MTP counters and GPU telemetry. Raw timing records are [under source-ab](V1/results/source-ab/). The exact [older workload](V1/benchmarks/legacy-workload.json) and [client](V1/benchmarks/legacy.py) are included. After testing, V1 and the previous 600W cap were restored; GPU1 stayed stopped. Both source variants in this section were measured at 450W.
 
 ## Single-GPU coding throughput: 450W vs 600W
 
@@ -31,20 +58,9 @@ Data: [power comparison](V1/results/coding/power-comparison.json), [450W raw tim
 
 The original router decisions, NVFP4 expert MMA and weighted expert-output epilogue remain authoritative and unchanged. MoE expert weights are already GPU-resident. The **26.82 GiB CUDA-mapped host n-gram/PLE table is separate** from those weights. Expert prediction/prefetch prototypes did not yield an end-to-end benefit and are not enabled in V1. This is a source release, not a vLLM flag sweep; the tested launch arguments/environment are preserved for reproduction.
 
-## What improved against the original source
+## Historical source comparisons
 
-Historical matched **single-GPU** tests, separate from the coding/power experiment above:
-
-| Test | Original | V1 | Scope |
-|---|---:|---:|---|
-| C1, MTP3, 1K input | 222.48 tok/s | 226.53 tok/s | +1.82% median request throughput |
-| C1, MTP3, 8K input | 219.63 tok/s | 218.60 tok/s | −0.47%; no universal gain |
-| C1, no MTP, 1K input | 120.73 tok/s | 123.41 tok/s | +2.22%; auxiliary configuration |
-| Prepared MoE, 8 rows | 33.47 µs | 30.75 µs | Fixed real routes; kernel microbenchmark |
-| Prepared MoE, 16 rows | 66.58 µs | 63.89 µs | Fixed real routes; kernel microbenchmark |
-| Prepared MoE, 32 rows | 164.96 µs | 162.38 µs | Fixed real routes; kernel microbenchmark |
-
-MTP acceptance varied even between unmodified runs; the C1 MTP wall-latency confidence interval included zero. Some larger-concurrency historical cases regressed. Microbenchmark gains must not be interpreted as equivalent serving gains. The new power comparison measures V1 at two power limits; it does **not** compare original source against V1. [Historical full summary](V1/results/historical-single-gpu-summary.json), [implementation and limitations](V1/docs/engineering.md).
+Earlier single-GPU measurements and isolated kernel gains remain available in [the historical summary](V1/results/historical-single-gpu-summary.json) and [engineering notes](V1/docs/engineering.md). The fresh original/V1 comparison above takes precedence for current serving claims. Microbenchmark gains are not equivalent to end-to-end gains; the power table also is not an original-versus-V1 comparison.
 
 ## Build and run V1
 

@@ -1,0 +1,227 @@
+{
+  "gpu_count": 1,
+  "power_w": 450,
+  "mtp": 3,
+  "protocol": {
+    "effective_model_launch_options_identical": true,
+    "vllm_b12x_omp_cuda_environment_identical": true,
+    "image_identical": true,
+    "checkpoint_revision_identical": true,
+    "model_reference_difference": "Original uses repository ID; V1 uses the identical pinned local snapshot. Both use the same checkpoint bytes and PLE identity setting.",
+    "target_power_w": 450,
+    "gpu_count": 1,
+    "base_url": "http://127.0.0.1:8001"
+  },
+  "coding": [
+    {
+      "concurrency": 1,
+      "output_tps": {
+        "original": 268.4441073945005,
+        "v1": 266.8976510397706,
+        "change_pct": -0.5760813190275327,
+        "original_samples": 12,
+        "v1_samples": 12
+      },
+      "median_ttft_ms": {
+        "original": 221.70444449875504,
+        "v1": 223.98618049919605,
+        "change_pct": 1.0291791874536882,
+        "original_samples": 12,
+        "v1_samples": 12
+      },
+      "same_prompt_count": 12,
+      "same_output_hash_count": 0,
+      "original_round_tps": [
+        269.8356143429285,
+        261.7139789718122,
+        258.64768226039143,
+        275.01202871476147,
+        256.0589924068981,
+        270.3295155875641,
+        258.94508835373114,
+        268.1763129817678,
+        268.7119018072333,
+        259.8874851926557,
+        276.12651529930497,
+        272.4230545352979
+      ],
+      "v1_round_tps": [
+        273.1373241610556,
+        266.65979994517204,
+        267.20029358097594,
+        251.95709667980515,
+        275.8191776952241,
+        267.1355021343691,
+        269.5325056118887,
+        269.17468643209577,
+        266.5468167595823,
+        261.557965795276,
+        258.83898485405626,
+        265.61298792169686
+      ],
+      "paired_geometric_wall_speedup_pct": -0.07956671575173058,
+      "conditional_prompt_bootstrap_95pct": [
+        -2.517357248766782,
+        2.236386742994365
+      ],
+      "limitations": "Conditional on these prompts and sequential original\u2192V1 blocks. Does not include run-level/thermal drift or isolate effects of MTP output/acceptance differences.",
+      "apparent_decode_tps": {
+        "original": 279.1008544304923,
+        "v1": 277.5814684914619,
+        "change_pct": -0.544385986252427,
+        "original_samples": 12,
+        "v1_samples": 12
+      },
+      "mtp_acceptance_original_v1": [
+        {
+          "accepted": 12568.0,
+          "draft_tokens": 17556.0,
+          "acceptance_fraction": 0.7158806106174527,
+          "draft_bundles": 5852.0
+        },
+        {
+          "accepted": 12490.0,
+          "draft_tokens": 17790.0,
+          "acceptance_fraction": 0.702079820123665,
+          "draft_bundles": 5930.0
+        }
+      ],
+      "median_ms_per_verified_step_proxy": {
+        "original": 11.374269990744185,
+        "v1": 11.221882815601479,
+        "change_pct": -1.3397534546543355,
+        "original_samples": 12,
+        "v1_samples": 12
+      }
+    },
+    {
+      "concurrency": 4,
+      "output_tps": {
+        "original": 678.3940652383358,
+        "v1": 664.88293839866,
+        "change_pct": -1.99163399740665,
+        "original_samples": 3,
+        "v1_samples": 3
+      },
+      "median_ttft_ms": {
+        "original": 427.49339499277994,
+        "v1": 434.8219789681025,
+        "change_pct": 1.7143151358973263,
+        "original_samples": 12,
+        "v1_samples": 12
+      },
+      "same_prompt_count": 12,
+      "same_output_hash_count": 0,
+      "original_round_tps": [
+        663.5095930642279,
+        684.7404768461033,
+        678.3940652383358
+      ],
+      "v1_round_tps": [
+        664.88293839866,
+        662.0604292898076,
+        677.4669865049742
+      ],
+      "paired_geometric_wall_speedup_pct": -1.0934082984112974,
+      "conditional_prompt_bootstrap_95pct": [
+        -3.312210731394094,
+        0.20698198621209585
+      ],
+      "limitations": "Conditional on these prompts and sequential original\u2192V1 blocks. Does not include run-level/thermal drift or isolate effects of MTP output/acceptance differences."
+    },
+    {
+      "concurrency": 8,
+      "output_tps": {
+        "original": 986.342696714882,
+        "v1": 958.2478689998012,
+        "change_pct": -2.848384015885508,
+        "original_samples": 3,
+        "v1_samples": 3
+      },
+      "median_ttft_ms": {
+        "original": 450.3746390109882,
+        "v1": 451.6907299985178,
+        "change_pct": 0.29222138049773694,
+        "original_samples": 24,
+        "v1_samples": 24
+      },
+      "same_prompt_count": 24,
+      "same_output_hash_count": 0,
+      "original_round_tps": [
+        995.8363566486971,
+        953.7262657584034,
+        986.342696714882
+      ],
+      "v1_round_tps": [
+        958.2478689998012,
+        952.8796513974573,
+        978.5430879395952
+      ],
+      "paired_geometric_wall_speedup_pct": -1.5644199668985597,
+      "conditional_prompt_bootstrap_95pct": [
+        -3.774564706132344,
+        -0.08876911450823588
+      ],
+      "limitations": "Conditional on these prompts and sequential original\u2192V1 blocks. Does not include run-level/thermal drift or isolate effects of MTP output/acceptance differences."
+    }
+  ],
+  "legacy_c1": [
+    {
+      "input_tokens": 1024,
+      "output_tokens": 1024,
+      "output_tps": {
+        "original": 217.69514227428613,
+        "v1": 224.00170256873827,
+        "change_pct": 2.8969687741153827,
+        "original_samples": 10,
+        "v1_samples": 10
+      },
+      "apparent_decode_tps": {
+        "original": 227.91735146780388,
+        "v1": 234.9981021772336,
+        "change_pct": 3.1067185819022347,
+        "original_samples": 10,
+        "v1_samples": 10
+      },
+      "same_output_hash_count": 0,
+      "paired_geometric_wall_speedup_pct": 1.5502953867570972,
+      "conditional_prompt_bootstrap_95pct": [
+        -1.3335650804003825,
+        4.541612029519441
+      ],
+      "limitations": "Conditional on these prompts and sequential original\u2192V1 blocks. Does not include run-level/thermal drift or isolate effects of MTP output/acceptance differences."
+    },
+    {
+      "input_tokens": 8192,
+      "output_tokens": 1024,
+      "output_tps": {
+        "original": 236.64697779686628,
+        "v1": 218.9220131275938,
+        "change_pct": -7.490044806102403,
+        "original_samples": 10,
+        "v1_samples": 10
+      },
+      "apparent_decode_tps": {
+        "original": 274.1786079533822,
+        "v1": 250.69106750937098,
+        "change_pct": -8.56651093946933,
+        "original_samples": 10,
+        "v1_samples": 10
+      },
+      "same_output_hash_count": 1,
+      "paired_geometric_wall_speedup_pct": -2.3004109797013244,
+      "conditional_prompt_bootstrap_95pct": [
+        -11.229518014175078,
+        7.9756271205479425
+      ],
+      "limitations": "Conditional on these prompts and sequential original\u2192V1 blocks. Does not include run-level/thermal drift or isolate effects of MTP output/acceptance differences."
+    }
+  ],
+  "restoration": {
+    "v1_running": true,
+    "gpu1_stopped": true,
+    "gpu0_power_restored_w": 600.0,
+    "original_container_preserved": true
+  },
+  "legacy_workload_sha256": "f91ef42fbbd332e047a351fcc26386bec94bf8486cdacfa4d24ed5bc1e2ca7a7"
+}

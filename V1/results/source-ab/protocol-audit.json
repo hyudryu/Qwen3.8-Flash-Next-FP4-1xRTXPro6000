@@ -1,0 +1,10 @@
+{
+  "effective_model_launch_options_identical": true,
+  "vllm_b12x_omp_cuda_environment_identical": true,
+  "image_identical": true,
+  "checkpoint_revision_identical": true,
+  "model_reference_difference": "Original uses repository ID; V1 uses the identical pinned local snapshot. Both use the same checkpoint bytes and PLE identity setting.",
+  "target_power_w": 450,
+  "gpu_count": 1,
+  "base_url": "http://127.0.0.1:8001"
+}
