@@ -96,6 +96,19 @@ nvidia-smi -i 0 --query-gpu=power.limit,enforced.power.limit --format=csv
 sudo nvidia-smi -i 0 -pl 600
 ```
 
+For the original-source comparison, run the same launcher with `--image ghcr.io/local-inference-lab/vllm@sha256:745feb916ee816f5409fd58386114be4f22fbede7f9c0e0a7b8c4fe8dac0fb29 --name qwen38-original`. Run one version at a time at the same power limit; stop it before starting the other. Use 12 coding C1 rounds and three C4/C8 rounds for each version to reproduce the fresh source comparison.
+
+The exact earlier workload can be rerun as follows, replacing `original` with `v1` for the other source version and using a separate result directory:
+
+```bash
+python3 V1/benchmarks/legacy.py \
+  --base-url http://127.0.0.1:8000 --model qwen3.8-flash-next \
+  --label original --output local-results/original-legacy-c1 \
+  --workload V1/benchmarks/legacy-workload.json \
+  --concurrency 1 --input-lengths 1024 8192 \
+  --output-lengths 1024 --repeats 10 --warmups 2
+```
+
 The benchmark preserves launch settings, isolates prefix caches by request salt, validates server token counts and fails on competing request-counter changes. Power changes are runtime settings; no reboot-persistent power configuration is installed.
 
 ## Validation and rollback
