@@ -1,0 +1,10 @@
+--- a/flashinfer/experimental/b12x/moe/fused_moe/_preparation.py
++++ b/flashinfer/experimental/b12x/moe/fused_moe/_preparation.py
+@@ -1477,6 +1477,7 @@
+                 scale_decoder = expansion.prepared.state.decoder(lsc.active)
+                 launchers.extend(scale_decoder.programs)
+                 launchers.extend(scale_decoder.routing_programs)
++                launchers.extend(scale_decoder.pipeline_programs or ())
+             elif lsc_payload:
+                 launchers.extend(
+                     compile_nvfp4_csf_programs(lsc_payload, device.ordinal)

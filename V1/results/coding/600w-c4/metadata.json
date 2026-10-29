@@ -1,0 +1,17 @@
+{
+  "gpu_count": 1,
+  "concurrency": [
+    4
+  ],
+  "rounds": 3,
+  "max_output_tokens": 1536,
+  "natural_eos": true,
+  "thinking": false,
+  "base_url": "http://127.0.0.1:8001",
+  "model": "qwen3.8-flash-next",
+  "cache_salt": "20e5fe1fcaa98623ea7cf748c2aa39c65f3f861aec31036cd5eb1b5110e000ba",
+  "power_limits": "GPU0: 600W",
+  "started_unix": 1793277125.7829528,
+  "aggregate_definition": "Sum of completion tokens / simultaneous-batch wall time, including prompt processing and client/transport overhead; measured directly against the single engine.",
+  "workload": "Python/TypeScript/Rust/Go implementation and tests; same prompts across power settings, unique per-request cache salt; cache hits must be zero."
+}

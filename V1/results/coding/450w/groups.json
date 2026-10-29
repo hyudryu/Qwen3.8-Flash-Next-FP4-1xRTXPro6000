@@ -1,0 +1,155 @@
+[
+  {
+    "round": 0,
+    "concurrency": 1,
+    "wall_s": 5.832447530992795,
+    "output_tokens": 1536,
+    "aggregate_output_tps": 263.3542765430662,
+    "median_ttft_ms": 231.6496060229838,
+    "median_request_output_tps": 263.36026016813895,
+    "median_apparent_decode_tps": 274.07711575068305,
+    "finish_reasons": {
+      "length": 1
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 1536.0,
+      "requests": 1.0
+    }
+  },
+  {
+    "round": 1,
+    "concurrency": 1,
+    "wall_s": 5.628509305999614,
+    "output_tokens": 1536,
+    "aggregate_output_tps": 272.8964129743424,
+    "median_ttft_ms": 234.20969699509442,
+    "median_request_output_tps": 272.90030600877196,
+    "median_apparent_decode_tps": 284.56607144016925,
+    "finish_reasons": {
+      "length": 1
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 1536.0,
+      "requests": 1.0
+    }
+  },
+  {
+    "round": 2,
+    "concurrency": 1,
+    "wall_s": 5.627080551988911,
+    "output_tokens": 1536,
+    "aggregate_output_tps": 272.96570322902085,
+    "median_ttft_ms": 241.96999199921265,
+    "median_request_output_tps": 272.970043811679,
+    "median_apparent_decode_tps": 285.0526683639334,
+    "finish_reasons": {
+      "length": 1
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 1536.0,
+      "requests": 1.0
+    }
+  },
+  {
+    "round": 0,
+    "concurrency": 4,
+    "wall_s": 8.886948038998526,
+    "output_tokens": 6144,
+    "aggregate_output_tps": 691.3509534474977,
+    "median_ttft_ms": 470.6711530161556,
+    "median_request_output_tps": 175.13211686245666,
+    "median_apparent_decode_tps": 184.9508667576687,
+    "finish_reasons": {
+      "length": 4
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 6144.0,
+      "requests": 4.0
+    }
+  },
+  {
+    "round": 1,
+    "concurrency": 4,
+    "wall_s": 9.119731897022575,
+    "output_tokens": 6144,
+    "aggregate_output_tps": 673.7040155759297,
+    "median_ttft_ms": 437.62294997577555,
+    "median_request_output_tps": 172.12851043520743,
+    "median_apparent_decode_tps": 180.88874907905335,
+    "finish_reasons": {
+      "length": 4
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 6144.0,
+      "requests": 4.0
+    }
+  },
+  {
+    "round": 2,
+    "concurrency": 4,
+    "wall_s": 9.181847732979804,
+    "output_tokens": 6144,
+    "aggregate_output_tps": 669.146361241832,
+    "median_ttft_ms": 440.7586590095889,
+    "median_request_output_tps": 171.22607965048377,
+    "median_apparent_decode_tps": 179.76713823708275,
+    "finish_reasons": {
+      "length": 4
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 6144.0,
+      "requests": 4.0
+    }
+  },
+  {
+    "round": 0,
+    "concurrency": 8,
+    "wall_s": 12.34668961999705,
+    "output_tokens": 12288,
+    "aggregate_output_tps": 995.2465298955929,
+    "median_ttft_ms": 459.0111355064437,
+    "median_request_output_tps": 125.69223370088586,
+    "median_apparent_decode_tps": 130.51348076006502,
+    "finish_reasons": {
+      "length": 8
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 12288.0,
+      "requests": 8.0
+    }
+  },
+  {
+    "round": 1,
+    "concurrency": 8,
+    "wall_s": 12.590814989991486,
+    "output_tokens": 12288,
+    "aggregate_output_tps": 975.9495322397958,
+    "median_ttft_ms": 460.4290029674303,
+    "median_request_output_tps": 124.98205714612061,
+    "median_apparent_decode_tps": 129.7629899345323,
+    "finish_reasons": {
+      "length": 8
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 12288.0,
+      "requests": 8.0
+    }
+  },
+  {
+    "round": 2,
+    "concurrency": 8,
+    "wall_s": 12.882065163983498,
+    "output_tokens": 12288,
+    "aggregate_output_tps": 953.8843223954166,
+    "median_ttft_ms": 456.6044664825313,
+    "median_request_output_tps": 121.34445028540428,
+    "median_apparent_decode_tps": 125.81089970533706,
+    "finish_reasons": {
+      "length": 8
+    },
+    "backend_counter_deltas": {
+      "generation_tokens": 12288.0,
+      "requests": 8.0
+    }
+  }
+]

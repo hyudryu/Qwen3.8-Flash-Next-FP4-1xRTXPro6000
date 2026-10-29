@@ -1,0 +1,285 @@
+{
+  "scope": "Actual payload and route traces; materialized decoder; exact live original per-capacity tuning configs. Includes route construction. No serving speedup claimed.",
+  "source_sha256": {
+    "kernels/csf_routes.py": "dd6e0731b505a37b26951f9bc8d94dab00326c9673660674edf4106c4e8fc76f",
+    "kernels/csf_pipeline.py": "545f37ca5544f19c55a8fbd18f760a3f36bbad63169f5a126a3d034ec2aeee6b",
+    "expert_prediction/overlay/b12x_csf_tuning.py": "820e87f70f6b287d1cf6ca13efd8dd66242ab377ba11a563077c0dd1ce0f0cc2",
+    "expert_prediction/overlay/b12x_csf_decoder.py": "6ea2a1ced888b679ef9c70cdea8a8b5f667cd31ff573abb1289bd9062a719079",
+    "expert_prediction/overlay/b12x_moe_preparation.py": "6bd0ec2c4458495d937c81612eeed26aeebb27101bcfcf49b1a03e5752c919de"
+  },
+  "records": [
+    {
+      "tokens": 1,
+      "routes": 10,
+      "legacy_config": {
+        "groups_per_task": 8,
+        "shared_exceptions": false,
+        "bitmap_routes": false
+      },
+      "reference": {
+        "median_us": 2.313400059938431,
+        "samples_us": [
+          2.4157999083399773,
+          2.3075999692082405,
+          2.3142000660300255,
+          2.313400059938431,
+          2.31539998203516,
+          2.310599945485592,
+          2.3137999698519707,
+          2.304000034928322,
+          2.305000089108944
+        ]
+      },
+      "modified": {
+        "median_us": 2.3104000836610794,
+        "samples_us": [
+          2.3434000089764595,
+          2.3142000660300255,
+          2.311200089752674,
+          2.3135999217629433,
+          2.303200028836727,
+          2.301199920475483,
+          2.3056000471115112,
+          2.3104000836610794,
+          2.3094000294804573
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 4,
+      "routes": 40,
+      "legacy_config": {
+        "groups_per_task": 16,
+        "shared_exceptions": false,
+        "bitmap_routes": false
+      },
+      "reference": {
+        "median_us": 3.8509998470544815,
+        "samples_us": [
+          3.9510000497102737,
+          3.850800171494484,
+          3.8488000631332397,
+          3.8506001234054565,
+          3.8524001836776733,
+          3.8398001343011856,
+          3.8529999554157257,
+          3.8509998470544815,
+          3.8509998470544815
+        ]
+      },
+      "modified": {
+        "median_us": 3.852200135588646,
+        "samples_us": [
+          3.9090000092983246,
+          3.8499999791383743,
+          3.862600028514862,
+          3.847000002861023,
+          3.847000002861023,
+          3.852200135588646,
+          3.850400075316429,
+          3.864400088787079,
+          3.8524001836776733
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 8,
+      "routes": 80,
+      "legacy_config": {
+        "groups_per_task": 32,
+        "shared_exceptions": false,
+        "bitmap_routes": true
+      },
+      "reference": {
+        "median_us": 7.887600362300873,
+        "samples_us": [
+          7.987400144338608,
+          7.8684002161026,
+          7.891400158405304,
+          7.8950002789497375,
+          7.905399799346924,
+          7.881999760866165,
+          7.86919966340065,
+          7.871399819850922,
+          7.887600362300873
+        ]
+      },
+      "modified": {
+        "median_us": 5.5149998515844345,
+        "samples_us": [
+          5.582800135016441,
+          5.517600104212761,
+          5.513399839401245,
+          5.511000007390976,
+          5.5149998515844345,
+          5.514400079846382,
+          5.515599995851517,
+          5.512600019574165,
+          5.515599995851517
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 16,
+      "routes": 160,
+      "legacy_config": {
+        "groups_per_task": 32,
+        "shared_exceptions": false,
+        "bitmap_routes": false
+      },
+      "reference": {
+        "median_us": 8.713000267744064,
+        "samples_us": [
+          8.815199881792068,
+          8.73119980096817,
+          8.737800270318985,
+          8.713000267744064,
+          8.726999908685684,
+          8.701399713754654,
+          8.676999807357788,
+          8.7117999792099,
+          8.71260017156601
+        ]
+      },
+      "modified": {
+        "median_us": 6.794600188732147,
+        "samples_us": [
+          6.900600343942642,
+          6.819199770689011,
+          6.793200224637985,
+          6.794600188732147,
+          6.795600056648254,
+          6.794200092554092,
+          6.79360032081604,
+          6.796800345182419,
+          6.791000068187714
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 24,
+      "routes": 240,
+      "legacy_config": {
+        "groups_per_task": 16,
+        "shared_exceptions": true,
+        "bitmap_routes": true
+      },
+      "reference": {
+        "median_us": 12.684600055217743,
+        "samples_us": [
+          12.941199541091919,
+          12.710000574588776,
+          12.69959956407547,
+          12.681600451469421,
+          12.69720047712326,
+          12.683400511741638,
+          12.683600187301636,
+          12.684600055217743,
+          12.684600055217743
+        ]
+      },
+      "modified": {
+        "median_us": 8.716800063848495,
+        "samples_us": [
+          8.812999725341797,
+          8.708199858665466,
+          8.71340036392212,
+          8.702600002288818,
+          8.716999739408493,
+          8.727599680423737,
+          8.716800063848495,
+          8.71639996767044,
+          8.716800063848495
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 32,
+      "routes": 320,
+      "legacy_config": {
+        "groups_per_task": 32,
+        "shared_exceptions": true,
+        "bitmap_routes": true
+      },
+      "reference": {
+        "median_us": 13.950000703334808,
+        "samples_us": [
+          14.097200334072113,
+          13.951000571250916,
+          13.94679993391037,
+          13.950000703334808,
+          13.918599486351013,
+          13.95460069179535,
+          13.931599259376526,
+          13.950400054454803,
+          13.944199681282043
+        ]
+      },
+      "modified": {
+        "median_us": 9.846600145101547,
+        "samples_us": [
+          9.885799884796143,
+          9.857799857854843,
+          9.846600145101547,
+          9.828999638557434,
+          9.848599880933762,
+          9.860800206661224,
+          9.835200011730194,
+          9.815800189971924,
+          9.82159972190857
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    },
+    {
+      "tokens": 64,
+      "routes": 640,
+      "legacy_config": {
+        "groups_per_task": 4,
+        "shared_exceptions": true,
+        "bitmap_routes": false
+      },
+      "reference": {
+        "median_us": 36.99299991130829,
+        "samples_us": [
+          37.127599120140076,
+          37.01379895210266,
+          36.99699938297272,
+          36.99299991130829,
+          36.976200342178345,
+          36.99699938297272,
+          36.948999762535095,
+          36.97519898414612,
+          36.976200342178345
+        ]
+      },
+      "modified": {
+        "median_us": 14.207600057125092,
+        "samples_us": [
+          14.321599900722504,
+          14.207600057125092,
+          14.208599925041199,
+          14.215199649333954,
+          14.21079933643341,
+          14.196200668811798,
+          14.159999787807465,
+          14.202399551868439,
+          14.186400175094604
+        ]
+      },
+      "materialized_pipeline_retained": true,
+      "all_scale_bytes_equal": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "gpu_count": 1,
+  "summaries": [
+    {
+      "concurrency": 1,
+      "median_aggregate_output_tps": 270.2972374039624,
+      "pooled_aggregate_output_tps": 271.29253572858005,
+      "round_tps": [
+        264.99635008985103,
+        270.2972374039624,
+        278.9473402211463
+      ],
+      "requests": 3,
+      "total_output_tokens": 4608,
+      "mean_prompt_tokens": 254.33333333333334,
+      "min_prompt_tokens": 254,
+      "max_prompt_tokens": 255,
+      "length_capped_requests": 3,
+      "median_apparent_decode_tps": 281.412824716801
+    },
+    {
+      "concurrency": 4,
+      "median_aggregate_output_tps": 687.9101985615291,
+      "pooled_aggregate_output_tps": 687.1263451795143,
+      "round_tps": [
+        689.9988716714313,
+        683.5020351841725,
+        687.9101985615291
+      ],
+      "requests": 12,
+      "total_output_tokens": 18432,
+      "mean_prompt_tokens": 245,
+      "min_prompt_tokens": 235,
+      "max_prompt_tokens": 255,
+      "length_capped_requests": 12,
+      "median_apparent_decode_tps": 182.36193837936628
+    },
+    {
+      "concurrency": 8,
+      "median_aggregate_output_tps": 951.9887597076317,
+      "pooled_aggregate_output_tps": 956.6385896316987,
+      "round_tps": [
+        948.9229225569876,
+        969.2537236639183,
+        951.9887597076317
+      ],
+      "requests": 24,
+      "total_output_tokens": 36864,
+      "mean_prompt_tokens": 245.04166666666666,
+      "min_prompt_tokens": 235,
+      "max_prompt_tokens": 257,
+      "length_capped_requests": 24,
+      "median_apparent_decode_tps": 127.5685878583875
+    }
+  ],
+  "quality_validation": "Generation throughput only; generated coding tests were not executed."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "target": "vllm/models/qwen4_exp/nvidia/hyperconnection.py",
+    "patch": "hyperconnection.patch",
+    "original_sha256": "386bcc4ff5957b5b86aa62e338347f5ba57667bb0653dbc4c88c15d879daebff",
+    "modified_sha256": "a343110bd86bbf2e3ad56305971a13b48d5f2c8c3e83862d92f3ac6a1cb6c79f"
+  },
+  {
+    "target": "flashinfer/experimental/b12x/_lib/quant/nvfp4_csf.py",
+    "patch": "b12x_csf_decoder.patch",
+    "original_sha256": "bbbc113460c0b636432ae4e648d832696555660bc64b23efe7290b6a5296b19a",
+    "modified_sha256": "6ea2a1ced888b679ef9c70cdea8a8b5f667cd31ff573abb1289bd9062a719079"
+  },
+  {
+    "target": "flashinfer/experimental/b12x/_lib/quant/csf_blocks_tuning.py",
+    "patch": "b12x_csf_tuning.patch",
+    "original_sha256": "1a346c3b493c8918616983a999b505dd539a1b17ad1d7827d3df65b09a675d61",
+    "modified_sha256": "820e87f70f6b287d1cf6ca13efd8dd66242ab377ba11a563077c0dd1ce0f0cc2"
+  },
+  {
+    "target": "flashinfer/experimental/b12x/moe/fused_moe/_preparation.py",
+    "patch": "b12x_moe_preparation.patch",
+    "original_sha256": "095faead05aba731829d5d3d31e59d3f37beb0ad74e2710ebca5db65d6b5d8d3",
+    "modified_sha256": "6bd0ec2c4458495d937c81612eeed26aeebb27101bcfcf49b1a03e5752c919de"
+  }
+]

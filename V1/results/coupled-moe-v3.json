@@ -1,0 +1,185 @@
+{
+  "scope": "Actual prepared MoE on loaded layer24; fixed real routes and generated BF16 activations. Includes scale expansion and its effects on following expert execution. Idle-worker microbenchmark, not full serving.",
+  "records": [
+    {
+      "tokens": 4,
+      "reference": {
+        "median_us": 24.734999984502792,
+        "samples_us": [
+          24.968499317765236,
+          24.734999984502792,
+          24.676000699400902,
+          24.72900040447712,
+          24.664999917149544,
+          24.676499888300896,
+          24.76849965751171,
+          24.751000106334686,
+          24.799499660730362
+        ]
+      },
+      "modified": {
+        "median_us": 24.769499897956848,
+        "samples_us": [
+          24.975499138236046,
+          24.74750019609928,
+          24.70099925994873,
+          24.824000895023346,
+          24.694999679923058,
+          24.794500321149826,
+          24.734999984502792,
+          24.769499897956848,
+          24.785000830888748
+        ]
+      },
+      "max_abs_output_error": 2.288818359375e-05,
+      "rms_output_error": 2.6205445919913473e-06,
+      "baseline_repeat_max_abs": 1.9073486328125e-05,
+      "reference_program_names": [
+        "_dynamic_route_plan_kernel",
+        "integration.tp_moe.dynamic",
+        "quant.nvfp4_csf_pair"
+      ],
+      "modified_program_names": [
+        "_dynamic_route_plan_kernel",
+        "integration.tp_moe.dynamic",
+        "quant.nvfp4_csf_pair"
+      ]
+    },
+    {
+      "tokens": 8,
+      "reference": {
+        "median_us": 33.47000107169151,
+        "samples_us": [
+          33.662501722574234,
+          33.4865003824234,
+          33.5020013153553,
+          33.46949815750122,
+          33.52800011634827,
+          33.47000107169151,
+          33.44149887561798,
+          33.44250097870827,
+          33.43600034713745
+        ]
+      },
+      "modified": {
+        "median_us": 30.74749931693077,
+        "samples_us": [
+          30.976999551057816,
+          30.728500336408615,
+          30.725499615073204,
+          30.741000548005104,
+          30.74749931693077,
+          30.780499801039696,
+          30.74749931693077,
+          30.735500156879425,
+          30.786000192165375
+        ]
+      },
+      "max_abs_output_error": 3.0517578125e-05,
+      "rms_output_error": 2.777729832814657e-06,
+      "baseline_repeat_max_abs": 1.9073486328125e-05,
+      "reference_program_names": [
+        "_dynamic_route_plan_kernel",
+        "integration.tp_moe.dynamic",
+        "quant.csf_active_experts",
+        "quant.nvfp4_csf_pair"
+      ],
+      "modified_program_names": [
+        "_dynamic_route_plan_kernel",
+        "compact_experts",
+        "integration.tp_moe.dynamic",
+        "qwen38.quant.csf_pipeline"
+      ]
+    },
+    {
+      "tokens": 16,
+      "reference": {
+        "median_us": 66.58049672842026,
+        "samples_us": [
+          66.81200116872787,
+          66.5460005402565,
+          66.58049672842026,
+          66.47100299596786,
+          66.56850129365921,
+          66.59650057554245,
+          66.66400283575058,
+          66.43850356340408,
+          66.63499772548676
+        ]
+      },
+      "modified": {
+        "median_us": 63.88700008392334,
+        "samples_us": [
+          64.11650031805038,
+          63.92949819564819,
+          63.890501856803894,
+          63.83249908685684,
+          63.86300176382065,
+          63.88700008392334,
+          63.858501613140106,
+          63.95900249481201,
+          63.853003084659576
+        ]
+      },
+      "max_abs_output_error": 2.6702880859375e-05,
+      "rms_output_error": 2.5020215161930537e-06,
+      "baseline_repeat_max_abs": 2.288818359375e-05,
+      "reference_program_names": [
+        "_dynamic_route_plan_kernel",
+        "integration.tp_moe.dynamic",
+        "quant.csf_active_experts",
+        "quant.nvfp4_csf_pair"
+      ],
+      "modified_program_names": [
+        "_dynamic_route_plan_kernel",
+        "compact_experts",
+        "integration.tp_moe.dynamic",
+        "qwen38.quant.csf_pipeline"
+      ]
+    },
+    {
+      "tokens": 32,
+      "reference": {
+        "median_us": 164.9560034275055,
+        "samples_us": [
+          165.31400382518768,
+          164.93099927902222,
+          165.18400609493256,
+          164.89499807357788,
+          165.01450538635254,
+          164.92250561714172,
+          164.9560034275055,
+          165.0265008211136,
+          164.87999260425568
+        ]
+      },
+      "modified": {
+        "median_us": 162.37999498844147,
+        "samples_us": [
+          162.69749402999878,
+          162.32900321483612,
+          162.44150698184967,
+          162.4089926481247,
+          162.37999498844147,
+          162.1840000152588,
+          162.3775064945221,
+          162.44150698184967,
+          162.34250366687775
+        ]
+      },
+      "max_abs_output_error": 2.288818359375e-05,
+      "rms_output_error": 2.325427431060234e-06,
+      "baseline_repeat_max_abs": 1.71661376953125e-05,
+      "reference_program_names": [
+        "integration.tp_moe.dynamic",
+        "quant.csf_active_experts",
+        "quant.nvfp4_csf_pair"
+      ],
+      "modified_program_names": [
+        "compact_experts",
+        "integration.tp_moe.dynamic",
+        "qwen38.quant.csf_pipeline"
+      ]
+    }
+  ]
+}

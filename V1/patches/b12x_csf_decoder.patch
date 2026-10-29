@@ -1,0 +1,79 @@
+--- a/flashinfer/experimental/b12x/_lib/quant/nvfp4_csf.py
++++ b/flashinfer/experimental/b12x/_lib/quant/nvfp4_csf.py
+@@ -738,6 +738,8 @@
+     indexed_scales: tuple | None = None
+     indexed_programs: tuple | None = None
+     bitmap_routes: bool = False
++    pipeline_planes: tuple | None = None
++    pipeline_programs: tuple | None = None
+ 
+     @classmethod
+     def prepare(cls, first, second, out13, out2, *, indexed_scales=None):
+@@ -767,6 +769,18 @@
+             compile_nvfp4_csf_pair(first.geometry, second.geometry, ids64)
+             for ids64 in (False, True)
+         )
++        # Compile only for the validated native codec. Small decode and full
++        # prefill retain the original programs and shared scratch ownership.
++        pipeline_planes = pipeline_programs = None
++        if first.num_experts == 512 and all(p.geometry[2] == 4 and p.geometry[3] == 9
++               and p.geometry[8] == 1 and p.geometry[9] == 0 and p.geometry[10] == 1
++               and p.rows % 128 == 0 and p.columns % 4 == 0 for p in (first, second)):
++            from dataclasses import replace
++            from kernels.csf_pipeline import compile_pipeline
++            pipeline_planes = tuple(replace(p, groups_per_task=16) for p in (first, second))
++            pipeline_programs = tuple(compile_pipeline(
++                pipeline_planes[0].geometry, pipeline_planes[1].geometry, ids64)
++                for ids64 in (False, True))
+         return cls(
+             first,
+             second,
+@@ -780,6 +794,8 @@
+             torch.empty(
+                 first.num_experts, dtype=torch.int32, device=first.fixed.device
+             ),
++            pipeline_planes=pipeline_planes,
++            pipeline_programs=pipeline_programs,
+             indexed_scales=indexed_scales,
+             bitmap_routes=first.geometry[3] in range(4, 10),
+             indexed_programs=(
+@@ -811,21 +827,33 @@
+         # imply that every expert is active. Long prefills bound the scan work
+         # by expanding the complete, statically sized expert set instead.
+         mode = 0
++        compacted = False
+         if ids.numel() >= 16 * self.first.num_experts:
+             mode = 3
+         elif ids.numel() >= 64:
+-            mark_active_experts(
+-                ids, self.active, self.routing_programs[int(ids.dtype == torch.int64)]
+-            )
+-            ids, mode = self.active, 2
++            if self.pipeline_programs is not None and ids.numel() <= 512:
++                from kernels.csf_routes import compact_experts
++                # Ordered unique list, padded with -1, bounded by route count.
++                # All counts remain on GPU; no dynamic-grid host readback.
++                routes = ids.numel()
++                compact_experts[(1,)](ids, self.active, routes, 512, 512, num_warps=8)
++                ids, mode, compacted = self.active[:min(routes, 512)], 1, True
++            else:
++                mark_active_experts(
++                    ids, self.active, self.routing_programs[int(ids.dtype == torch.int64)]
++                )
++                ids, mode = self.active, 2
+         # Short route lists retain direct duplicate checks. Equal-size spans
+         # avoid assigning a large gate/up slab and a small down slab the same
+         # CTA budget. Presence and full-expert expansion retain their slab grid.
+         indexed = self.indexed_programs is not None and mode == 0
+         programs = self.indexed_programs if indexed else self.programs
++        planes = (self.first, self.second)
++        if (mode == 2 or compacted) and self.pipeline_programs is not None:
++            programs, planes = self.pipeline_programs, self.pipeline_planes
+         decode_nvfp4_csf_pair(
+-            self.first,
+-            self.second,
++            planes[0],
++            planes[1],
+             ids,
+             out13,
+             out2,

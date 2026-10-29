@@ -1,0 +1,1721 @@
+[
+  {
+    "unix": 1793277161.903982,
+    "power_w": 97.58,
+    "limit_w": 600.0,
+    "temperature_c": 41.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277162.9334862,
+    "power_w": 97.99,
+    "limit_w": 450.0,
+    "temperature_c": 40.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277163.9646661,
+    "power_w": 97.45,
+    "limit_w": 450.0,
+    "temperature_c": 40.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277164.9963272,
+    "power_w": 97.57,
+    "limit_w": 450.0,
+    "temperature_c": 40.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277166.0274575,
+    "power_w": 97.57,
+    "limit_w": 450.0,
+    "temperature_c": 40.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277167.0567493,
+    "power_w": 97.54,
+    "limit_w": 450.0,
+    "temperature_c": 40.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277168.0880384,
+    "power_w": 96.97,
+    "limit_w": 450.0,
+    "temperature_c": 39.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277169.1190448,
+    "power_w": 96.91,
+    "limit_w": 450.0,
+    "temperature_c": 39.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277170.147643,
+    "power_w": 96.67,
+    "limit_w": 450.0,
+    "temperature_c": 39.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277171.1766813,
+    "power_w": 96.4,
+    "limit_w": 450.0,
+    "temperature_c": 39.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277172.2078,
+    "power_w": 96.31,
+    "limit_w": 450.0,
+    "temperature_c": 39.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277173.2426317,
+    "power_w": 199.86,
+    "limit_w": 450.0,
+    "temperature_c": 44.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2865.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277174.281153,
+    "power_w": 339.69,
+    "limit_w": 450.0,
+    "temperature_c": 45.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2865.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277175.3175964,
+    "power_w": 383.11,
+    "limit_w": 450.0,
+    "temperature_c": 45.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277176.3547134,
+    "power_w": 383.95,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277177.3923967,
+    "power_w": 384.58,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277178.4288116,
+    "power_w": 385.63,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277179.4608073,
+    "power_w": 378.23,
+    "limit_w": 450.0,
+    "temperature_c": 45.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277180.5008326,
+    "power_w": 344.66,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277181.537198,
+    "power_w": 385.69,
+    "limit_w": 450.0,
+    "temperature_c": 47.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277182.57447,
+    "power_w": 387.22,
+    "limit_w": 450.0,
+    "temperature_c": 47.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277183.612591,
+    "power_w": 387.1,
+    "limit_w": 450.0,
+    "temperature_c": 47.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277184.6486568,
+    "power_w": 387.31,
+    "limit_w": 450.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277185.6858225,
+    "power_w": 344.99,
+    "limit_w": 450.0,
+    "temperature_c": 47.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277186.7222302,
+    "power_w": 387.18,
+    "limit_w": 450.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277187.7570827,
+    "power_w": 388.36,
+    "limit_w": 450.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277188.7927496,
+    "power_w": 388.99,
+    "limit_w": 450.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277189.8315449,
+    "power_w": 389.33,
+    "limit_w": 450.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277190.8626516,
+    "power_w": 357.05,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277191.9018898,
+    "power_w": 357.26,
+    "limit_w": 450.0,
+    "temperature_c": 49.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277192.938503,
+    "power_w": 363.38,
+    "limit_w": 450.0,
+    "temperature_c": 46.0,
+    "gpu_util_percent": 94.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277193.9775422,
+    "power_w": 375.25,
+    "limit_w": 450.0,
+    "temperature_c": 50.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277195.017113,
+    "power_w": 432.17,
+    "limit_w": 450.0,
+    "temperature_c": 50.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277196.0569155,
+    "power_w": 433.63,
+    "limit_w": 450.0,
+    "temperature_c": 50.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277197.097905,
+    "power_w": 433.98,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277198.139594,
+    "power_w": 434.37,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277199.179068,
+    "power_w": 434.88,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277200.218311,
+    "power_w": 434.96,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277201.256779,
+    "power_w": 435.51,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277202.314678,
+    "power_w": 336.1,
+    "limit_w": 450.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2805.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277203.3545492,
+    "power_w": 433.86,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277204.395035,
+    "power_w": 435.63,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277205.4334662,
+    "power_w": 436.47,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277206.4734938,
+    "power_w": 436.4,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277207.510964,
+    "power_w": 437.56,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277208.5503309,
+    "power_w": 438.18,
+    "limit_w": 450.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277209.5880363,
+    "power_w": 438.46,
+    "limit_w": 450.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277210.6259189,
+    "power_w": 432.33,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277211.6654162,
+    "power_w": 349.17,
+    "limit_w": 450.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277212.703914,
+    "power_w": 437.37,
+    "limit_w": 450.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277213.7414298,
+    "power_w": 438.23,
+    "limit_w": 450.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277214.778525,
+    "power_w": 438.69,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277215.818786,
+    "power_w": 439.55,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277216.8579335,
+    "power_w": 439.54,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277217.8981395,
+    "power_w": 440.01,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277218.9389393,
+    "power_w": 440.23,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277219.9717672,
+    "power_w": 419.05,
+    "limit_w": 450.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 94.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277221.013269,
+    "power_w": 384.53,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277222.0535424,
+    "power_w": 444.48,
+    "limit_w": 450.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277223.0914502,
+    "power_w": 372.27,
+    "limit_w": 450.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 31.0,
+    "sm_clock_mhz": 2737.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277224.1307998,
+    "power_w": 445.15,
+    "limit_w": 450.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277225.1717386,
+    "power_w": 445.58,
+    "limit_w": 450.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277226.2146783,
+    "power_w": 445.11,
+    "limit_w": 450.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277227.254473,
+    "power_w": 445.24,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277228.2906663,
+    "power_w": 445.7,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277229.3295844,
+    "power_w": 447.03,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277230.3690035,
+    "power_w": 447.71,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277231.4069242,
+    "power_w": 447.77,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277232.4442754,
+    "power_w": 448.06,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277233.4844935,
+    "power_w": 448.16,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277234.5254765,
+    "power_w": 448.68,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277235.5644772,
+    "power_w": 361.97,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 25.0,
+    "sm_clock_mhz": 2805.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277236.602146,
+    "power_w": 448.31,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277237.6434805,
+    "power_w": 448.71,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277238.6844306,
+    "power_w": 448.97,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277239.725358,
+    "power_w": 448.59,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277240.7637744,
+    "power_w": 449.54,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277241.804641,
+    "power_w": 449.83,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277242.8425012,
+    "power_w": 450.39,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277243.8828022,
+    "power_w": 450.3,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277244.9205246,
+    "power_w": 450.06,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277245.9597397,
+    "power_w": 450.49,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277246.999079,
+    "power_w": 446.67,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277248.0359235,
+    "power_w": 362.83,
+    "limit_w": 450.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 23.0,
+    "sm_clock_mhz": 2790.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277249.076392,
+    "power_w": 448.14,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277250.115015,
+    "power_w": 450.33,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277251.154047,
+    "power_w": 450.11,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277252.1934688,
+    "power_w": 450.13,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277253.235801,
+    "power_w": 450.54,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277254.2737384,
+    "power_w": 449.97,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277255.3158917,
+    "power_w": 449.71,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277256.355243,
+    "power_w": 450.46,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277257.3927383,
+    "power_w": 450.29,
+    "limit_w": 450.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277258.433931,
+    "power_w": 450.51,
+    "limit_w": 450.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277259.4729292,
+    "power_w": 449.93,
+    "limit_w": 450.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277260.5070755,
+    "power_w": 429.74,
+    "limit_w": 450.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 97.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277261.5366626,
+    "power_w": 120.43,
+    "limit_w": 600.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2865.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277262.5665529,
+    "power_w": 117.88,
+    "limit_w": 600.0,
+    "temperature_c": 51.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2797.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277263.5962665,
+    "power_w": 100.57,
+    "limit_w": 600.0,
+    "temperature_c": 50.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277264.625986,
+    "power_w": 100.56,
+    "limit_w": 600.0,
+    "temperature_c": 50.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277265.6559927,
+    "power_w": 100.37,
+    "limit_w": 600.0,
+    "temperature_c": 49.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277266.6844814,
+    "power_w": 100.21,
+    "limit_w": 600.0,
+    "temperature_c": 49.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277267.7141566,
+    "power_w": 100.14,
+    "limit_w": 600.0,
+    "temperature_c": 49.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277268.7430308,
+    "power_w": 100.07,
+    "limit_w": 600.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277269.773098,
+    "power_w": 99.89,
+    "limit_w": 600.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277270.8024945,
+    "power_w": 99.75,
+    "limit_w": 600.0,
+    "temperature_c": 48.0,
+    "gpu_util_percent": 0.0,
+    "sm_clock_mhz": 2610.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277271.841018,
+    "power_w": 259.41,
+    "limit_w": 600.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277272.8817348,
+    "power_w": 354.02,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2850.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277273.9191206,
+    "power_w": 397.73,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277274.9568768,
+    "power_w": 398.47,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277275.9969842,
+    "power_w": 399.12,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277277.0338702,
+    "power_w": 399.61,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277278.06571,
+    "power_w": 369.22,
+    "limit_w": 600.0,
+    "temperature_c": 52.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277279.1010852,
+    "power_w": 369.67,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277280.137853,
+    "power_w": 399.31,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277281.1767664,
+    "power_w": 400.09,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277282.2145076,
+    "power_w": 400.77,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277283.252407,
+    "power_w": 400.73,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277284.2898736,
+    "power_w": 358.83,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277285.3290758,
+    "power_w": 399.86,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277286.3651543,
+    "power_w": 400.48,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277287.4013598,
+    "power_w": 401.59,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277288.437762,
+    "power_w": 401.48,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277289.4704115,
+    "power_w": 341.9,
+    "limit_w": 600.0,
+    "temperature_c": 53.0,
+    "gpu_util_percent": 53.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277290.5088031,
+    "power_w": 414.03,
+    "limit_w": 600.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277291.5481765,
+    "power_w": 353.72,
+    "limit_w": 600.0,
+    "temperature_c": 54.0,
+    "gpu_util_percent": 46.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277292.5883589,
+    "power_w": 442.26,
+    "limit_w": 600.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277293.6298413,
+    "power_w": 443.0,
+    "limit_w": 600.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277294.6686502,
+    "power_w": 443.9,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277295.7085905,
+    "power_w": 444.92,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277296.7482357,
+    "power_w": 445.62,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277297.7896302,
+    "power_w": 445.63,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277298.828421,
+    "power_w": 445.79,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277299.8677824,
+    "power_w": 438.23,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 92.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277300.9087496,
+    "power_w": 356.74,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277301.9462042,
+    "power_w": 444.79,
+    "limit_w": 600.0,
+    "temperature_c": 57.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277302.9845297,
+    "power_w": 445.74,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277304.0219202,
+    "power_w": 446.17,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277305.0614448,
+    "power_w": 446.77,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277306.1029332,
+    "power_w": 446.89,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277307.1448524,
+    "power_w": 447.51,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277308.1850858,
+    "power_w": 448.04,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277309.2168267,
+    "power_w": 396.53,
+    "limit_w": 600.0,
+    "temperature_c": 55.0,
+    "gpu_util_percent": 21.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277310.2559986,
+    "power_w": 414.74,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277311.2953784,
+    "power_w": 446.89,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277312.3347318,
+    "power_w": 447.53,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277313.375204,
+    "power_w": 447.72,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277314.4138758,
+    "power_w": 448.89,
+    "limit_w": 600.0,
+    "temperature_c": 58.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277315.454543,
+    "power_w": 449.12,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277316.4935746,
+    "power_w": 449.59,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277317.5336432,
+    "power_w": 449.67,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2835.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277318.5755932,
+    "power_w": 364.78,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 23.0,
+    "sm_clock_mhz": 2797.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277319.6151788,
+    "power_w": 452.08,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277320.647781,
+    "power_w": 398.66,
+    "limit_w": 600.0,
+    "temperature_c": 56.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277321.6901076,
+    "power_w": 427.95,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277322.728191,
+    "power_w": 452.4,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277323.7668574,
+    "power_w": 453.77,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277324.8059564,
+    "power_w": 453.71,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277325.8448935,
+    "power_w": 453.51,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277326.8868537,
+    "power_w": 453.83,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277327.9273236,
+    "power_w": 454.36,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277328.9674594,
+    "power_w": 454.42,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277330.0077355,
+    "power_w": 455.17,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277331.0480046,
+    "power_w": 455.31,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277332.0897958,
+    "power_w": 454.87,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277333.1278384,
+    "power_w": 442.3,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277334.1666021,
+    "power_w": 372.43,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 25.0,
+    "sm_clock_mhz": 2805.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277335.2077045,
+    "power_w": 454.82,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277336.2473392,
+    "power_w": 455.47,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277337.285606,
+    "power_w": 455.74,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277338.3261256,
+    "power_w": 455.12,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277339.3647728,
+    "power_w": 456.41,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277340.404203,
+    "power_w": 456.55,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277341.441979,
+    "power_w": 455.96,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277342.4853988,
+    "power_w": 457.08,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277343.5257235,
+    "power_w": 456.81,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277344.5639372,
+    "power_w": 456.84,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277345.600645,
+    "power_w": 451.75,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277346.637726,
+    "power_w": 374.48,
+    "limit_w": 600.0,
+    "temperature_c": 60.0,
+    "gpu_util_percent": 53.0,
+    "sm_clock_mhz": 2730.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277347.6790206,
+    "power_w": 456.04,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277348.7197201,
+    "power_w": 456.31,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277349.7588015,
+    "power_w": 456.41,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277350.7986975,
+    "power_w": 456.27,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277351.8377755,
+    "power_w": 456.68,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277352.8762841,
+    "power_w": 457.14,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277353.9151697,
+    "power_w": 457.68,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277354.956036,
+    "power_w": 458.02,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277355.995644,
+    "power_w": 458.01,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277357.0353525,
+    "power_w": 457.87,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277358.08133,
+    "power_w": 455.36,
+    "limit_w": 600.0,
+    "temperature_c": 61.0,
+    "gpu_util_percent": 100.0,
+    "sm_clock_mhz": 2827.0,
+    "memory_clock_mhz": 13365.0
+  },
+  {
+    "unix": 1793277359.112636,
+    "power_w": 429.38,
+    "limit_w": 600.0,
+    "temperature_c": 59.0,
+    "gpu_util_percent": 92.0,
+    "sm_clock_mhz": 2842.0,
+    "memory_clock_mhz": 13365.0
+  }
+]
