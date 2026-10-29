@@ -1,0 +1,16 @@
+**
+!V1
+!V1/kernels
+!V1/kernels/**
+!V1/patches
+!V1/patches/**
+!V1/scripts
+!V1/scripts/install.py
+!V2
+!V2/qwen_v2
+!V2/qwen_v2/**
+!V2/scripts
+!V2/scripts/install.py
+!V2/Dockerfile
+**/__pycache__
+**/*.pyc
