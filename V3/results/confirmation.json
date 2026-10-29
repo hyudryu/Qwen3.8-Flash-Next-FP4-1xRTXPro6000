@@ -1,0 +1,54 @@
+{
+ "design": "Interleaved on GPU1: base, V3, base, V3; each block = fresh container launch, general check, then 10 C1 coding rounds. Round i uses the same prompt in every run (paired).",
+ "coding": {
+  "base_mean_tps": 266.6,
+  "v3_mean_tps": 291.4,
+  "paired_mean_ratio": 1.0934,
+  "bootstrap95_ratio": [
+   1.0722,
+   1.1144
+  ],
+  "rounds_v3_faster": 10,
+  "rounds": 10,
+  "base_accepted_per_draft": 2.131,
+  "v3_accepted_per_draft": 2.562
+ },
+ "general": {
+  "greedy": {
+   "base_mean_tps": 218.5,
+   "v3_mean_tps": 212.3,
+   "change_pct": -2.8
+  },
+  "sampled": {
+   "base_mean_tps": 217.7,
+   "v3_mean_tps": 212.6,
+   "change_pct": -2.3
+  }
+ },
+ "general_per_prompt_ratio": {
+  "greedy": [
+   0.912,
+   1.097,
+   0.926,
+   0.826,
+   1.034,
+   0.951
+  ],
+  "sampled": [
+   0.93,
+   1.02,
+   0.954,
+   0.905,
+   1.05,
+   0.951
+  ]
+ },
+ "general_prompts": [
+  "essay",
+  "math",
+  "french",
+  "chinese",
+  "json",
+  "scifi"
+ ]
+}

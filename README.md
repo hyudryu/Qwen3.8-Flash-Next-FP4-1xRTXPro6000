@@ -2,6 +2,10 @@
 
 **V1: source-level TP1 inference optimizations** for [nvidia/Qwen3.8-Flash-Next-FP4-Local](https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local), tested on one NVIDIA RTX PRO 6000 Blackwell Workstation Edition, 96 GB. The tested machine has 128 GB system RAM. This release contains actual CUDA/CuTe and Triton changes plus hash-checked inference integration patches. No TP2 results or two-GPU aggregate numbers are used here.
 
+## V3 experiment
+
+[V3 adds a pruned + dynamic MTP draft vocabulary and MTP depth 4](V3/README.md). It leaves the target model and its BF16 LM head untouched. In an interleaved TP1/450 W confirmation, C1 coding went from 266.6 to **291.4 tok/s (+9.3%, paired 95% CI +7.2% to +11.4%)**, while short general/multilingual prompts were 2–3% slower. V1 below is preserved unchanged.
+
 ## Single-GPU coding throughput: 450W vs 600W
 
 These are **V1 results**, with TP1 and MTP depth 3. Only one model instance was running. Median aggregate output tokens/s, three simultaneous-request batches per cell:

@@ -1,0 +1,14 @@
+[
+  {
+    "target": "vllm/models/qwen4_exp/nvidia/mtp.py",
+    "patch": "mtp_draft_vocab.patch",
+    "original_sha256": "c87aabf01195294eded4e966f67a0d46adf3a7fe2fc343901305214d014bbb3d",
+    "modified_sha256": "0877dcaef6855b210a59b7b8892c005a608eb4435537aa6582ab2881a5d8cbd2"
+  },
+  {
+    "target": "vllm/v1/worker/gpu/spec_decode/eagle/utils.py",
+    "patch": "eagle_target_head.patch",
+    "original_sha256": "b7199697fbf97c778b8cf475322a4b221c326b38f9e42d717ca53ae1dd0601bb",
+    "modified_sha256": "78d6e70b2f34aa3446ac61d431347b15853aa4ad018f370a5f131894109161f8"
+  }
+]

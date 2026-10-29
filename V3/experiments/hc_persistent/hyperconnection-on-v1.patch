@@ -1,0 +1,72 @@
+--- a/vllm/models/qwen4_exp/nvidia/hyperconnection.py
++++ b/vllm/models/qwen4_exp/nvidia/hyperconnection.py
+@@ -64,6 +64,10 @@
+ 
+ logger = init_logger(__name__)
+ 
++# V3 fused small-row HC mix (resident-grid kernel); set QWEN38_HC_FUSED=0 to disable.
++_V3_HC_FUSED = __import__("os").environ.get("QWEN38_HC_FUSED", "1") != "0"
++_V3_HC_CTAS = 168
++
+ 
+ # ---------------------------------------------------------------------------
+ # Gated-residual variant
+@@ -230,6 +234,16 @@
+             torch.empty(max_tokens, config.hidden_size, **factory),
+             persistent=False,
+         )
++        # V3 fused mix: down+inject output and a monotonically increasing
++        # generation counter for the kernel's resident-grid barrier.
++        self.register_buffer(
++            "v3_down", torch.empty(4 * 336, **factory), persistent=False
++        )
++        self.register_buffer(
++            "v3_counter",
++            torch.zeros(1, device=self.device, dtype=torch.int64),
++            persistent=False,
++        )
+         if self.tp_size > 1:
+             local_hidden = config.hidden_size // self.tp_size
+             local_lowrank = config.hc_lowrank // self.tp_size
+@@ -632,6 +646,9 @@
+         if self.tp_size > 1:
+             return self._mix_sharded(normalized)
+         api = _hyperconnection_api() if self.workspace is not None else None
++        fused = self._v3_fused_mix(normalized, api)
++        if fused is not None:
++            return fused
+         if self.use_combine:
+             down_and_injection = self.input_mix_weight_down_block_inject(normalized)
+             projected_down = down_and_injection[:, : self.lora_rank]
+@@ -677,6 +694,31 @@
+         )
+         return block_input, injection
+ 
++    def _v3_fused_mix(self, normalized: torch.Tensor, api):
++        """V3: whole small-row TP1 mix (down+inject, scaled SiLU, up, gated mean) in one launch."""
++        if (api is None or not _V3_HC_FUSED or normalized.shape[0] > 4
++                or self.hc_count != 4 or self.lora_rank != 320 or self.hidden_size != 2560
++                or normalized.dtype != torch.bfloat16 or not normalized.is_contiguous()):
++            return None
++        down_layer = (self.input_mix_weight_down_block_inject if self.use_combine
++                      else self.input_mix_weight_down)
++        wd, wu = down_layer.weight, self.input_mix_weight_up.weight
++        if not (wd.is_contiguous() and wu.is_contiguous()) or wd.shape[0] > 2 * _V3_HC_CTAS:
++            return None
++        from kernels.hc_v3 import hc_mix_persistent
++        tokens, width = normalized.shape[0], wd.shape[0]
++        down, counter = self.workspace.v3_down, self.workspace.v3_counter
++        # One shared down buffer is safe: each combine consumes the previous
++        # injection in stream order before the next mix overwrites it.
++        down = down[: tokens * width].view(tokens, width)
++        bottleneck = self.workspace.bottleneck[:tokens]
++        block_input = self.workspace.block_input[:tokens]
++        hc_mix_persistent[(_V3_HC_CTAS,)](
++            normalized, wd, wu, down, bottleneck, block_input, counter, tokens,
++            4 * 2560, width, 320, 4, 2560, _V3_HC_CTAS, 2048, 16, num_warps=8)
++        injection = down[:, 320:324] if self.use_combine else None
++        return block_input, injection
++
+     def _mix_sharded(self, normalized: torch.Tensor):
+         api = _hyperconnection_api()
+         workspace = self.workspace
