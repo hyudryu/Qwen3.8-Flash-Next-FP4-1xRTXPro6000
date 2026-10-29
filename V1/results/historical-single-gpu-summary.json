@@ -1,0 +1,203 @@
+{
+  "limitations": "Medians, cold prefixes, fixed prompt IDs and output lengths. MTP acceptance varies even in the reference. Request output TPS includes prefill. Apparent decode rate is derived from SSE arrival windows and is not exact token ITL. Profiling times are excluded. Three-batch C4/C8 and no-MTP screens have limited statistical power.",
+  "mtp3_c1": {
+    "reference": [
+      "pipeline-reference-c1",
+      "hc-reference-confirm-c1"
+    ],
+    "modified": [
+      "source-v3-c1"
+    ],
+    "comparisons": [
+      {
+        "concurrency": 1,
+        "input_tokens": 1024,
+        "output_tokens": 1024,
+        "metric": "request_output_tps",
+        "original": 222.48024496722314,
+        "modified": 226.52994419147637,
+        "change_pct": 1.8202511530180265,
+        "original_samples": 40,
+        "modified_samples": 20,
+        "apparent_decode_tps": {
+          "original": 233.36120654722117,
+          "modified": 237.56525641334278,
+          "change_pct": 1.8015204533453177
+        },
+        "end_to_end_ms_per_output_token": {
+          "original": 4.4947810990918535,
+          "modified": 4.414427432846324
+        }
+      },
+      {
+        "concurrency": 1,
+        "input_tokens": 8192,
+        "output_tokens": 1024,
+        "metric": "request_output_tps",
+        "original": 219.6284722333979,
+        "modified": 218.60278451370203,
+        "change_pct": -0.4670103603898301,
+        "original_samples": 40,
+        "modified_samples": 20,
+        "apparent_decode_tps": {
+          "original": 251.71338231173536,
+          "modified": 250.05567213240806,
+          "change_pct": -0.6585705392788022
+        },
+        "end_to_end_ms_per_output_token": {
+          "original": 4.553143724176644,
+          "modified": 4.574507146487514
+        }
+      }
+    ]
+  },
+  "mtp3_matrix": {
+    "reference": [
+      "pipeline-reference-matrix",
+      "hc-reference-confirm-matrix"
+    ],
+    "modified": [
+      "source-v3-matrix"
+    ],
+    "comparisons": [
+      {
+        "concurrency": 4,
+        "input_tokens": 1024,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 533.6693940068453,
+        "modified": 523.2541594880307,
+        "change_pct": -1.9516267254181319,
+        "original_samples": 6,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 4,
+        "input_tokens": 32768,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 167.65076106873133,
+        "modified": 168.3678689048435,
+        "change_pct": 0.4277390878161258,
+        "original_samples": 6,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 8,
+        "input_tokens": 1024,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 752.9154277419645,
+        "modified": 740.7290173481235,
+        "change_pct": -1.6185629812884517,
+        "original_samples": 6,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 8,
+        "input_tokens": 32768,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 178.4239915327446,
+        "modified": 178.46040598758202,
+        "change_pct": 0.020408945301930714,
+        "original_samples": 6,
+        "modified_samples": 3
+      }
+    ]
+  },
+  "without_mtp": {
+    "reference": [
+      "hc-reference-no-mtp"
+    ],
+    "modified": [
+      "source-v3-no-mtp"
+    ],
+    "comparisons": [
+      {
+        "concurrency": 1,
+        "input_tokens": 1024,
+        "output_tokens": 512,
+        "metric": "request_output_tps",
+        "original": 120.73230909296488,
+        "modified": 123.41409792765627,
+        "change_pct": 2.221268569150281,
+        "original_samples": 3,
+        "modified_samples": 3,
+        "apparent_decode_tps": {
+          "original": 126.33654727754521,
+          "modified": 129.33114653306123,
+          "change_pct": 2.370334887288994
+        },
+        "end_to_end_ms_per_output_token": {
+          "original": 8.28278699805196,
+          "modified": 8.102802003918441
+        }
+      },
+      {
+        "concurrency": 1,
+        "input_tokens": 32768,
+        "output_tokens": 512,
+        "metric": "request_output_tps",
+        "original": 81.83803292487305,
+        "modified": 83.15286229443797,
+        "change_pct": 1.6066238673795086,
+        "original_samples": 3,
+        "modified_samples": 3,
+        "apparent_decode_tps": {
+          "original": 126.25374839443984,
+          "modified": 129.24781143020087,
+          "change_pct": 2.371464668444556
+        },
+        "end_to_end_ms_per_output_token": {
+          "original": 12.219257529295646,
+          "modified": 12.02604423235698
+        }
+      },
+      {
+        "concurrency": 4,
+        "input_tokens": 1024,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 350.9304248856901,
+        "modified": 357.2670953668433,
+        "change_pct": 1.8056771461799848,
+        "original_samples": 3,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 4,
+        "input_tokens": 32768,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 141.37213373391177,
+        "modified": 142.15018229655956,
+        "change_pct": 0.5503549689023002,
+        "original_samples": 3,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 8,
+        "input_tokens": 1024,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 540.7562241034806,
+        "modified": 549.7802674614326,
+        "change_pct": 1.6687821527922253,
+        "original_samples": 3,
+        "modified_samples": 3
+      },
+      {
+        "concurrency": 8,
+        "input_tokens": 32768,
+        "output_tokens": 512,
+        "metric": "batch_aggregate_output_tps",
+        "original": 163.12639118455425,
+        "modified": 163.46661157303691,
+        "change_pct": 0.20856244413434144,
+        "original_samples": 3,
+        "modified_samples": 3
+      }
+    ]
+  }
+}

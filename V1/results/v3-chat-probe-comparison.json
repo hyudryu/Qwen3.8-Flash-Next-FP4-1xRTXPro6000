@@ -1,0 +1,249 @@
+{
+  "scope": "Normal chat template, thinking disabled, temperature 0/seed42, two generated tokens and cold prefix per call. These are token/numerical smoke probes, not a broad quality benchmark or proof of distribution equivalence. Tail log probabilities vary substantially even between unmodified repeats.",
+  "modified_vs_reference": [
+    {
+      "case": "0",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 19,
+      "max_common_probability_difference": 0.0006021484087227469,
+      "max_common_logprob_difference": 1.0618972778320312
+    },
+    {
+      "case": "0",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 9.46291111477218e-05,
+      "max_common_logprob_difference": 1.2499256134033203
+    },
+    {
+      "case": "1",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 1.4170110210853634e-05,
+      "max_common_logprob_difference": 1.5000019073486328
+    },
+    {
+      "case": "1",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 15,
+      "max_common_probability_difference": 2.574466845350898e-05,
+      "max_common_logprob_difference": 0.874974250793457
+    },
+    {
+      "case": "2",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 16,
+      "max_common_probability_difference": 2.217177950880611e-05,
+      "max_common_logprob_difference": 2.6874780654907227
+    },
+    {
+      "case": "2",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 6.437081087162788e-06,
+      "max_common_logprob_difference": 1.4374942779541016
+    },
+    {
+      "case": "3",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.005553547846067763,
+      "max_common_logprob_difference": 1.6193761825561523
+    },
+    {
+      "case": "3",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 17,
+      "max_common_probability_difference": 0.008736760502555636,
+      "max_common_logprob_difference": 2.620150089263916
+    },
+    {
+      "case": "4",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 19,
+      "max_common_probability_difference": 0.0008246853936156873,
+      "max_common_logprob_difference": 0.43667125701904297
+    },
+    {
+      "case": "4",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.0008056151421017566,
+      "max_common_logprob_difference": 0.4366912841796875
+    },
+    {
+      "case": "5",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.004354403931361661,
+      "max_common_logprob_difference": 1.058074951171875
+    },
+    {
+      "case": "5",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 17,
+      "max_common_probability_difference": 0.010291093212068225,
+      "max_common_logprob_difference": 1.3019790649414062
+    },
+    {
+      "case": "6",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 19,
+      "max_common_probability_difference": 0.05516659842449419,
+      "max_common_logprob_difference": 0.9204177856445312
+    },
+    {
+      "case": "6",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 20,
+      "max_common_probability_difference": 0.04506630412255219,
+      "max_common_logprob_difference": 0.6993846893310547
+    },
+    {
+      "case": "7",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.0012054070747915535,
+      "max_common_logprob_difference": 1.2487916946411133
+    },
+    {
+      "case": "7",
+      "repeat": 1,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 17,
+      "max_common_probability_difference": 0.000380686354000894,
+      "max_common_logprob_difference": 0.4997711181640625
+    }
+  ],
+  "reference_repeat_noise": [
+    {
+      "case": "0",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.00024495896573173415,
+      "max_common_logprob_difference": 1.6872549057006836
+    },
+    {
+      "case": "1",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 15,
+      "max_common_probability_difference": 5.971535868121158e-05,
+      "max_common_logprob_difference": 1.7499399185180664
+    },
+    {
+      "case": "2",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 15,
+      "max_common_probability_difference": 1.6569139638544783e-05,
+      "max_common_logprob_difference": 1.7499828338623047
+    },
+    {
+      "case": "3",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.018870140997996998,
+      "max_common_logprob_difference": 1.6056499481201172
+    },
+    {
+      "case": "4",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 18,
+      "max_common_probability_difference": 0.0003928214884154624,
+      "max_common_logprob_difference": 0.4371051788330078
+    },
+    {
+      "case": "5",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 17,
+      "max_common_probability_difference": 0.002869446520919472,
+      "max_common_logprob_difference": 1.3095860481262207
+    },
+    {
+      "case": "6",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 20,
+      "max_common_probability_difference": 0.04871318127988389,
+      "max_common_logprob_difference": 0.8172445297241211
+    },
+    {
+      "case": "7",
+      "repeat": 0,
+      "matching_token_positions": 2,
+      "tokens": 2,
+      "same_first_token": true,
+      "common_second_top20": 19,
+      "max_common_probability_difference": 0.0005102217337678017,
+      "max_common_logprob_difference": 0.6869888305664062
+    }
+  ],
+  "matching_generated_tokens": 32,
+  "generated_tokens": 32
+}

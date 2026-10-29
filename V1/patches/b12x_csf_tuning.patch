@@ -1,0 +1,89 @@
+--- a/flashinfer/experimental/b12x/_lib/quant/csf_blocks_tuning.py
++++ b/flashinfer/experimental/b12x/_lib/quant/csf_blocks_tuning.py
+@@ -152,6 +152,33 @@
+     return programs, routing
+ 
+ 
++
++@program_cache(scope="preparation")
++def compile_expansion_with_pipeline(query_payload, config_payload, ordinal):
++    # A distinct compile factory retains the custom CUDA programs through
++    # discovery, worker compilation, materialization and graph capture.
++    from kernels.csf_pipeline import compile_pipeline, pipeline_geometries
++    query = CsfExpansionQuery(**dict(query_payload))
++    config = CsfExpansionConfig.from_config(config_payload)
++    programs, routing = compile_expansion(query_payload, config_payload, ordinal)
++    geometries = tuple((*g[:7], config.groups_per_task,
++                        int(config.shared_exceptions), *g[7:])
++                       for g in (query.first, query.second))
++    optimized = pipeline_geometries(*geometries) if 64 <= query.routes < 16 * query.first[6] else None
++    with torch.cuda.device(ordinal):
++        pipeline = (() if optimized is None else tuple(
++            compile_pipeline(*optimized, ids64) for ids64 in (False, True)))
++        if pipeline and query.routes <= 512:
++            from kernels.csf_routes import compact_experts
++            # Match the production ABI without allocating tensors or launching.
++            # Retain this Triton executable alongside the two CUDA decode ABIs.
++            compact = compact_experts.warmup(
++                getattr(torch, query.ids_dtype), torch.int32,
++                query.routes, 512, 512, grid=(1,), num_warps=8)
++            pipeline = (*pipeline, compact)
++    return programs, routing, pipeline
++
++
+ def _scratch(experts, device):
+     return (
+         ScratchBufferSpec(
+@@ -183,6 +210,7 @@
+     routing: tuple
+     device: torch.device
+     bitmap_routes: bool
++    pipeline_launchers: tuple = ()
+ 
+     def decoder(self, scratch):
+         active = scratch_tensor(
+@@ -197,6 +225,11 @@
+             self.routing,
+             active[: self.first.num_experts],
+             bitmap_routes=self.bitmap_routes,
++            pipeline_programs=self.pipeline_launchers or None,
++            pipeline_planes=(tuple(replace(p, groups_per_task=32,
++                                            shared_exceptions=False)
++                                   for p in (self.first, self.second))
++                             if self.pipeline_launchers else None),
+         )
+ 
+     def bind(self, *, ids, out13, out2, scratch):
+@@ -240,7 +273,7 @@
+     def compile_jobs(config, device):
+         return (
+             CompileJob.create(
+-                "b12x._lib.quant.csf_blocks_tuning:compile_expansion",
++                "b12x._lib.quant.csf_blocks_tuning:compile_expansion_with_pipeline",
+                 TUNING.encode_query(query),
+                 TUNING.encode_config(config),
+                 device.ordinal,
+@@ -259,17 +292,20 @@
+             )
+             for p in (first, second)
+         )
+-        programs, routing = compile_expansion(
++        programs, routing, pipeline = compile_expansion_with_pipeline(
+             TUNING.encode_query(query), TUNING.encode_config(config), device.ordinal
+         )
+-        return _ExpansionState(
++        state = _ExpansionState(
+             query,
+             *planes,
+             programs,
+             routing,
+             torch.device("cuda", device.ordinal),
+             config.bitmap_routes,
+-        )
++            pipeline,
++        )
++        from b12x._lib.compile_plan import attach_programs
++        return attach_programs(state, *programs, *routing, *pipeline)
+ 
+     return Plan(
+         contract=TUNING,

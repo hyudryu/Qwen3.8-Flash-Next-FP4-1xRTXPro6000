@@ -1,0 +1,23 @@
+{
+  "gpu_count": 1,
+  "summaries": [
+    {
+      "concurrency": 4,
+      "median_aggregate_output_tps": 675.291800637151,
+      "pooled_aggregate_output_tps": 666.5189349214659,
+      "round_tps": [
+        675.291800637151,
+        641.5562444354771,
+        684.2536734734197
+      ],
+      "requests": 12,
+      "total_output_tokens": 18432,
+      "mean_prompt_tokens": 245,
+      "min_prompt_tokens": 235,
+      "max_prompt_tokens": 255,
+      "length_capped_requests": 12,
+      "median_apparent_decode_tps": 181.9154046853521
+    }
+  ],
+  "quality_validation": "Generation throughput only; generated coding tests were not executed."
+}

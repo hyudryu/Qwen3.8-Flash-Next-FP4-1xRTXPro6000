@@ -1,0 +1,56 @@
+{
+  "gpu_count": 1,
+  "comparison": [
+    {
+      "concurrency": 1,
+      "450w_median_tps": 272.8964129743424,
+      "600w_median_tps": 270.2972374039624,
+      "600w_change_pct": -0.9524403571491313,
+      "450w_rounds": [
+        263.3542765430662,
+        272.8964129743424,
+        272.96570322902085
+      ],
+      "600w_rounds": [
+        264.99635008985103,
+        270.2972374039624,
+        278.9473402211463
+      ]
+    },
+    {
+      "concurrency": 4,
+      "450w_median_tps": 673.7040155759297,
+      "600w_median_tps": 687.9101985615291,
+      "600w_change_pct": 2.108668296040217,
+      "450w_rounds": [
+        691.3509534474977,
+        673.7040155759297,
+        669.146361241832
+      ],
+      "600w_rounds": [
+        689.9988716714313,
+        683.5020351841725,
+        687.9101985615291
+      ]
+    },
+    {
+      "concurrency": 8,
+      "450w_median_tps": 975.9495322397958,
+      "600w_median_tps": 951.9887597076317,
+      "600w_change_pct": -2.4551241371235877,
+      "450w_rounds": [
+        995.2465298955929,
+        975.9495322397958,
+        953.8843223954166
+      ],
+      "600w_rounds": [
+        948.9229225569876,
+        969.2537236639183,
+        951.9887597076317
+      ]
+    }
+  ],
+  "order": "initial 600W C1/C8 and C4 screen; 450W C1/C4/C8; 600W C1/C4/C8 confirmation",
+  "samples_per_cell": 3,
+  "conclusion": "No consistent 600W throughput advantage. Three rounds and variable MTP acceptance do not establish a statistically reliable power-limit effect."
+}

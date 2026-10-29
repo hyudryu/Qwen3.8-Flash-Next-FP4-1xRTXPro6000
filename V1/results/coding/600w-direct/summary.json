@@ -1,0 +1,40 @@
+{
+  "gpu_count": 1,
+  "summaries": [
+    {
+      "concurrency": 1,
+      "median_aggregate_output_tps": 273.65777421970546,
+      "pooled_aggregate_output_tps": 275.7700085692331,
+      "round_tps": [
+        273.65777421970546,
+        270.36264065223594,
+        283.63198969663046
+      ],
+      "requests": 3,
+      "total_output_tokens": 4608,
+      "mean_prompt_tokens": 254.33333333333334,
+      "min_prompt_tokens": 254,
+      "max_prompt_tokens": 255,
+      "length_capped_requests": 3,
+      "median_apparent_decode_tps": 285.30697642783167
+    },
+    {
+      "concurrency": 8,
+      "median_aggregate_output_tps": 966.5625414707595,
+      "pooled_aggregate_output_tps": 964.3905778215778,
+      "round_tps": [
+        958.1340896277901,
+        968.5386020409883,
+        966.5625414707595
+      ],
+      "requests": 24,
+      "total_output_tokens": 36864,
+      "mean_prompt_tokens": 245.04166666666666,
+      "min_prompt_tokens": 235,
+      "max_prompt_tokens": 257,
+      "length_capped_requests": 24,
+      "median_apparent_decode_tps": 127.57217126408743
+    }
+  ],
+  "quality_validation": "Generation throughput only; generated coding tests were not executed."
+}

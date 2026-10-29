@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!kernels/
+!kernels/*.py
+!patches/
+!patches/*.json
+!patches/*.patch
+!scripts/
+!scripts/install.py

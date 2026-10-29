@@ -1,0 +1,24 @@
+--- a/vllm/models/qwen4_exp/nvidia/hyperconnection.py
++++ b/vllm/models/qwen4_exp/nvidia/hyperconnection.py
+@@ -652,6 +652,21 @@
+             if api is not None
+             else hc_silu(projected_down, self.hc_count)
+         )
++        # Small TP1 decode: fuse up projection and gated stream mean, keeping
++        # the original BF16 logits/gates/products and ordered FP32 sum.
++        # Prefill and larger batches retain the prepared original implementation.
++        if (api is not None and normalized.shape[0] <= 4
++                and self.hc_count == 4 and self.lora_rank == 320
++                and self.hidden_size == 2560
++                and normalized.dtype == torch.bfloat16
++                and self.input_mix_weight_up.weight.is_contiguous()):
++            from kernels.hc_fused import hc_up_gate
++            tokens = normalized.shape[0]
++            block_input = self.workspace.block_input[:tokens]
++            hc_up_gate[((tokens + 15) // 16, 160)](
++                bottleneck, self.input_mix_weight_up.weight, normalized,
++                block_input, tokens, 2560, 320, 4, 16, num_warps=4)
++            return block_input, injection
+         gate_logits = self.input_mix_weight_up(bottleneck)
+         block_input = (
+             api.run_gate_mean(

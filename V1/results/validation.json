@@ -1,0 +1,15 @@
+{
+  "packaged_docker_image_build": "passed",
+  "packaged_sources_match_deployed_overlay_sha256": true,
+  "source_install_restore_reinstall_roundtrip": "all four SHA256 exact",
+  "standalone_gpu_smoke": {
+    "hc_rows": [
+      1,
+      4
+    ],
+    "max_abs_error": 0.0,
+    "route_compaction_graph_cases": 12,
+    "all_exact": true
+  },
+  "source_serving_validation": "The deployed four overlays and three kernel files match V1. Existing running instance used for serving benchmarks; packaged image was build-tested and smoke-tested, not loaded with a second full model."
+}
