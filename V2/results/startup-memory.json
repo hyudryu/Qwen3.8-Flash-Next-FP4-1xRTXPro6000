@@ -1,0 +1,42 @@
+[
+  {
+    "variant": "v1-primary-a",
+    "startup_memory_records": [
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:33:37 [kv_cache_utils.py:2850] GPU KV cache size: 792,224 tokens, Maximum concurrency for 262,144 tokens per request: 3.02x",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:33:54 [gpu_worker.py:1012] CUDA graph pool memory: 0.25 GiB (actual), 0.25 GiB (estimated), difference: 0.0 GiB (1.6%).",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:33:54 [gpu_worker.py:1075] Free memory on device (94.3/94.97 GiB) on startup. Desired GPU memory utilization is (0.96, 91.17 GiB). Actual usage is 74.6 GiB for consumed memory (weights + non-torch), 1.98 GiB for peak activation, and 0.25 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=15237811180` (14.19 GiB) to fit into requested memory, or `--kv-cache-memory=18598148608` (17.32 GiB) to fully utilize gpu memory. Current kv cache memory in use is 14.59 GiB."
+    ]
+  },
+  {
+    "variant": "v2-primary-b",
+    "startup_memory_records": [
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:46:58 [kv_cache_utils.py:2850] GPU KV cache size: 792,224 tokens, Maximum concurrency for 262,144 tokens per request: 3.02x",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:47:14 [gpu_worker.py:1012] CUDA graph pool memory: 0.25 GiB (actual), 0.24 GiB (estimated), difference: 0.01 GiB (3.4%).",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 14:47:14 [gpu_worker.py:1075] Free memory on device (94.3/94.97 GiB) on startup. Desired GPU memory utilization is (0.96, 91.17 GiB). Actual usage is 74.6 GiB for consumed memory (weights + non-torch), 1.98 GiB for peak activation, and 0.25 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=15239908332` (14.19 GiB) to fit into requested memory, or `--kv-cache-memory=18600245760` (17.32 GiB) to fully utilize gpu memory. Current kv cache memory in use is 14.59 GiB."
+    ]
+  },
+  {
+    "variant": "v1-primary-a2",
+    "startup_memory_records": [
+      "(EngineCore pid=707) [replica 0] INFO 10-29 15:01:39 [kv_cache_utils.py:2850] GPU KV cache size: 792,224 tokens, Maximum concurrency for 262,144 tokens per request: 3.02x",
+      "(EngineCore pid=707) [replica 0] INFO 10-29 15:01:55 [gpu_worker.py:1012] CUDA graph pool memory: 0.25 GiB (actual), 0.25 GiB (estimated), difference: 0.0 GiB (1.6%).",
+      "(EngineCore pid=707) [replica 0] INFO 10-29 15:01:55 [gpu_worker.py:1075] Free memory on device (94.3/94.97 GiB) on startup. Desired GPU memory utilization is (0.96, 91.17 GiB). Actual usage is 74.6 GiB for consumed memory (weights + non-torch), 1.98 GiB for peak activation, and 0.25 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=15237811180` (14.19 GiB) to fit into requested memory, or `--kv-cache-memory=18598083072` (17.32 GiB) to fully utilize gpu memory. Current kv cache memory in use is 14.59 GiB."
+    ]
+  },
+  {
+    "variant": "original-primary",
+    "startup_memory_records": [
+      "(EngineCore pid=533) [replica 0] INFO 10-29 15:14:23 [kv_cache_utils.py:2850] GPU KV cache size: 792,058 tokens, Maximum concurrency for 262,144 tokens per request: 3.02x",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 15:14:40 [gpu_worker.py:1012] CUDA graph pool memory: 0.25 GiB (actual), 0.26 GiB (estimated), difference: 0.0 GiB (0.8%).",
+      "(EngineCore pid=533) [replica 0] INFO 10-29 15:14:40 [gpu_worker.py:1075] Free memory on device (94.3/94.97 GiB) on startup. Desired GPU memory utilization is (0.96, 91.17 GiB). Actual usage is 74.6 GiB for consumed memory (weights + non-torch), 1.98 GiB for peak activation, and 0.25 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=15235714028` (14.19 GiB) to fit into requested memory, or `--kv-cache-memory=18596051456` (17.32 GiB) to fully utilize gpu memory. Current kv cache memory in use is 14.59 GiB."
+    ]
+  },
+  {
+    "variant": "target-only-control",
+    "startup_memory_records": [
+      "(EngineCore pid=395) [replica 0] INFO 10-29 15:20:10 [kv_cache_utils.py:2850] GPU KV cache size: 1,102,524 tokens, Maximum concurrency for 262,144 tokens per request: 4.21x",
+      "(EngineCore pid=395) [replica 0] INFO 10-29 15:20:41 [gpu_worker.py:1012] CUDA graph pool memory: 0.09 GiB (actual), 0.13 GiB (estimated), difference: 0.04 GiB (46.7%).",
+      "(EngineCore pid=395) [replica 0] INFO 10-29 15:20:41 [gpu_worker.py:1075] Free memory on device (94.3/94.97 GiB) on startup. Desired GPU memory utilization is (0.96, 91.17 GiB). Actual usage is 71.45 GiB for consumed memory (weights + non-torch), 2.03 GiB for peak activation, and 0.09 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=18745556972` (17.46 GiB) to fit into requested memory, or `--kv-cache-memory=22105894400` (20.59 GiB) to fully utilize gpu memory. Current kv cache memory in use is 17.69 GiB."
+    ]
+  }
+]

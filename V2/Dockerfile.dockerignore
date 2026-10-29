@@ -4,6 +4,9 @@
 !V1/kernels/**
 !V1/patches
 !V1/patches/**
+!V1/docs
+!V1/docs/THIRD_PARTY_NOTICES.md
+!LICENSE
 !V1/scripts
 !V1/scripts/install.py
 !V2

@@ -1,0 +1,5 @@
+Validated V2 worker integration
+Restored V2 worker integration
+Installed V2 worker integration
+Installed V2 worker integration
+Worker integration roundtrip: exact original, exact reinstall, idempotent install

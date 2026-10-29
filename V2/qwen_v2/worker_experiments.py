@@ -3,6 +3,9 @@ import json,pathlib,torch
 from qwen_v2.diagnostics import OUTPUT,summarize
 
 def run(worker,label):
+ if label.startswith('source-hashes-'):
+  from qwen_v2.source_hashes import run as hashes
+  return hashes(label)
  if label=='dispatch':
   from qwen_v2.hooks import DISPATCH_INSPECTION
   return DISPATCH_INSPECTION

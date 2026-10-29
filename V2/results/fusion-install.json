@@ -1,0 +1,301 @@
+{
+  "modules": [
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.0.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.1.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.2.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.3.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.4.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.5.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.6.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.7.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.8.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.9.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.10.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.11.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.12.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.13.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.14.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.15.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.16.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.17.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.18.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.19.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.20.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.21.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.22.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.23.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.24.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.25.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.26.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.27.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.28.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.29.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.30.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.31.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.32.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.33.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.34.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.35.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.36.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.37.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.38.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.39.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.40.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.41.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.42.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.43.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.44.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.45.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.46.mlp.shared_expert"
+    },
+    {
+      "phase": "target",
+      "name": "language_model.model.layers.47.mlp.shared_expert"
+    }
+  ],
+  "variant": "split",
+  "eligible_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "resources": [
+    {
+      "rows": 1,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 2,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 3,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 4,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 5,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 6,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 7,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    },
+    {
+      "rows": 8,
+      "registers_per_thread": 92,
+      "shared_memory_bytes": 24576,
+      "threads_per_cta": 128,
+      "occupancy_query_status": 0,
+      "theoretical_blocks_per_sm": 4,
+      "sm_count": 188,
+      "theoretical_thread_occupancy": 0.3333333333333333,
+      "scope": "Driver resource bound, not measured achieved occupancy"
+    }
+  ],
+  "shared_scratch_bytes": 655360,
+  "scratch_ordering": "Consecutive layers depend on the prior MoE join; CUDA graph replays on this single worker are serialized.",
+  "persistent_added_weight_bytes": 0,
+  "fallback": "Original forward for every unsupported shape/regime"
+}

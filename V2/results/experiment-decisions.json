@@ -1,0 +1,40 @@
+{
+  "promoted": false,
+  "decisions": [
+    {
+      "candidate": "single",
+      "status": "rejected",
+      "reason": "Hot repeated-weight speedup did not transfer to instrumented production kernel duration."
+    },
+    {
+      "candidate": "split-initial-guard",
+      "status": "excluded",
+      "reason": "Guard incorrectly required runtime mode FULL inside an outer graph capture; trace had no optimized kernel. No fallback-only trace is used as optimized evidence."
+    },
+    {
+      "candidate": "split-corrected",
+      "status": "not_promoted",
+      "reason": "Production graph verified, local boundary faster, but no repeatable C1 serving gain and numerical parity remains unresolved."
+    },
+    {
+      "experiment": "raw-completion-natural-workload",
+      "status": "excluded",
+      "reason": "Immediate EOS; replaced with the actual chat generation template before main measurements."
+    },
+    {
+      "experiment": "warm-prefix-forced-repeat",
+      "status": "not_a_parity_certificate",
+      "reason": "Large original-repeat logit differences; cold resets were collected independently, with unresolved differences remaining."
+    }
+  ],
+  "unrun": [
+    "C4/C16 and extended-context performance confirmation for a winner",
+    "Persistent routed NVFP4 replacement",
+    "New HC/input normalization fusion",
+    "Full factorial input/HC/FFN/output fusion ablation"
+  ],
+  "limitations": [
+    "Nsight Compute performance-counter access denied; host policy unchanged",
+    "Full-vocabulary diagnostics do not certify recurrent/KV/MTP rollback parity"
+  ]
+}

@@ -1,0 +1,79 @@
+========= COMPUTE-SANITIZER
+{
+  "scope": "Synthetic shared-scratch replay and memory-safety smoke, not checkpoint parity or serving performance",
+  "cases": [
+    {
+      "rows": 1,
+      "activation_exact": true,
+      "output_max_abs": 0.0,
+      "output_rms": 0.0
+    },
+    {
+      "rows": 8,
+      "activation_exact": true,
+      "output_max_abs": 0.001953125,
+      "output_rms": 1.4171073416946456e-05
+    },
+    {
+      "rows": 2,
+      "activation_exact": true,
+      "output_max_abs": 0.0001220703125,
+      "output_rms": 1.7059844594768947e-06
+    },
+    {
+      "rows": 64,
+      "activation_exact": true,
+      "output_max_abs": 0.015625,
+      "output_rms": 3.8609461626037955e-05
+    },
+    {
+      "rows": 4,
+      "activation_exact": true,
+      "output_max_abs": 0.0,
+      "output_rms": 0.0
+    },
+    {
+      "rows": 32,
+      "activation_exact": true,
+      "output_max_abs": 0.0078125,
+      "output_rms": 2.756272442638874e-05
+    },
+    {
+      "rows": 8,
+      "activation_exact": true,
+      "output_max_abs": 9.5367431640625e-07,
+      "output_rms": 6.66400179483162e-09
+    },
+    {
+      "rows": 16,
+      "activation_exact": true,
+      "output_max_abs": 0.0,
+      "output_rms": 0.0
+    },
+    {
+      "rows": 1,
+      "activation_exact": true,
+      "output_max_abs": 9.5367431640625e-07,
+      "output_rms": 1.8848643534852272e-08
+    },
+    {
+      "rows": 4,
+      "activation_exact": true,
+      "output_max_abs": 0.0,
+      "output_rms": 0.0
+    },
+    {
+      "rows": 64,
+      "activation_exact": true,
+      "output_max_abs": 0.00390625,
+      "output_rms": 1.1126851859444287e-05
+    },
+    {
+      "rows": 2,
+      "activation_exact": true,
+      "output_max_abs": 1.9073486328125e-06,
+      "output_rms": 2.665600717932648e-08
+    }
+  ]
+}
+========= ERROR SUMMARY: 0 errors

@@ -1,0 +1,5274 @@
+{
+  "scope": "Host dispatch arguments at actual graph launches, not inferred from concurrency. No tensor host readbacks.",
+  "records": [
+    {
+      "host_time_ns": 283770118600957,
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283791933636212,
+      "phase": "target",
+      "actual_rows": 80,
+      "padded_rows": 80,
+      "kind": "target-forward",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283792428158204,
+      "phase": "target",
+      "actual_rows": 64,
+      "padded_rows": 64,
+      "kind": "target-forward",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283792679897590,
+      "phase": "target",
+      "actual_rows": 5,
+      "padded_rows": 5,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283792912445775,
+      "phase": "target",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283793127399963,
+      "phase": "target",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283793320179365,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283793513038561,
+      "phase": "target",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802406879887,
+      "phase": "target",
+      "actual_rows": 80,
+      "padded_rows": 80,
+      "kind": "target-forward",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283802600447957,
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-fused-steps",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283802603527779,
+      "phase": "target",
+      "actual_rows": 64,
+      "padded_rows": 64,
+      "kind": "target-forward",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283802607327552,
+      "phase": "draft",
+      "actual_rows": 64,
+      "padded_rows": 64,
+      "kind": "draft-prefill",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283802607869698,
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-fused-steps",
+      "requests": 16
+    },
+    {
+      "host_time_ns": 283802612898838,
+      "phase": "target",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283802658918655,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283802662540343,
+      "phase": "target",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283802707158448,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283802710767296,
+      "phase": "target",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802754304583,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802756577299,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802758718002,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802759161056,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802762470833,
+      "phase": "target",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283802805124747,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283808873243840,
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809123653074,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809127772250,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809129712444,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809139427333,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809143846833,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809145311833,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809154202842,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809157433556,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809158699810,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809167122987,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809170359150,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809171585052,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809180659634,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809183903609,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809185114718,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809194121054,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809197321552,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809198527854,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809207454838,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809210661586,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809211869009,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809220861734,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809223997733,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809225219939,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809234687246,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809237882527,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809239117853,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809248627426,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809251830288,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809253043850,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809262253671,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809265483955,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809266714684,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809275759009,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809278963113,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809280185048,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809289316908,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809292473178,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809293670265,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809302712297,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809305923913,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809307138757,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809316525681,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809319728392,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809320924388,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809330010167,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809333204025,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809334418779,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809343895381,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809347090602,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809348289782,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809357490138,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809360574457,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809361784995,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809371032002,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809374226301,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809375426924,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809384960694,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809388144336,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809389347222,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809398565406,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809401735036,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809402937271,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809412426072,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809415577455,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809416773610,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809426598860,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809429738054,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809430927910,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809440176670,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809443412754,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809444611964,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809454456283,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809457588086,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809458780095,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809467887177,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809471022515,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809472234925,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809481013040,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809484169129,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809485368881,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809494841687,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809497912275,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809499141391,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809508336239,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809511610971,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809512880991,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809521465106,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809524605952,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809525812434,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809535588488,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809538755895,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809539993455,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809549087937,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809552258189,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809553511102,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809562674841,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809565831732,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809567151068,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809576179609,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809579348719,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809580624808,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809590316432,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809593996670,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809595684264,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809605370770,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809609630853,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809611551406,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809620400250,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809623935044,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809625489933,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809634579498,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809637895755,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809639335206,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809648779498,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809652136788,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809653578643,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809662978437,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809666237525,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809667538152,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809676910313,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809680087245,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809681315220,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809690211567,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809693399275,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809694630255,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809703795686,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809706951566,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809708170066,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809717613006,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809720732850,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809721948586,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809731345405,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809734475595,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809735685381,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809744775357,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809747936394,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809749148004,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809757774274,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809760879966,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809762093338,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809771227872,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809774403502,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809775616774,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809784856351,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283809805404336,
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810040423753,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810044597573,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810046411843,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810056207758,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810060429782,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810061862953,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810071208844,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810074407830,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810075667754,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810084653208,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810087798401,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810089048340,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810097732519,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810100926337,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810102142864,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810111111312,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810114222953,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810115429215,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810124666437,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810127818220,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810129026665,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810138172607,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810141714392,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810142917618,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810151772752,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810155165697,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810156383336,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810165314536,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810168457756,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810169662284,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810179129973,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810182254113,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810183448737,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810192763860,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810195929264,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810197143067,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810205905747,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810209065542,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810210277262,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810219589561,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810222719230,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810223912741,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810233703017,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810236846808,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810238065679,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810247558135,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810250685010,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810251886985,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810261029571,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810264175375,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810265373554,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810274909458,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810278060610,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810279259910,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810288822565,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810291950652,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810293159817,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810302565720,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810305650330,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810306866286,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810316290417,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810319383660,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810320587427,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810329960550,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810333090029,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810334297972,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810343730416,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810346841637,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810348050863,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810357335468,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810360443694,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810361642013,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810371171717,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810374283449,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810375496010,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810385316683,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810388422064,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810389619732,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810399365369,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810402498544,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810403705817,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810413172443,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810416257924,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810417440969,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810426790405,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810429956370,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810431169192,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810440501852,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810443644120,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810444841838,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810454127025,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810457222962,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810458428582,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810467761452,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810470888187,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810472128430,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810481356369,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810484494922,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810485687542,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810495172347,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810498320184,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810499517751,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810508675391,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810512362861,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810513587170,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810522968024,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810526101880,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810527296643,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810536972112,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810540080499,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810541284426,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810550825257,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810553923688,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810555117721,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810564618299,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810567693755,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810568881167,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810578548754,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810581616227,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810582804841,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810592163962,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810595253148,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810596500893,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810606208282,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810609301645,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810610506133,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810620040024,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810623128469,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810624323272,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810634401593,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283810660701182,
+      "phase": "target",
+      "actual_rows": 4096,
+      "padded_rows": 4096,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283810917662256,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283810940309099,
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283811181946368,
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283811306692087,
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811547980728,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811672810827,
+      "phase": "target",
+      "actual_rows": 302,
+      "padded_rows": 302,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811870559617,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811876381019,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811879262726,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811897669106,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811903195453,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811904849986,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811922171042,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811926379756,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811927886020,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811945520319,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811949574455,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811950921062,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811967938099,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811971857477,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811973028724,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811990988105,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811994826818,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283811995964713,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812015564225,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812019452504,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812020610952,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812039974549,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812043838281,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812044987334,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812066128955,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812070016092,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812071175611,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812091447400,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812095302959,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812096439273,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812117214528,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812121101075,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812122251139,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812142954985,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812146810073,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812147959927,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812169240342,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812173102411,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812174265476,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812195107064,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812198928851,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812200111215,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812220115020,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812223908113,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812225035082,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812245997046,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812249806694,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812250922455,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812271979365,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812276459318,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812277580758,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812298852900,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812302720678,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812303837512,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812325492004,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812329293790,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812330404774,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812352010131,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812355816484,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812356938925,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812376797276,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812380550447,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812381670175,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812402299616,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812406128664,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812407257035,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812428072162,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812431840937,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812432960164,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812454298679,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812458345273,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812459483439,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812481642209,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812485513082,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812486653471,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812507753027,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812511574834,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812512736376,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812533635152,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812537340920,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812538489222,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812559284509,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812563134569,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812564268799,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812584844747,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812588668928,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812589815216,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812610320966,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812614138977,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812615281530,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812636605933,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812640428491,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812641555861,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812662333119,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812666152583,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812667298751,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812689318637,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812693156449,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812694316689,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812714674631,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812718526855,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812719666974,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812740450883,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812744276556,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812745408472,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812766128192,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812769955247,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812771099563,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812792262386,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812796085215,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812797225204,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812818592523,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812822428522,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812823573709,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812844527089,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812848344049,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812849488314,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812870325996,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812874202487,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812875356238,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812897304022,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812901816405,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812902958237,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812924242958,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283812934081449,
+      "phase": "target",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 7
+    },
+    {
+      "host_time_ns": 283812935333320,
+      "phase": "draft",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 7
+    },
+    {
+      "host_time_ns": 283812954885719,
+      "phase": "draft",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 7
+    },
+    {
+      "host_time_ns": 283812959974491,
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283812962542493,
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283812979906255,
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283812989609106,
+      "phase": "target",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283812991041757,
+      "phase": "draft",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283813008547197,
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283813016968060,
+      "phase": "target",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283813018229577,
+      "phase": "draft",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283813035217959,
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283813040101084,
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283813042983091,
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283813057808776,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283813066818007,
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813068225850,
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813081759021,
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813089194844,
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813090348013,
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813104432776,
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283813109067156,
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283813111672016,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283813123016059,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283813127336676,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283813128971248,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283813137880064,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283813164217372,
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283813396895767,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283813408457657,
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283813664132706,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283813773142695,
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 7
+    },
+    {
+      "host_time_ns": 283814019563404,
+      "phase": "draft",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 7
+    },
+    {
+      "host_time_ns": 283814143490630,
+      "phase": "target",
+      "actual_rows": 2338,
+      "padded_rows": 2338,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814380839312,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814387465997,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814389533617,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814410097166,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814416121672,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814417927839,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814435463075,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814440180604,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814441842598,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814458700319,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814463263971,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814464827113,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814482060934,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814487082572,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814488565240,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814507541319,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814512133024,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814513536670,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814531088422,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814536100656,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814537476118,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814556406897,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814560940192,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814562279949,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814582289073,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814586909102,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814588263832,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814607556349,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814612548693,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814613851713,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814633109858,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814637668522,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814638985414,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814658710208,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814663623680,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814664945129,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814684905206,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814689354592,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814690665965,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814711046081,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814715399027,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814716676999,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814736998164,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814741284939,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814742561869,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814762629052,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814766905520,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814768216073,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814787863538,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814792152566,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814793427814,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814813437488,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814818274501,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814819551231,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814840579798,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814844837777,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814846108819,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814867436957,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814871672473,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814872950495,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814893616782,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814897876775,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814899160105,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814919552280,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814923811592,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814925119910,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814945762872,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814950787264,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814952233496,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814972935078,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814977312953,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814978628282,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283814999328322,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815003691414,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815005110323,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815026105849,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815030567763,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815031999022,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815054098250,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815058349409,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815059825838,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815081269184,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815085728645,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815087174456,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815108700990,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815113316792,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815115043997,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815136009356,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815141209079,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815143145047,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815165076566,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815170532635,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815172610351,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815194052525,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815198739407,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815200356272,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815222291848,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815226697175,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815228083073,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815249606203,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815254034556,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815255356345,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815276541533,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815280934341,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815282246125,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815303439826,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815307820876,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815309126501,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815330926107,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815335356894,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815336649508,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815359342032,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815363701508,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815364997488,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815386838238,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815391234801,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815392545604,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815414306170,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815418710446,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815419992954,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815442688253,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815447160293,
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815448466318,
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815470697440,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "host_time_ns": 283815476537791,
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283815478380034,
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283815496433500,
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "host_time_ns": 283815505872103,
+      "phase": "target",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283815507422095,
+      "phase": "draft",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283815525431793,
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "host_time_ns": 283815530950118,
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283815532779060,
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283815548413694,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "host_time_ns": 283815558398650,
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283815559920478,
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283815573352053,
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "host_time_ns": 283815578056081,
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815579812211,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815591142313,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815594585315,
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815596030445,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815607438157,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815610880879,
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815612174685,
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815623766371,
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "host_time_ns": 283815628151096,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815629812880,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815638851116,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815642065145,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815643387986,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815652619590,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815655777923,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815657060522,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815666278085,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815669440154,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815670667678,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815679783353,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815682922647,
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815684138443,
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "host_time_ns": 283815693096365,
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    }
+  ],
+  "histograms": [
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "count": 103
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "count": 7
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "count": 3
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 3
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "count": 4
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 85
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 98
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 4
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "count": 3
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "count": 3
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "count": 1
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "count": 82
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 64,
+      "padded_rows": 64,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "count": 4
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 99
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 5,
+      "padded_rows": 5,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 4
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "count": 3
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "count": 3
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "count": 82
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 64,
+      "padded_rows": 64,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 80,
+      "padded_rows": 80,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 302,
+      "padded_rows": 302,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "count": 3
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 2338,
+      "padded_rows": 2338,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 4096,
+      "padded_rows": 4096,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "count": 5
+    }
+  ]
+}

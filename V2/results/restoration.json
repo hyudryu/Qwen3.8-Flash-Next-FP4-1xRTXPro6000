@@ -1,0 +1,14 @@
+{
+  "native_gpu0_healthy": true,
+  "checks": {
+    "Cmd": true,
+    "Env": true,
+    "Image": true,
+    "Binds": true,
+    "Mounts": true,
+    "RestartPolicy": true,
+    "gpu1_stopped": true
+  },
+  "restored_via_sparkdeck": true,
+  "v2_enabled": false
+}

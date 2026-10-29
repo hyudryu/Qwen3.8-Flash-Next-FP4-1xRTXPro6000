@@ -29,5 +29,6 @@
       "source_commit": "8244d1c44348ae8a5bbfc9f1b607021652283ed4",
       "repository": "local-inference-lab/vllm"
     }
-  }
+  },
+  "fusion_implementation_commit": "f3dfd88f8e6f74fbd4db1fd9e01f421f5e243c41"
 }

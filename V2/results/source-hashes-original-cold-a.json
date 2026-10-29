@@ -1,0 +1,101 @@
+{
+  "scope": "File hashes plus loaded Python code/JIT source hashes; no weights or environment exported.",
+  "modules": [
+    {
+      "module": "vllm.model_executor.models.qwen2_moe",
+      "file": "/opt/venv/lib/python3.12/site-packages/vllm/model_executor/models/qwen2_moe.py",
+      "file_sha256": "cecb5fb8c82bc92743016a56bc3991f3bd612b9767063ccdc0715a49a3e54442",
+      "loaded_callable_hashes": {}
+    },
+    {
+      "module": "vllm.models.qwen4_exp.nvidia.hyperconnection",
+      "file": "/opt/venv/lib/python3.12/site-packages/vllm/models/qwen4_exp/nvidia/hyperconnection.py",
+      "file_sha256": "386bcc4ff5957b5b86aa62e338347f5ba57667bb0653dbc4c88c15d879daebff",
+      "loaded_callable_hashes": {
+        "_hyperconnection_api": "82749ed49ee77117a2f6b6f42e78344efeac76cc63f3114a82b6a90e046dbdbf"
+      }
+    },
+    {
+      "module": "vllm.models.qwen4_exp.nvidia.model",
+      "file": "/opt/venv/lib/python3.12/site-packages/vllm/models/qwen4_exp/nvidia/model.py",
+      "file_sha256": "75d071a584dc9a0be96afe1707db36cfc3ed840b899e14892de413679c7d0b69",
+      "loaded_callable_hashes": {
+        "_is_file_backed_ple_weight": "a66a3b4a0223e9398157d561bcd4c122c41787422b6a08e6abe79b0499dfba62",
+        "without_modelopt_fp4": "3aee8b6ddc191b131a2d75297a1031358cd265618daeb9ed027308aa01d5ddfc",
+        "_remap_qsa_cache_scale_name": "620ede8a155ee8d669944f49688923929a917ccd761b9abd7028b4ef7821678f"
+      }
+    },
+    {
+      "module": "b12x.moe.fused_moe._preparation",
+      "file": "/opt/venv/lib/python3.12/site-packages/flashinfer/experimental/b12x/moe/fused_moe/_preparation.py",
+      "file_sha256": "095faead05aba731829d5d3d31e59d3f37beb0ad74e2710ebca5db65d6b5d8d3",
+      "loaded_callable_hashes": {
+        "_codec_scalar": "7c9263098ac2128aef27818ae68203c5e1a882fb0f6680232be468721e8a36d3",
+        "_decode_scalar": "980cc66ed1ef86891d5f6f3b06aa87cdbfd6d30d6cebbe4c71ae36c91278bc59",
+        "_quant_mode": "b6ef0c591a21bbbbd018b89fa3984bdea3986056bf6060a9d26a04919f53fc3b",
+        "_control_snapshot": "6f8be07cbc6f7c190f51898bf648709839c439bd326dda78ba94d6912adb21f5",
+        "_query": "ab008152fdf0118bbdfbd6f808e18828ac02840bfd50b3cbcfcc0c1b669da3b7",
+        "_weight_payload": "21b2a77136da8190560853ae415813f9c16daa75fff935658a97d11f60d54585",
+        "_decode_query": "d5033b06911107a4ddec2b040cdde5e9c030f6c62eb5c6281abefa80a91dd5dc",
+        "_route_query_from_moe": "4b59b90e3a631e2a6d1a55fe87f5bc9fd0de674b9b4565b37ace68e8c24ea47d",
+        "_lower_caps": "7a9d099cce64ee571ec648cea8bc04cb23c58768474bd644e87e900769b26dbb",
+        "_w4a16_primary_launches": "192fc0547bc21650a05daacdd55f2fb955347c365fe691ded64a59c9e9676294",
+        "_dynamic_program_arguments": "8603fb527af254c1aea4f29d417f8f215cdd15842312cd5d3fc471ac906a2ae8",
+        "_compact_launches": "234baa14e8fe8dc3ac9adb8c3c8fd60f55ab68f5eb2c0d288957edc62719069d",
+        "_program_carriers": "f947ae7f9a02a05de334cdd7aed00feeebb3074333a1dd51b3badc7cc736d57d",
+        "variant_for": "979433051d4c0e38164d442b3d8b99f2842064af08f2cbe466876cb303d70e10",
+        "plan": "99d1a72dc1d37dee44055248ec6fb88f674716463d67dd035fc490f3164e5c4c",
+        "_dynamic_route_plan_payloads": "28a86e3be41ed162006ec9ec7581e4af8401153a85a18ccc0b660aa372f28505",
+        "plan_route_topk": "3aeedceb208de662757ed4defff5a561b82a9dd8180372945e7bff938c70a57a",
+        "plan_fc2": "6d8d898567db0ea207071312b4ea55af5844b72404f3d47f8124f6c8f052d928"
+      }
+    },
+    {
+      "module": "b12x._lib.quant.nvfp4_csf",
+      "file": "/opt/venv/lib/python3.12/site-packages/flashinfer/experimental/b12x/_lib/quant/nvfp4_csf.py",
+      "file_sha256": "bbbc113460c0b636432ae4e648d832696555660bc64b23efe7290b6a5296b19a",
+      "loaded_callable_hashes": {
+        "make_nvfp4_csf_batch": "f403773119890b64a9485961a8dcb4ff8e6d3663c1c115045e77b1381e25c400",
+        "repack_nvfp4_csf_batch": "2b86a84e369a1e85660dc7c27969f0fc07b0f24758c7935f21183fec97e08009",
+        "_matches_scale_output": "6bdeb4402e4a00c2dc04299618bcb67da1f7acd9552f3d5baedba70f5284f319",
+        "decode_nvfp4_csf_pair": "bf78e98e209d07e7508d142afe9268bd532716ee694b897b817bd6cda65b8603",
+        "_decode_pair_fake": "98038e12131f8ef03b99221a4a31ee73323f6bb634e585f462943f35d506d87d"
+      }
+    },
+    {
+      "module": "qwen_v2.fused_shared",
+      "file": "/opt/qwen38-v2/qwen_v2/fused_shared.py",
+      "file_sha256": "9565a28e9a0aca85149647cd5762760c4f04874134f902090e2bb8bb75eef204",
+      "loaded_callable_hashes": {
+        "swiglu_projection": "9a1085cc48ad1fa5de6457f5b88fa4f69381a9892903ed9430b76f32b138fce2",
+        "swiglu_projection_split": "501acc99c67428b20393d00a55a92289360fd573609cb765d3ac81dd3fbba7b0",
+        "split_epilogue": "4147957286439e8464522f2bcd95e7856553c2e56cb2de3c852228e28afb76f5"
+      }
+    },
+    {
+      "module": "qwen_v2.hooks",
+      "file": "/opt/qwen38-v2/qwen_v2/hooks.py",
+      "file_sha256": "5dccd46771c5d4edc1aa3cdff6a5dab536176b014a3114c7c44d3c6c8122e28c",
+      "loaded_callable_hashes": {
+        "swiglu_projection": "9a1085cc48ad1fa5de6457f5b88fa4f69381a9892903ed9430b76f32b138fce2",
+        "swiglu_projection_split": "501acc99c67428b20393d00a55a92289360fd573609cb765d3ac81dd3fbba7b0",
+        "split_epilogue": "4147957286439e8464522f2bcd95e7856553c2e56cb2de3c852228e28afb76f5",
+        "_forward": "b69fbf586dc1b7cd05ace4c55a97da0c647f2c89afb2c6ff62a87f14220c4ed4",
+        "install": "582e47b51222fb583e2b0c65dd0180e3dc2f78d1e04d32f5992177ef1d8bb2a9"
+      }
+    },
+    {
+      "module": "b12x._lib.quant.csf_blocks_tuning",
+      "file": "/opt/venv/lib/python3.12/site-packages/flashinfer/experimental/b12x/_lib/quant/csf_blocks_tuning.py",
+      "file_sha256": "1a346c3b493c8918616983a999b505dd539a1b17ad1d7827d3df65b09a675d61",
+      "loaded_callable_hashes": {
+        "_uses_presence": "7e4257ab94e20e9b72ab79c7f72d9c90b8b8920dd12bab5a1765a80e87367685",
+        "_validate_query": "a9d1ba619db6efa169d978df30aed37bca86af865762fcdf71377ccb9ea7aab7",
+        "_validate_config": "b2acce4e935324bd43b8189510a389d0561a1a9344b6289655632e079494b134",
+        "_parameters": "f135a25031676d1b7c652ef827429e2db845995baf4b37cee9608ac22c6cdad3",
+        "_scratch": "f6243675ae70ebc206651581ed36035db2c8359a7fc259b6cd981e766e448caf",
+        "plan_csf_block_expansion": "f2fc5040617f1e6e6cf8806cf1aa0694cd0e75e7f2946eb94830cc41c794b3d3"
+      }
+    }
+  ]
+}

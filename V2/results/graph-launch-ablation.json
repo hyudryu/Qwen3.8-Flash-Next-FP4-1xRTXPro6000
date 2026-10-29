@@ -1,0 +1,867 @@
+{
+  "v1": {
+    "graph_id": 2540,
+    "kernel_nodes": 2103,
+    "kernels": [
+      {
+        "name": "_causal_conv1d_update_kernel",
+        "executions": 3600,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 2.767867777777778
+      },
+      {
+        "name": "_commit_raw_ring_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.8021941666666668
+      },
+      {
+        "name": "_compress_completed_groups_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 3.977514166666667
+      },
+      {
+        "name": "_copy_stable_topk_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.5790008333333336
+      },
+      {
+        "name": "_dilated_conv_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.4595
+      },
+      {
+        "name": "_dynamic_route_plan_kernel",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 1.433236875
+      },
+      {
+        "name": "_expand_selected_groups_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.4415583333333335
+      },
+      {
+        "name": "_gated_rmsnorm_kernel",
+        "executions": 3600,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 1.4788213888888888
+      },
+      {
+        "name": "_gated_u_norm_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 2.76187
+      },
+      {
+        "name": "_grouped_rmsnorm_kernel",
+        "executions": 200,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 1.6992850000000002
+      },
+      {
+        "name": "_hash_ids_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.58462
+      },
+      {
+        "name": "_nvfp4_lookup_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 10.88999
+      },
+      {
+        "name": "_prepare_history_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 8.02232
+      },
+      {
+        "name": "_prepare_index_query_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.6303258333333333
+      },
+      {
+        "name": "_request_ids_kernel",
+        "executions": 200,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 0.8871849999999999
+      },
+      {
+        "name": "_reset_fresh_qsa_state_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 4.0199058333333335
+      },
+      {
+        "name": "_score_representatives_tiled_kernel",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.9631833333333333
+      },
+      {
+        "name": "_sorted_softmax_topk_kernel",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 2.5617091666666667
+      },
+      {
+        "name": "_stage_b12x_gdn_metadata_kernel",
+        "executions": 3600,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 0.7580275000000001
+      },
+      {
+        "name": "_stage_qsa_request_state_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.31424
+      },
+      {
+        "name": "_stage_qsa_rope_positions_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.1337300000000001
+      },
+      {
+        "name": "_triton_mrope_forward",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.4503566666666665
+      },
+      {
+        "name": "_update_state_kernel",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 2.67198
+      },
+      {
+        "name": "hc_up_gate",
+        "executions": 9700,
+        "unique_graph_nodes": 97,
+        "instrumented_average_us": 6.717950309278351
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libdense_gemmDenseGemmKernel_object_at__CopyAtom_ThrID10_TVLayoutSrc1102401_TVLayoutDst1102401_Valuetypebf16_tensor00o2560111100_tensorptrbf16gmemalign16o256012_0",
+        "executions": 14400,
+        "unique_graph_nodes": 144,
+        "instrumented_average_us": 13.968359513888888
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libdense_gemmDenseGemmKernel_object_at__CopyAtom_ThrID10_TVLayoutSrc1102401_TVLayoutDst1102401_Valuetypebf16_tensor00o6144111100_tensorptrbf16gmemalign16o614416_0",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 12.312486458333332
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libdense_gemmDenseGemmKernel_object_at__CopyAtom_ThrID10_TVLayoutSrc1102401_TVLayoutDst1102401_Valuetypebf16_tensor00o640111100_tensorptrbf16gmemalign16o6401640_0",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 4.5494047916666664
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libquantnvfp4_csf_Pair_object_at__ptri8_gmem_align16_ptri8_gmem_align16_ptri8_gmem_align16_ptri8_gmem_align16_tensorptri32_gmem_o_1____tensorptri32_gmem_o_1_ten_0",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 6.629694166666667
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentiondsa_indexertiled_topkDSATiledTopkKernel_object_at__tensorptrf32gmemo1_tensorptri32gmemo1_tensorptri32gmemo1_tensorptrf32gmemo1_tensorptri32gmemo1_tensor_0",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 4.9349475
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionpaged_selected_forward_CooperativeSparseGqaMergeKernel_object_at__ptrf32gmem_ptrf32gmem_ptrbf16gmem_ptrf32gmem__1",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.6540591666666666
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionpaged_selected_forward_SelectedPositionPagedForwardKernel_object_at__ptrbf16gmem_ptrf8E4M3FNgmem_ptrf8E4M3FNgmem_ptrf32gmem_ptrf32gmem_ptri32gmem_ptri32_0",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 9.055054166666666
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionqsa_stable_select_cuteStableSelectionKernel_object_at__cutlasscutecore_Pointerobjectatutlasscutecore_Pointerobjectatutlasscutecore_Pointerobjectatutlass_0",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 3.0457475
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xgemmblockscaled_reduceWeightOnlySplitKReduce_object_at__ptrf32gmemalign16_ptrbf16gmemalign16__0",
+        "executions": 14400,
+        "unique_graph_nodes": 144,
+        "instrumented_average_us": 1.635324513888889
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xmoe_sharedkernelssiluMoEDynamicKernelSilu_object_at__tensorptrbf16gmemalign16o256025601_tensorptri32gmemo1_tensorptrf32gmemo1_tensorptri8gmemalign16o1_tensorptri_0",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 56.39379770833333
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_Combine_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem__0",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.64765
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_PackedCombineNorm_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem___0",
+        "executions": 9500,
+        "unique_graph_nodes": 95,
+        "instrumented_average_us": 2.158089052631579
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_ScaledSilu_object_at__ptrbf16gmem_ptrbf16gmem___0",
+        "executions": 9700,
+        "unique_graph_nodes": 97,
+        "instrumented_average_us": 0.5819724742268041
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xsequencegdn_decode_cute_kernels_PackedRecurrentQwenKernel_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrf32gmem_ptrbf16gmem_ptrf32gmem_ptri32gmem_ptri32gmem__0",
+        "executions": 3600,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 9.647879166666668
+      },
+      {
+        "name": "nvjet_sm120_tst_mma_320x8x64_2_80x8x64_tmaAB_alignCD4_splitK_TNNN",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 44.59943
+      },
+      {
+        "name": "nvjet_sm120_tst_mma_64x8x128_5_16x8x128_tmaAB_alignCD4_splitK_TNNN",
+        "executions": 14500,
+        "unique_graph_nodes": 145,
+        "instrumented_average_us": 5.073908413793103
+      },
+      {
+        "name": "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)8, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 3.195458541666667
+      },
+      {
+        "name": "void <unnamed>::elementwise_kernel_with_index<int, at::native::arange_cuda_out(const c10::Scalar &, const c10::Scalar &, const c10::Scalar &, at::Tensor &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)]>(T1, T2, function_traits<T2>::result_type *)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.63871
+      },
+      {
+        "name": "void at::native::<unnamed>::indexSelectSmallIndex<int, long, unsigned int, (int)1, (int)1, (int)-2>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<const T1, T3>, at::cuda::detail::TensorInfo<const T2, T3>, int, int, T3, long)",
+        "executions": 300,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 1.6237766666666666
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::<unnamed>::where_kernel_impl(at::TensorIterator &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(bool, unsigned long, unsigned long) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.72092
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 1.0937739583333335
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(int) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 4.92539
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 2.59766
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 2.724411875
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 3900,
+        "unique_graph_nodes": 39,
+        "instrumented_average_us": 1.3297233333333334
+      },
+      {
+        "name": "void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)2>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &, bool)::[lambda(int) (instance 1)]>(long, T3)",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 5.915125833333334
+      },
+      {
+        "name": "void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, (int)4, (int)4>>(T3)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 1.6495533333333332
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctor_add<int>, std::array<char *, (unsigned long)3>, (int)4, TrivialOffsetCalculator<(int)2, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.83008
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 500,
+        "unique_graph_nodes": 5,
+        "instrumented_average_us": 1.17861
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 1.8512995833333334
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.10656
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::CUDAFunctor_add<long>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 300,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 0.8978033333333333
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::FillFunctor<long>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 300,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 0.61802
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<bool, bool, bool, at::native::BitwiseAndFunctor<bool>>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 100,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.25406
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float>>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 0.66404
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 0.7876704166666667
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 4900,
+        "unique_graph_nodes": 49,
+        "instrumented_average_us": 0.7974630612244898
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<bool>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 200,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 1.09999
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::BFloat16>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 3600,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 0.6404894444444444
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 1700,
+        "unique_graph_nodes": 17,
+        "instrumented_average_us": 0.7342405882352941
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.7379095833333333
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.7630325
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::sigmoid_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 6000,
+        "unique_graph_nodes": 60,
+        "instrumented_average_us": 1.1379988333333333
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase &, T2)::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2400,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.8766266666666667
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::compare_scalar_kernel<long>(at::TensorIteratorBase &, at::native::<unnamed>::OpType, T1)::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 200,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 1.0995
+      },
+      {
+        "name": "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, __nv_bfloat16, float, __nv_bfloat16, (bool)0, float, __nv_bfloat16, __nv_bfloat16, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)",
+        "executions": 14600,
+        "unique_graph_nodes": 146,
+        "instrumented_average_us": 1.1717971232876712
+      },
+      {
+        "name": "void vllm::act_and_mul_kernel<c10::BFloat16, __nv_bfloat162, &vllm::silu_kernel<c10::BFloat16>, &vllm::packed_silu_kernel<__nv_bfloat162>, (bool)1, (bool)1, (bool)0, (bool)0>(T1 *, const T1 *, int, float, float, float)",
+        "executions": 4800,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 1.0140047916666666
+      },
+      {
+        "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>(const T1 *, const T1 *, T2 *, T2 *, const long *, long, long, long, long, long, int, int, int, const float *, const float *, int)",
+        "executions": 1200,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.0678441666666667
+      }
+    ]
+  },
+  "single": {
+    "graph_id": 2540,
+    "kernel_nodes": 1959,
+    "kernels": [
+      {
+        "name": "_causal_conv1d_update_kernel",
+        "executions": 3384,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 2.754030141843972
+      },
+      {
+        "name": "_commit_raw_ring_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.7779627659574468
+      },
+      {
+        "name": "_compress_completed_groups_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 4.039413120567375
+      },
+      {
+        "name": "_copy_stable_topk_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.584653368794326
+      },
+      {
+        "name": "_dilated_conv_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.4859468085106382
+      },
+      {
+        "name": "_dynamic_route_plan_kernel",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 1.3335955230496455
+      },
+      {
+        "name": "_expand_selected_groups_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.4556941489361703
+      },
+      {
+        "name": "_gated_rmsnorm_kernel",
+        "executions": 3384,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 1.4822204491725768
+      },
+      {
+        "name": "_gated_u_norm_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 2.7676382978723404
+      },
+      {
+        "name": "_grouped_rmsnorm_kernel",
+        "executions": 188,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 1.6806329787234042
+      },
+      {
+        "name": "_hash_ids_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.5407553191489363
+      },
+      {
+        "name": "_nvfp4_lookup_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 10.622382978723405
+      },
+      {
+        "name": "_prepare_history_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 8.0935
+      },
+      {
+        "name": "_prepare_index_query_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.659784574468085
+      },
+      {
+        "name": "_request_ids_kernel",
+        "executions": 188,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 0.8919148936170213
+      },
+      {
+        "name": "_reset_fresh_qsa_state_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 3.857552304964539
+      },
+      {
+        "name": "_score_representatives_tiled_kernel",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.91185195035461
+      },
+      {
+        "name": "_sorted_softmax_topk_kernel",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 2.538529476950355
+      },
+      {
+        "name": "_stage_b12x_gdn_metadata_kernel",
+        "executions": 3384,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 0.763548463356974
+      },
+      {
+        "name": "_stage_qsa_request_state_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.3238936170212767
+      },
+      {
+        "name": "_stage_qsa_rope_positions_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.135659574468085
+      },
+      {
+        "name": "_triton_mrope_forward",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.4894051418439718
+      },
+      {
+        "name": "_update_state_kernel",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 2.6597127659574467
+      },
+      {
+        "name": "hc_up_gate",
+        "executions": 9118,
+        "unique_graph_nodes": 97,
+        "instrumented_average_us": 6.746685237990787
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libdense_gemmDenseGemmKernel_object_at__CopyAtom_ThrID10_TVLayoutSrc1102401_TVLayoutDst1102401_Valuetypebf16_tensor00o2560111100_tensorptrbf16gmemalign16o256012_0",
+        "executions": 13536,
+        "unique_graph_nodes": 144,
+        "instrumented_average_us": 13.782236776004726
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libdense_gemmDenseGemmKernel_object_at__CopyAtom_ThrID10_TVLayoutSrc1102401_TVLayoutDst1102401_Valuetypebf16_tensor00o6144111100_tensorptrbf16gmemalign16o614416_0",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 12.317940159574468
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12x_libquantnvfp4_csf_Pair_object_at__ptri8_gmem_align16_ptri8_gmem_align16_ptri8_gmem_align16_ptri8_gmem_align16_tensorptri32_gmem_o_1____tensorptri32_gmem_o_1_ten_0",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 6.773972960992908
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentiondsa_indexertiled_topkDSATiledTopkKernel_object_at__tensorptrf32gmemo1_tensorptri32gmemo1_tensorptri32gmemo1_tensorptrf32gmemo1_tensorptri32gmemo1_tensor_0",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 4.874499113475177
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionpaged_selected_forward_CooperativeSparseGqaMergeKernel_object_at__ptrf32gmem_ptrf32gmem_ptrbf16gmem_ptrf32gmem__1",
+        "executions": 1119,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 1.6532296693476318
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionpaged_selected_forward_SelectedPositionPagedForwardKernel_object_at__ptrbf16gmem_ptrf8E4M3FNgmem_ptrf8E4M3FNgmem_ptrf32gmem_ptrf32gmem_ptri32gmem_ptri32_0",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 9.060522163120568
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xattentionqsa_stable_select_cuteStableSelectionKernel_object_at__cutlasscutecore_Pointerobjectatutlasscutecore_Pointerobjectatutlasscutecore_Pointerobjectatutlass_0",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 3.0418989361702127
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xgemmblockscaled_reduceWeightOnlySplitKReduce_object_at__ptrf32gmemalign16_ptrbf16gmemalign16__0",
+        "executions": 13536,
+        "unique_graph_nodes": 144,
+        "instrumented_average_us": 1.6870615395981088
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xmoe_sharedkernelssiluMoEDynamicKernelSilu_object_at__tensorptrbf16gmemalign16o256025601_tensorptri32gmemo1_tensorptrf32gmemo1_tensorptri8gmemalign16o1_tensorptri_0",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 57.79804920212766
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_Combine_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem__0",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.6488510638297872
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_PackedCombineNorm_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrbf16gmem___0",
+        "executions": 8930,
+        "unique_graph_nodes": 95,
+        "instrumented_average_us": 2.155755319148936
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xnormhyperconnection_cute_ScaledSilu_object_at__ptrbf16gmem_ptrbf16gmem___0",
+        "executions": 9118,
+        "unique_graph_nodes": 97,
+        "instrumented_average_us": 0.5853535863127879
+      },
+      {
+        "name": "kernel_cutlass_kernel_b12xsequencegdn_decode_cute_kernels_PackedRecurrentQwenKernel_object_at__ptrbf16gmem_ptrbf16gmem_ptrbf16gmem_ptrf32gmem_ptrbf16gmem_ptrf32gmem_ptri32gmem_ptri32gmem__0",
+        "executions": 3384,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 9.706301418439716
+      },
+      {
+        "name": "nvjet_sm120_tst_mma_320x8x64_2_80x8x64_tmaAB_alignCD4_splitK_TNNN",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 44.64027659574468
+      },
+      {
+        "name": "nvjet_sm120_tst_mma_64x8x128_5_16x8x128_tmaAB_alignCD4_splitK_TNNN",
+        "executions": 13630,
+        "unique_graph_nodes": 145,
+        "instrumented_average_us": 5.081794057226706
+      },
+      {
+        "name": "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)8, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<const __nv_bfloat16>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>>(T13)",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 3.974528368794326
+      },
+      {
+        "name": "swiglu_projection",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 33.7853047429078
+      },
+      {
+        "name": "void <unnamed>::elementwise_kernel_with_index<int, at::native::arange_cuda_out(const c10::Scalar &, const c10::Scalar &, const c10::Scalar &, at::Tensor &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)]>(T1, T2, function_traits<T2>::result_type *)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.626031914893617
+      },
+      {
+        "name": "void at::native::<unnamed>::indexSelectSmallIndex<int, long, unsigned int, (int)1, (int)1, (int)-2>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<const T1, T3>, at::cuda::detail::TensorInfo<const T2, T3>, int, int, T3, long)",
+        "executions": 282,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 1.6149609929078015
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::<unnamed>::where_kernel_impl(at::TensorIterator &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(bool, unsigned long, unsigned long) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.452904255319149
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 1.0949109042553191
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(int) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 4.922148936170212
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 2.6349064716312056
+      },
+      {
+        "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+        "executions": 3666,
+        "unique_graph_nodes": 39,
+        "instrumented_average_us": 1.3284026186579379
+      },
+      {
+        "name": "void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)2>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &, bool)::[lambda(int) (instance 1)]>(long, T3)",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 5.914804964539007
+      },
+      {
+        "name": "void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, (int)4, (int)4>>(T3)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 1.6640004432624114
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctor_add<int>, std::array<char *, (unsigned long)3>, (int)4, TrivialOffsetCalculator<(int)2, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.8057659574468086
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 470,
+        "unique_graph_nodes": 5,
+        "instrumented_average_us": 1.1306042553191489
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (int)4, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T4, T5, T6, T7)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 1.8496077127659576
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 1.1019574468085107
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::CUDAFunctor_add<long>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 282,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 0.9016702127659575
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)2, at::native::FillFunctor<long>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 282,
+        "unique_graph_nodes": 3,
+        "instrumented_average_us": 0.5980070921985815
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<bool, bool, bool, at::native::BitwiseAndFunctor<bool>>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 94,
+        "unique_graph_nodes": 1,
+        "instrumented_average_us": 0.9988085106382979
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float>>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 0.669468085106383
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 4512,
+        "unique_graph_nodes": 48,
+        "instrumented_average_us": 0.7881815159574468
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char *, (unsigned long)3>, (bool)0>(int, T2, T3)",
+        "executions": 4606,
+        "unique_graph_nodes": 49,
+        "instrumented_average_us": 0.79243052540165
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<bool>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 188,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 0.9722393617021277
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::BFloat16>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 3384,
+        "unique_graph_nodes": 36,
+        "instrumented_average_us": 0.6353782505910166
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, std::array<char *, (unsigned long)1>, (bool)0>(int, T2, T3)",
+        "executions": 1598,
+        "unique_graph_nodes": 17,
+        "instrumented_average_us": 0.7181095118898624
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.7369720744680851
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.7513377659574467
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::sigmoid_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 0.976668439716312
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase &, T2)::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 2256,
+        "unique_graph_nodes": 24,
+        "instrumented_average_us": 0.8863479609929078
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::compare_scalar_kernel<long>(at::TensorIteratorBase &, at::native::<unnamed>::OpType, T1)::[lambda(long) (instance 1)], std::array<char *, (unsigned long)2>, (bool)0>(int, T2, T3)",
+        "executions": 188,
+        "unique_graph_nodes": 2,
+        "instrumented_average_us": 1.0862819148936171
+      },
+      {
+        "name": "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, __nv_bfloat16, float, __nv_bfloat16, (bool)0, float, __nv_bfloat16, __nv_bfloat16, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)",
+        "executions": 13724,
+        "unique_graph_nodes": 146,
+        "instrumented_average_us": 1.1592083211891577
+      },
+      {
+        "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>(const T1 *, const T1 *, T2 *, T2 *, const long *, long, long, long, long, long, int, int, int, const float *, const float *, int)",
+        "executions": 1128,
+        "unique_graph_nodes": 12,
+        "instrumented_average_us": 2.079897163120567
+      }
+    ]
+  },
+  "scope": "C1 target graph identified by 48 routed MoE nodes and 97 small-row hyperconnection nodes. Host scheduled rows 4/4 for this catalog entry. Same checkpoint/runtime/MTP3; profiling durations are not final throughput. Graph IDs are process-local."
+}

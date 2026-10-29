@@ -45,6 +45,7 @@ def completion(base,model,prompt,limit,seed,barrier=None):
 def workload(base,model,path,length):
     if path.exists():
         data=json.loads(path.read_text())
+        if any(len(row['tokens'])!=length for row in data):raise ValueError('Persisted workload length differs; use a fresh workload path')
         if not all('content_offset' in row for row in data):raise ValueError('Legacy raw-completion workload: use a fresh chat-template workload file')
         return data
     def template_ids(text):
