@@ -1,0 +1,217 @@
+--- a/vllm/models/qwen4_exp/nvidia/mtp.py
++++ b/vllm/models/qwen4_exp/nvidia/mtp.py
+@@ -4,6 +4,8 @@
+ 
+ from __future__ import annotations
+ 
++import json
++import os
+ import weakref
+ from collections.abc import Iterable, Sequence
+ from typing import Any
+@@ -714,6 +716,88 @@
+ )
+ 
+ 
++# --- V3 dynamic draft vocabulary -------------------------------------------
++# Static top-K draft head + a ring of request-context tokens (prompt and accepted
++# tokens seen by the MTP) scored against the target BF16 head. slot_of[token]:
++# -3 static, -1 absent, -2 being claimed, -4 evicted while claimed, >=0 ring slot.
++import triton
++import triton.language as tl
++
++
++@triton.jit
++def _dyn_observe_kernel(ids, n, slot_of, ring, cursor, full, rows, vocab,
++                        D: tl.constexpr, BLOCK: tl.constexpr):
++    offs = tl.program_id(0) * BLOCK + tl.arange(0, BLOCK)
++    m = offs < n
++    tok = tl.load(ids + offs, mask=m, other=0).to(tl.int32)
++    m = m & (tok >= 0) & (tok < vocab)
++    state = tl.load(slot_of + tok, mask=m, other=0)
++    m = m & (state == -1)
++    tok = tl.where(m, tok, 0)  # masked lanes address a valid entry and never match -7
++    neg2 = tl.full(tok.shape, -2, tl.int32)
++    won = tl.atomic_cas(slot_of + tok, tl.where(m, -1, -7).to(tl.int32), neg2) == -1
++    m = m & won
++    pos = (tl.atomic_add(cursor + tl.zeros_like(offs), tl.where(m, 1, 0).to(tl.int64), mask=m) % D).to(tl.int32)
++    prev = tl.atomic_xchg(ring + pos, tok, mask=m)
++    ev = m & (prev >= 0)
++    prev_safe = tl.where(ev, prev, 0)
++    neg1 = tl.full(tok.shape, -1, tl.int32)
++    # A ring position can be reused within one launch (> D new tokens), so the evicted token may
++    # not have published its slot yet (-2). Mark it -4 and let its owner release it to -1.
++    old = tl.atomic_cas(slot_of + prev_safe, tl.where(ev, pos, -7).to(tl.int32), neg1)
++    pend = ev & (old == -2)
++    old = tl.atomic_cas(slot_of + prev_safe, tl.where(pend, -2, -7).to(tl.int32), tl.full(tok.shape, -4, tl.int32))
++    late = pend & (old == pos)  # owner published between the two CAS
++    tl.atomic_cas(slot_of + prev_safe, tl.where(late, pos, -7).to(tl.int32), neg1)
++    lost = m & (tl.atomic_cas(slot_of + tok, tl.where(m, -2, -7).to(tl.int32), pos) == -4)
++    tl.atomic_cas(slot_of + tok, tl.where(lost, -4, -7).to(tl.int32), neg1)
++    for r in range(rows):  # evicted token column back to -inf
++        tl.store(full + r * vocab + prev_safe, float("-inf"), mask=ev)
++
++
++@triton.jit
++def _dyn_logits_kernel(h, w, ring, full, T, vocab, H: tl.constexpr, BD: tl.constexpr, BK: tl.constexpr):
++    j = tl.program_id(0) * BD + tl.arange(0, BD)
++    tok = tl.load(ring + j)
++    valid = tok >= 0
++    safe = tl.where(valid, tok, 0).to(tl.int64)
++    t = tl.program_id(1) * 16 + tl.arange(0, 16)
++    acc = tl.zeros((16, BD), tl.float32)
++    for kb in tl.static_range(0, H, BK):
++        k = kb + tl.arange(0, BK)
++        a = tl.load(h + t[:, None] * H + k[None, :], mask=t[:, None] < T, other=0.)
++        b = tl.load(w + safe[None, :] * H + k[:, None], mask=valid[None, :], other=0.)
++        acc = tl.dot(a, b, acc)
++    tl.store(full + t[:, None] * vocab + safe[None, :], acc.to(full.dtype.element_ty),
++             mask=(t[:, None] < T) & valid[None, :])
++
++
++def _dyn_observe_op(ids: torch.Tensor, slot_of: torch.Tensor, ring: torch.Tensor,
++                    cursor: torch.Tensor, full: torch.Tensor) -> None:
++    n = ids.numel()
++    if n:
++        _dyn_observe_kernel[(triton.cdiv(n, 256),)](
++            ids, n, slot_of, ring, cursor, full, full.shape[0], full.shape[1],
++            D=ring.numel(), BLOCK=256)
++
++
++def _dyn_logits_op(hidden: torch.Tensor, weight: torch.Tensor, ring: torch.Tensor,
++                   full: torch.Tensor) -> None:
++    T = hidden.shape[0]
++    _dyn_logits_kernel[(ring.numel() // 16, triton.cdiv(T, 16))](
++        hidden, weight, ring, full, T, full.shape[1], H=hidden.shape[1], BD=16, BK=256, num_warps=4)
++
++
++def _dyn_noop(*args, **kwargs) -> None:
++    return
++
++
++direct_register_custom_op(op_name="qwen38_draft_dyn_observe", op_func=_dyn_observe_op,
++                          mutates_args=["slot_of", "ring", "cursor", "full"], fake_impl=_dyn_noop)
++direct_register_custom_op(op_name="qwen38_draft_dyn_logits", op_func=_dyn_logits_op,
++                          mutates_args=["full"], fake_impl=_dyn_noop)
++
++
+ @support_torch_compile(
+     dynamic_arg_dims={
+         "input_ids": 0,
+@@ -794,6 +878,50 @@
+             config.vocab_size,
+             lm_head=self.lm_head,
+         )
++        # V3: optional pruned draft vocabulary. The draft head scores only a
++        # fixed token subset; other columns stay -inf, so speculative rejection
++        # sampling remains exact and only proposal coverage changes.
++        self.draft_vocab_ids: torch.Tensor | None = None
++        self.draft_dyn_slots = 0
++        draft_vocab_path = os.environ.get("QWEN38_DRAFT_VOCAB")
++        if draft_vocab_path and get_pp_group().is_last_rank:
++            with open(draft_vocab_path) as f:
++                ids = sorted(int(i) for i in json.load(f)["ids"])
++            if len(ids) % 64 or ids[-1] >= config.vocab_size:
++                raise ValueError("draft vocab must be a multiple of 64 valid ids")
++            self.lm_head_sub = ParallelLMHead(
++                len(ids),
++                config.hidden_size,
++                quant_config=None,
++                prefix=maybe_prefix(prefix, "lm_head_sub"),
++                lm_head_quantization="nvfp4" if self.has_own_lm_head else None,
++            )
++            self.logits_processor_sub = LogitsProcessor(
++                len(ids), lm_head=self.lm_head_sub
++            )
++            self.draft_vocab_ids = torch.tensor(ids, dtype=torch.long)
++            spec = vllm_config.speculative_config
++            self.draft_logits_rows = vllm_config.scheduler_config.max_num_seqs * (
++                (spec.num_speculative_tokens if spec is not None else 0) + 1
++            )
++            self.draft_logits_full: torch.Tensor | None = None
++            dyn_slots = int(os.environ.get("QWEN38_DRAFT_DYNAMIC", "0"))
++            if dyn_slots % 16:
++                raise ValueError("QWEN38_DRAFT_DYNAMIC must be a multiple of 16")
++            self.draft_dyn_slots = dyn_slots
++            self.target_head_weight: torch.Tensor | None = None
++            if dyn_slots:
++                device = current_platform.current_device()
++                slot_of = torch.full((config.vocab_size,), -1, dtype=torch.int32, device="cpu")
++                slot_of[torch.tensor(ids, dtype=torch.long)] = -3
++                self.draft_slot_of = slot_of.to(device)
++                self.draft_ring = torch.full((dyn_slots,), -1, dtype=torch.int32, device=device)
++                self.draft_cursor = torch.zeros(1, dtype=torch.int64, device=device)
++                self.draft_logits_full = torch.full(
++                    (self.draft_logits_rows, config.vocab_size), float("-inf"),
++                    dtype=vllm_config.model_config.dtype, device=device)
++        else:
++            self.draft_dyn_slots = 0
+         self.make_empty_intermediate_tensors = (
+             self.model.make_empty_intermediate_tensors
+         )
+@@ -801,6 +929,13 @@
+         if not uses_b12x(vllm_config):
+             enable_qwen4_exp_low_latency_gemm(self, vllm_config.model_config.dtype)
+ 
++    def set_target_lm_head(self, lm_head: nn.Module) -> None:
++        weight = getattr(lm_head, "weight", None)
++        if (self.draft_dyn_slots and weight is not None
++                and weight.dtype == torch.bfloat16 and weight.is_contiguous()
++                and weight.shape[0] >= self.config.vocab_size):
++            self.target_head_weight = weight
++
+     def embed_input_ids(self, input_ids: torch.Tensor) -> torch.Tensor:
+         return self.model.embed_input_ids(input_ids)
+ 
+@@ -814,6 +949,10 @@
+         spec_step_idx: int = 0,
+         **kwargs: object,
+     ) -> torch.Tensor | tuple[torch.Tensor, torch.Tensor] | IntermediateTensors:
++        if self.draft_dyn_slots and input_ids is not None:
++            torch.ops.vllm.qwen38_draft_dyn_observe(
++                input_ids, self.draft_slot_of, self.draft_ring, self.draft_cursor,
++                self.draft_logits_full)
+         return self.model(
+             input_ids,
+             positions,
+@@ -828,7 +967,30 @@
+         hidden_states: torch.Tensor,
+         spec_step_idx: int = 0,
+     ) -> torch.Tensor | None:
+-        return self.logits_processor(self.lm_head, hidden_states)
++        if self.draft_vocab_ids is None or hidden_states.shape[0] > self.draft_logits_rows:
++            return self.logits_processor(self.lm_head, hidden_states)
++        sub = self.logits_processor_sub(self.lm_head_sub, hidden_states)
++        if sub is None:
++            return None
++        full = self.draft_logits_full
++        if full is None or (not self.draft_dyn_slots and (full.dtype != sub.dtype or full.device != sub.device)):
++            # Allocated during the profiling/warmup run, before graph capture.
++            full = torch.full(
++                (self.draft_logits_rows, self.config.vocab_size),
++                float("-inf"),
++                dtype=sub.dtype,
++                device=sub.device,
++            )
++            self.draft_logits_full = full
++            self.draft_vocab_ids = self.draft_vocab_ids.to(sub.device)
++        if self.draft_vocab_ids.device != full.device:
++            self.draft_vocab_ids = self.draft_vocab_ids.to(full.device)
++        out = full[: sub.shape[0]]
++        out.index_copy_(1, self.draft_vocab_ids, sub[:, : self.draft_vocab_ids.numel()].to(full.dtype))
++        if self.draft_dyn_slots and self.target_head_weight is not None:
++            torch.ops.vllm.qwen38_draft_dyn_logits(
++                hidden_states.contiguous(), self.target_head_weight, self.draft_ring, out)
++        return out
+ 
+     def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
+         qsa_layer_ids = frozenset(range(self.model.num_mtp_layers))
+@@ -836,6 +998,8 @@
+         def remap_weight_names():
+             for name, weight in weights:
+                 remapped_name = _remap_mtp_weight_name(name)
++                if remapped_name == "lm_head.weight" and self.draft_vocab_ids is not None:
++                    yield "lm_head_sub.weight", weight[self.draft_vocab_ids.to(weight.device)]
+                 if remapped_name is not None:
+                     yield (
+                         _remap_qsa_cache_scale_name(remapped_name, qsa_layer_ids),

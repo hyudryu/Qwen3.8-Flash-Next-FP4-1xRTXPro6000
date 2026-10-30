@@ -1,0 +1,13 @@
+--- a/vllm/v1/worker/gpu/spec_decode/eagle/utils.py
++++ b/vllm/v1/worker/gpu/spec_decode/eagle/utils.py
+@@ -155,6 +155,10 @@
+     maybe_share_target_embed(eagle_model, draft_inner, target_inner)
+ 
+     target_lm_head = get_target_lm_head(target_model, target_language_model)
++    # V3: let a draft model with its own (pruned) head read target head rows.
++    set_target_lm_head = getattr(eagle_model, "set_target_lm_head", None)
++    if set_target_lm_head is not None and target_lm_head is not None:
++        set_target_lm_head(target_lm_head)
+     draft_lm_head = getattr(eagle_model, "lm_head", None)
+     if target_lm_head is not None and _should_share(
+         eagle_model, "has_own_lm_head", draft_lm_head, target_lm_head

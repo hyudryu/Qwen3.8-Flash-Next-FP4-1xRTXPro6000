@@ -1,0 +1,322 @@
+{
+ "scope": "GPU1 replica of the V1 production deployment, TP1, 450 W, C1. Coding = V1 coding.py (1536-token outputs, temperature 0). General = bench_general.py (6 prose/math/multilingual/JSON prompts, 800 tokens). Single-run per-config screens unless rounds=10; see confirmation.json for the interleaved final comparison.",
+ "configs": {
+  "base-d5": {
+   "config": "full draft head, MTP5 + exact capture sizes",
+   "coding_runs": [
+    {
+     "label": "base-d5-r1",
+     "median_tps": 271.8,
+     "mean_tps": 273.0,
+     "rounds": 10,
+     "accepted_per_draft": 2.792
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 203.9,
+     "accepted_per_draft": 1.713
+    },
+    "sampled": {
+     "mean_tps": 201.6,
+     "accepted_per_draft": 1.701
+    }
+   }
+  },
+  "base": {
+   "config": "V1 production config (MTP3, full NVFP4 draft head)",
+   "coding_runs": [
+    {
+     "label": "base-r1",
+     "median_tps": 265.6,
+     "mean_tps": 265.2,
+     "rounds": 5,
+     "accepted_per_draft": 2.096
+    },
+    {
+     "label": "base-r2",
+     "median_tps": 267.8,
+     "mean_tps": 267.0,
+     "rounds": 5,
+     "accepted_per_draft": 2.129
+    },
+    {
+     "label": "base-r3",
+     "median_tps": 269.0,
+     "mean_tps": 267.7,
+     "rounds": 10,
+     "accepted_per_draft": 2.135
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 222.9,
+     "accepted_per_draft": 1.558
+    },
+    "sampled": {
+     "mean_tps": 215.5,
+     "accepted_per_draft": 1.504
+    }
+   }
+  },
+  "dv16k": {
+   "config": "static draft vocab 16K, MTP3",
+   "coding_runs": [
+    {
+     "label": "dv16k-r1",
+     "median_tps": 272.0,
+     "mean_tps": 274.3,
+     "rounds": 5,
+     "accepted_per_draft": 2.03
+    }
+   ]
+  },
+  "dv24k": {
+   "config": "static 24K, MTP3",
+   "coding_runs": [
+    {
+     "label": "dv24k-r1",
+     "median_tps": 274.9,
+     "mean_tps": 272.4,
+     "rounds": 5,
+     "accepted_per_draft": 2.02
+    }
+   ]
+  },
+  "dv32k": {
+   "config": "static 32K, MTP3",
+   "coding_runs": [
+    {
+     "label": "dv32k-r1",
+     "median_tps": 276.0,
+     "mean_tps": 277.9,
+     "rounds": 5,
+     "accepted_per_draft": 2.089
+    }
+   ]
+  },
+  "dv49k-d4": {
+   "config": "static 49K, MTP4 + exact capture sizes",
+   "coding_runs": [
+    {
+     "label": "dv49k-d4-r1",
+     "median_tps": 288.2,
+     "mean_tps": 287.9,
+     "rounds": 10,
+     "accepted_per_draft": 2.515
+    }
+   ]
+  },
+  "dv49k-d5": {
+   "config": "static 49K, MTP5 + exact capture sizes (code-weighted list)",
+   "coding_runs": [
+    {
+     "label": "dv49k-d5-r1",
+     "median_tps": 291.7,
+     "mean_tps": 290.1,
+     "rounds": 10,
+     "accepted_per_draft": 2.79
+    },
+    {
+     "label": "dv49k-d5-r2",
+     "median_tps": 295.4,
+     "mean_tps": 294.6,
+     "rounds": 10,
+     "accepted_per_draft": 2.835
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 196.4,
+     "accepted_per_draft": 1.411
+    },
+    "sampled": {
+     "mean_tps": 194.7,
+     "accepted_per_draft": 1.429
+    }
+   }
+  },
+  "dv49k-d6": {
+   "config": "static 49K, MTP6",
+   "coding_runs": [
+    {
+     "label": "dv49k-d6-r1",
+     "median_tps": 274.0,
+     "mean_tps": 273.7,
+     "rounds": 10,
+     "accepted_per_draft": 3.073
+    }
+   ]
+  },
+  "dv49k-d7": {
+   "config": "static 49K, MTP7",
+   "coding_runs": [
+    {
+     "label": "dv49k-d7-r1",
+     "median_tps": 283.1,
+     "mean_tps": 281.2,
+     "rounds": 10,
+     "accepted_per_draft": 3.124
+    }
+   ]
+  },
+  "dv49k": {
+   "config": "static 49K (code-weighted list), MTP3 (general row from the same code-weighted list, MTP3)",
+   "coding_runs": [
+    {
+     "label": "dv49k-r1",
+     "median_tps": 280.4,
+     "mean_tps": 280.0,
+     "rounds": 5,
+     "accepted_per_draft": 2.131
+    },
+    {
+     "label": "dv49k-r2",
+     "median_tps": 277.6,
+     "mean_tps": 277.8,
+     "rounds": 10,
+     "accepted_per_draft": 2.106
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 202.9,
+     "accepted_per_draft": 1.195
+    },
+    "sampled": {
+     "mean_tps": 203.1,
+     "accepted_per_draft": 1.241
+    }
+   }
+  },
+  "dyn49k-a5w8": {
+   "config": "static 49K + dynamic, adaptive depth max 5 window 8",
+   "coding_runs": [
+    {
+     "label": "dyn49k-a5w8-r1",
+     "median_tps": 272.6,
+     "mean_tps": 272.5,
+     "rounds": 10,
+     "accepted_per_draft": 2.276
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 209.7,
+     "accepted_per_draft": 1.234
+    },
+    "sampled": {
+     "mean_tps": 215.1,
+     "accepted_per_draft": 1.34
+    }
+   }
+  },
+  "dyn49k-d3": {
+   "config": "static 49K (multilingual list) + 1024 dynamic slots, MTP3",
+   "coding_runs": [
+    {
+     "label": "dyn49k-d3-r1",
+     "median_tps": 275.5,
+     "mean_tps": 274.2,
+     "rounds": 10,
+     "accepted_per_draft": 2.081
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 218.9,
+     "accepted_per_draft": 1.379
+    },
+    "sampled": {
+     "mean_tps": 220.4,
+     "accepted_per_draft": 1.439
+    }
+   }
+  },
+  "dyn49k-d4": {
+   "config": "static 49K + dynamic, MTP4 (V3 final)",
+   "coding_runs": [
+    {
+     "label": "dyn49k-d4-r1",
+     "median_tps": 294.8,
+     "mean_tps": 291.8,
+     "rounds": 10,
+     "accepted_per_draft": 2.565
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 215.5,
+     "accepted_per_draft": 1.513
+    },
+    "sampled": {
+     "mean_tps": 217.6,
+     "accepted_per_draft": 1.584
+    }
+   }
+  },
+  "dyn49k-d5": {
+   "config": "static 49K + dynamic, MTP5",
+   "coding_runs": [
+    {
+     "label": "dyn49k-d5-r1",
+     "median_tps": 290.6,
+     "mean_tps": 290.9,
+     "rounds": 10,
+     "accepted_per_draft": 2.825
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 205.1,
+     "accepted_per_draft": 1.563
+    },
+    "sampled": {
+     "mean_tps": 208.2,
+     "accepted_per_draft": 1.624
+    }
+   }
+  },
+  "dyn98k-a5w8": {
+   "config": "static 98K + dynamic, adaptive max 5 window 8",
+   "coding_runs": [
+    {
+     "label": "dyn98k-a5w8-r1",
+     "median_tps": 266.8,
+     "mean_tps": 267.8,
+     "rounds": 10,
+     "accepted_per_draft": 2.272
+    }
+   ],
+   "general": {
+    "greedy": {
+     "mean_tps": 208.8,
+     "accepted_per_draft": 1.272
+    },
+    "sampled": {
+     "mean_tps": 215.9,
+     "accepted_per_draft": 1.413
+    }
+   }
+  },
+  "hc49": {
+   "config": "static 49K + persistent fused HC kernel, MTP3",
+   "coding_runs": [
+    {
+     "label": "hc49-r1",
+     "median_tps": 275.9,
+     "mean_tps": 274.5,
+     "rounds": 5,
+     "accepted_per_draft": 2.111
+    },
+    {
+     "label": "hc49-r2",
+     "median_tps": 276.9,
+     "mean_tps": 276.4,
+     "rounds": 10,
+     "accepted_per_draft": 2.092
+    }
+   ]
+  }
+ }
+}
