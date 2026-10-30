@@ -1,0 +1,24 @@
+[
+  {
+    "variant": "v1-primary-a",
+    "jit_warnings": [
+      "(EngineCore pid=533) [replica 0] WARNING 10-29 14:34:35 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _restore_auxiliary_state_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.",
+      "(EngineCore pid=533) [replica 0] WARNING 10-29 14:34:35 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _post_update_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.",
+      "(EngineCore pid=533) [replica 0] WARNING 10-29 14:34:50 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _apply_grammar_bitmask_kernel. This causes a latency spike; consider extending warmup to cover this shape/config."
+    ]
+  },
+  {
+    "variant": "v2-primary-b",
+    "jit_warnings": [
+      "(EngineCore pid=533) [replica 0] WARNING 10-29 14:48:52 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _restore_auxiliary_state_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.",
+      "(EngineCore pid=533) [replica 0] WARNING 10-29 14:48:52 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _post_update_kernel. This causes a latency spike; consider extending warmup to cover this shape/config."
+    ]
+  },
+  {
+    "variant": "v1-primary-a2",
+    "jit_warnings": [
+      "(EngineCore pid=707) [replica 0] WARNING 10-29 15:02:59 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _restore_auxiliary_state_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.",
+      "(EngineCore pid=707) [replica 0] WARNING 10-29 15:02:59 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _post_update_kernel. This causes a latency spike; consider extending warmup to cover this shape/config."
+    ]
+  }
+]

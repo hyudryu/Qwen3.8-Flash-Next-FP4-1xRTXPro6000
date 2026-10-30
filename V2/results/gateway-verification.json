@@ -1,0 +1,20 @@
+{
+  "gateway": "http://localhost:7878/v1",
+  "model": "qwen3.8-flash-next",
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 20,
+    "completion_tokens": 2,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "content": "READY",
+  "elapsed_s": 0.5387425349908881,
+  "status": "ok"
+}
