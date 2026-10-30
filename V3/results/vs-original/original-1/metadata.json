@@ -1,0 +1,19 @@
+{
+  "gpu_count": 1,
+  "concurrency": [
+    1,
+    4,
+    8
+  ],
+  "rounds": 5,
+  "max_output_tokens": 1536,
+  "natural_eos": true,
+  "thinking": false,
+  "base_url": "http://127.0.0.1:8010",
+  "model": "qwen3.8-flash-next",
+  "cache_salt": "d3133aeab8700f458e74232f43d2468223d25693aae4a6c4c4ca5e12c02ad083",
+  "power_limits": "index, power.limit [W]\n0, 450.00 W\n",
+  "started_unix": 1793329550.8037586,
+  "aggregate_definition": "Sum of completion tokens / simultaneous-batch wall time, including prompt processing and client/transport overhead; gateway overhead applies only when the base URL is a gateway.",
+  "workload": "Python/TypeScript/Rust/Go implementation and tests; same prompts across power settings, unique per-request cache salt; cache hits must be zero."
+}
