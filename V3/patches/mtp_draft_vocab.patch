@@ -9,14 +9,14 @@
  import weakref
  from collections.abc import Iterable, Sequence
  from typing import Any
-@@ -714,6 +716,80 @@
+@@ -714,6 +716,88 @@
  )
  
  
 +# --- V3 dynamic draft vocabulary -------------------------------------------
 +# Static top-K draft head + a ring of request-context tokens (prompt and accepted
 +# tokens seen by the MTP) scored against the target BF16 head. slot_of[token]:
-+# -3 static, -1 absent, -2 being claimed, >=0 ring slot.
++# -3 static, -1 absent, -2 being claimed, -4 evicted while claimed, >=0 ring slot.
 +import triton
 +import triton.language as tl
 +
@@ -38,8 +38,16 @@
 +    prev = tl.atomic_xchg(ring + pos, tok, mask=m)
 +    ev = m & (prev >= 0)
 +    prev_safe = tl.where(ev, prev, 0)
-+    tl.atomic_cas(slot_of + prev_safe, tl.where(ev, pos, -7).to(tl.int32), tl.full(tok.shape, -1, tl.int32))
-+    tl.store(slot_of + tok, pos, mask=m)
++    neg1 = tl.full(tok.shape, -1, tl.int32)
++    # A ring position can be reused within one launch (> D new tokens), so the evicted token may
++    # not have published its slot yet (-2). Mark it -4 and let its owner release it to -1.
++    old = tl.atomic_cas(slot_of + prev_safe, tl.where(ev, pos, -7).to(tl.int32), neg1)
++    pend = ev & (old == -2)
++    old = tl.atomic_cas(slot_of + prev_safe, tl.where(pend, -2, -7).to(tl.int32), tl.full(tok.shape, -4, tl.int32))
++    late = pend & (old == pos)  # owner published between the two CAS
++    tl.atomic_cas(slot_of + prev_safe, tl.where(late, pos, -7).to(tl.int32), neg1)
++    lost = m & (tl.atomic_cas(slot_of + tok, tl.where(m, -2, -7).to(tl.int32), pos) == -4)
++    tl.atomic_cas(slot_of + tok, tl.where(lost, -4, -7).to(tl.int32), neg1)
 +    for r in range(rows):  # evicted token column back to -inf
 +        tl.store(full + r * vocab + prev_safe, float("-inf"), mask=ev)
 +
@@ -90,7 +98,7 @@
  @support_torch_compile(
      dynamic_arg_dims={
          "input_ids": 0,
-@@ -794,6 +870,50 @@
+@@ -794,6 +878,50 @@
              config.vocab_size,
              lm_head=self.lm_head,
          )
@@ -141,7 +149,7 @@
          self.make_empty_intermediate_tensors = (
              self.model.make_empty_intermediate_tensors
          )
-@@ -801,6 +921,13 @@
+@@ -801,6 +929,13 @@
          if not uses_b12x(vllm_config):
              enable_qwen4_exp_low_latency_gemm(self, vllm_config.model_config.dtype)
  
@@ -155,7 +163,7 @@
      def embed_input_ids(self, input_ids: torch.Tensor) -> torch.Tensor:
          return self.model.embed_input_ids(input_ids)
  
-@@ -814,6 +941,10 @@
+@@ -814,6 +949,10 @@
          spec_step_idx: int = 0,
          **kwargs: object,
      ) -> torch.Tensor | tuple[torch.Tensor, torch.Tensor] | IntermediateTensors:
@@ -166,7 +174,7 @@
          return self.model(
              input_ids,
              positions,
-@@ -828,7 +959,30 @@
+@@ -828,7 +967,30 @@
          hidden_states: torch.Tensor,
          spec_step_idx: int = 0,
      ) -> torch.Tensor | None:
@@ -198,7 +206,7 @@
  
      def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
          qsa_layer_ids = frozenset(range(self.model.num_mtp_layers))
-@@ -836,6 +990,8 @@
+@@ -836,6 +998,8 @@
          def remap_weight_names():
              for name, weight in weights:
                  remapped_name = _remap_mtp_weight_name(name)

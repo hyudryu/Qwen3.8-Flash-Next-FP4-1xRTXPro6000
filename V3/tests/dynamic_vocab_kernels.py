@@ -32,4 +32,20 @@ ns['_dyn_observe_op'](torch.arange(501, 501 + D, device=dev), slot_of, ring, cur
 assert all(torch.isinf(full[:, t]).all() for t in r if t not in range(501, 501 + D)), 'evicted columns not reset'
 assert slot_of[999].item() == -1 and slot_of[700].item() == -1
 assert sorted(ring.tolist()) == list(range(501, 501 + D)), sorted(ring.tolist())
+# Ring positions reused within one launch (far more than D new tokens): no token may be left
+# with a stale slot (permanently excluded) or stuck mid-claim.
+V2 = 40000
+slot_of = torch.full((V2,), -1, dtype=torch.int32, device=dev); slot_of[:500] = -3
+ring = torch.full((D,), -1, dtype=torch.int32, device=dev); cursor = torch.zeros(1, dtype=torch.int64, device=dev)
+full = torch.full((2, V2), float('-inf'), dtype=torch.bfloat16, device=dev)
+g = torch.Generator(device=dev).manual_seed(0)
+for it in range(200):
+    ids = torch.randint(0, V2, (8192,), device=dev, generator=g)
+    ns['_dyn_observe_op'](ids, slot_of, ring, cursor, full); torch.cuda.synchronize()
+    members = {t for t in ring.tolist() if t >= 0}
+    so = slot_of.cpu()
+    assert not ((so == -2) | (so == -4)).any(), f'iter {it}: tokens stuck mid-claim'
+    for t in members: assert ring[so[t]].item() == t, (it, t)
+    held = (so >= 0).nonzero().flatten().tolist()
+    assert set(held) == members, f'iter {it}: {len(set(held) - members)} tokens hold stale slots'
 print('dyn kernel tests passed')

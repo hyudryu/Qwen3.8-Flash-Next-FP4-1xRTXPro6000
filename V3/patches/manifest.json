@@ -3,7 +3,7 @@
     "target": "vllm/models/qwen4_exp/nvidia/mtp.py",
     "patch": "mtp_draft_vocab.patch",
     "original_sha256": "c87aabf01195294eded4e966f67a0d46adf3a7fe2fc343901305214d014bbb3d",
-    "modified_sha256": "0877dcaef6855b210a59b7b8892c005a608eb4435537aa6582ab2881a5d8cbd2"
+    "modified_sha256": "d9f254248fe704329a2424e22fc8bdbd19ee02b6a36ea21a1a0d309dba487e2b"
   },
   {
     "target": "vllm/v1/worker/gpu/spec_decode/eagle/utils.py",
