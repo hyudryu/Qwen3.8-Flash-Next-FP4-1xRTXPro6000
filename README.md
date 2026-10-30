@@ -18,22 +18,22 @@ Paired on one GPU at 450 W: the unmodified pinned image and V3 were launched alt
 
 | Coding, aggregate output tok/s | Original source | V3 | Change |
 |---|---:|---:|---:|
-| C1 | 257.4 | **282.4** | +9.7% |
-| C4 | 669.5 | **659.0** | -1.6% |
-| C8 | 943.4 | **979.0** | +3.8% |
+| C1 | 257.4 | **287.0** | +11.5% |
+| C4 | 669.5 | **662.2** | -1.1% |
+| C8 | 943.4 | **965.6** | +2.4% |
 
-_2 original + 1 V3 server launches, interleaved; 5 rounds per concurrency each; mean of all rounds._
+_2 original + 2 V3 server launches, interleaved; 5 rounds per concurrency each; mean of all rounds._
 
 **Prefill** (unique exact-length token-ID prompts, `max_tokens=1`, zero cached tokens verified, median of 3 per launch, [`V3/benchmarks/prefill.py`](V3/benchmarks/prefill.py)):
 
 | Prefill | Original source | V3 | Change |
 |---|---:|---:|---:|
-| 1,024 tokens | 4,974 tok/s | 5,123 tok/s | +3.0% |
-| 4,096 tokens | 14,549 tok/s | 14,663 tok/s | +0.8% |
-| 16,384 tokens | 14,411 tok/s | 14,409 tok/s | -0.0% |
-| 65,536 tokens | 14,009 tok/s | 14,020 tok/s | +0.1% |
-| 131,072 tokens | 13,496 tok/s | 13,500 tok/s | +0.0% |
-| C8 × 8,192 tokens (aggregate) | 14,476 tok/s | 14,497 tok/s | +0.1% |
+| 1,024 tokens | 4,974 tok/s | 5,059 tok/s | +1.7% |
+| 4,096 tokens | 14,549 tok/s | 14,582 tok/s | +0.2% |
+| 16,384 tokens | 14,411 tok/s | 14,376 tok/s | -0.2% |
+| 65,536 tokens | 14,009 tok/s | 13,969 tok/s | -0.3% |
+| 131,072 tokens | 13,496 tok/s | 13,458 tok/s | -0.3% |
+| C8 × 8,192 tokens (aggregate) | 14,476 tok/s | 14,430 tok/s | -0.3% |
 
 The gain is concentrated at C1, where a fourth draft token is nearly free; at C4/C8 the larger verify batches use that spare capacity, and the C4/C8 differences are within run-to-run variation. Prefill is unchanged, since V3 only changes the draft step that runs after the prompt is processed. Short general/multilingual prompts at C1 were 2–3% slower than the V1 configuration (Chinese −17%, essay −9%, math +10%); see the [V3 README](V3/README.md) for that trade-off.
 
