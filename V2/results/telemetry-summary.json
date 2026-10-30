@@ -1,0 +1,62 @@
+[
+  {
+    "source_cell": "v1-a",
+    "busy_samples": 299,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 454.34,
+    "median_sm_mhz": 2827.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 61.0,
+    "max_memory_mib": 93598.0
+  },
+  {
+    "source_cell": "v1-a2",
+    "busy_samples": 300,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 454.855,
+    "median_sm_mhz": 2827.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 62.0,
+    "max_memory_mib": 93598.0
+  },
+  {
+    "source_cell": "v2-b1",
+    "busy_samples": 297,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 450.34,
+    "median_sm_mhz": 2827.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 60.0,
+    "max_memory_mib": 93594.0
+  },
+  {
+    "source_cell": "v2-b2",
+    "busy_samples": 297,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 460.02,
+    "median_sm_mhz": 2827.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 63.0,
+    "max_memory_mib": 93594.0
+  },
+  {
+    "source_cell": "original-chat-control",
+    "busy_samples": 123,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 414.05,
+    "median_sm_mhz": 2827.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 55.0,
+    "max_memory_mib": 93600.0
+  },
+  {
+    "source_cell": "target-only-diagnostic",
+    "busy_samples": 181,
+    "scope": "All campaign samples with GPU utilization >=80%, including warmups; 600W cap fixed",
+    "median_power_w": 432.03,
+    "median_sm_mhz": 2842.0,
+    "median_memory_mhz": 13365.0,
+    "median_temperature_c": 57.0,
+    "max_memory_mib": 93324.0
+  }
+]

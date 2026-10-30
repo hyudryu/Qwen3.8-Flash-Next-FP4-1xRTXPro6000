@@ -4,7 +4,11 @@
 
 ## V3 experiment
 
-[V3 adds a pruned + dynamic MTP draft vocabulary and MTP depth 4](V3/README.md). It leaves the target model and its BF16 LM head untouched. In an interleaved TP1/450 W confirmation, C1 coding went from 266.6 to **291.4 tok/s (+9.3%, paired 95% CI +7.2% to +11.4%)**, while short general/multilingual prompts were 2–3% slower. V1 below is preserved unchanged.
+[V3 adds a pruned + dynamic MTP draft vocabulary and MTP depth 4](V3/README.md). It leaves the target model and its BF16 LM head untouched. In an interleaved TP1/450 W confirmation, C1 coding went from 266.6 to **291.4 tok/s (+9.3%, paired 95% CI +7.2% to +11.4%)**, while short general/multilingual prompts were 2–3% slower.
+
+## V2 experiment
+
+[V2 implements opt-in shared-FFN Triton fusion](V2/README.md), with production graph evidence and 20-pair C1/C8 benchmarks. It did **not** establish a C1 serving gain over V1 and remains disabled. See the [decision and raw results](V2/optimization_results.md). V1 below is preserved unchanged.
 
 ## Single-GPU coding throughput: 450W vs 600W
 

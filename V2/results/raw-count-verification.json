@@ -1,0 +1,39 @@
+{
+  "measured_requests": 828,
+  "committed_tokens": 847546,
+  "all_prompt_lengths": 2048,
+  "by_source_cell": {
+    "v1-a": {
+      "requests": 180,
+      "committed_tokens": 184262,
+      "capped_requests": 179
+    },
+    "v1-a2": {
+      "requests": 180,
+      "committed_tokens": 184320,
+      "capped_requests": 180
+    },
+    "v2-b1": {
+      "requests": 180,
+      "committed_tokens": 184089,
+      "capped_requests": 177
+    },
+    "v2-b2": {
+      "requests": 180,
+      "committed_tokens": 184320,
+      "capped_requests": 180
+    },
+    "original-chat-control": {
+      "requests": 54,
+      "committed_tokens": 55296,
+      "capped_requests": 54
+    },
+    "target-only-diagnostic": {
+      "requests": 54,
+      "committed_tokens": 55259,
+      "capped_requests": 53
+    }
+  },
+  "natural_eos_retained": true,
+  "v1_unchanged": true
+}

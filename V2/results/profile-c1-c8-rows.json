@@ -1,0 +1,4536 @@
+{
+  "scope": "Host dispatch arguments at actual graph launches, not inferred from concurrency. No tensor host readbacks.",
+  "records": [
+    {
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 7
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 7
+    },
+    {
+      "phase": "target",
+      "actual_rows": 2338,
+      "padded_rows": 2338,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 4
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 4
+    },
+    {
+      "phase": "target",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "kind": "target-forward",
+      "requests": 7
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 7
+    },
+    {
+      "phase": "target",
+      "actual_rows": 2338,
+      "padded_rows": 2338,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 8
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 8
+    },
+    {
+      "phase": "target",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "kind": "target-forward",
+      "requests": 7
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 7
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 7
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 6
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 6
+    },
+    {
+      "phase": "target",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 5
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "phase": "target",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "kind": "target-forward",
+      "requests": 5
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "kind": "draft-prefill",
+      "requests": 5
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "kind": "draft-fused-steps",
+      "requests": 5
+    },
+    {
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "phase": "target",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "target-forward",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "kind": "draft-prefill",
+      "requests": 3
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "kind": "draft-fused-steps",
+      "requests": 3
+    },
+    {
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "phase": "target",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "target-forward",
+      "requests": 2
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "kind": "draft-prefill",
+      "requests": 2
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "kind": "draft-fused-steps",
+      "requests": 2
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    },
+    {
+      "phase": "target",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "target-forward",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "kind": "draft-prefill",
+      "requests": 1
+    },
+    {
+      "phase": "draft",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "kind": "draft-fused-steps",
+      "requests": 1
+    }
+  ],
+  "histograms": [
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 1,
+      "padded_rows": 1,
+      "count": 104
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 2,
+      "padded_rows": 2,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 3,
+      "padded_rows": 4,
+      "count": 4
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 6
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 5,
+      "padded_rows": 8,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 6,
+      "padded_rows": 8,
+      "count": 7
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 7,
+      "padded_rows": 8,
+      "count": 3
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-fused-steps",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 82
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 100
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "count": 4
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "count": 4
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 20,
+      "padded_rows": 32,
+      "count": 2
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 24,
+      "padded_rows": 32,
+      "count": 7
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "count": 1
+    },
+    {
+      "phase": "draft",
+      "kind": "draft-prefill",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "count": 80
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 4,
+      "padded_rows": 4,
+      "count": 100
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 8,
+      "padded_rows": 8,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 12,
+      "padded_rows": 16,
+      "count": 4
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 16,
+      "padded_rows": 16,
+      "count": 4
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 20,
+      "padded_rows": 24,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 24,
+      "padded_rows": 24,
+      "count": 7
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 28,
+      "padded_rows": 32,
+      "count": 1
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 32,
+      "padded_rows": 32,
+      "count": 80
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 2048,
+      "padded_rows": 2048,
+      "count": 4
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 2338,
+      "padded_rows": 2338,
+      "count": 2
+    },
+    {
+      "phase": "target",
+      "kind": "target-forward",
+      "actual_rows": 6019,
+      "padded_rows": 6019,
+      "count": 4
+    }
+  ]
+}

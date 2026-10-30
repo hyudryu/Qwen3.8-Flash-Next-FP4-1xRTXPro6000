@@ -1,0 +1,34 @@
+{
+  "repository_base_commit": "7936854fe3a380331b6ce77c8e7b490c96210586",
+  "v1_tree": "c65139046718a26feba45e81fae45c090405d9c1",
+  "runtime_image_digest": "sha256:745feb916ee816f5409fd58386114be4f22fbede7f9c0e0a7b8c4fe8dac0fb29",
+  "model_revision": "b9ce18a6887e18c089fdea8509a33e63429a3300",
+  "gpu": "RTX PRO 6000 Blackwell Workstation 96GB",
+  "tp": 1,
+  "mtp": 3,
+  "power_limit_w": 600,
+  "scope": "Independent Qwen-specific source experiment; no host settings modified.",
+  "runtime_components": {
+    "flashinfer": {
+      "source_commit": "6023d031be8e32b4b8a749dbb5d17d7d246b939b",
+      "repository": "local-inference-lab/flashinfer"
+    },
+    "instanttensor": {
+      "source_commit": "747390dc2bd1e0a18b0c7b13a09a38594edf342f",
+      "repository": "local-inference-lab/InstantTensor"
+    },
+    "lmcache": {
+      "source_commit": "8ef537d6481b0d7c93277118ffcc6bf7e68d1b22",
+      "repository": "local-inference-lab/LMCache"
+    },
+    "nccl": {
+      "source_commit": "300f3a73caba7196e436571d9ac34069e81edea4",
+      "repository": "local-inference-lab/nccl-canonical"
+    },
+    "vllm": {
+      "source_commit": "8244d1c44348ae8a5bbfc9f1b607021652283ed4",
+      "repository": "local-inference-lab/vllm"
+    }
+  },
+  "fusion_implementation_commit": "f3dfd88f8e6f74fbd4db1fd9e01f421f5e243c41"
+}

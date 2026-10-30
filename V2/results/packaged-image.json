@@ -1,0 +1,8 @@
+{
+  "local_image_id": "sha256:8d933bb5b19a5937d2b8ffe76fd09532ecb2e4b02d2e6bdf20be957f943b0753",
+  "registry_digest": null,
+  "base_image_digest": "sha256:745feb916ee816f5409fd58386114be4f22fbede7f9c0e0a7b8c4fe8dac0fb29",
+  "default_fusion": "0",
+  "full_model_deployment_benchmarked": false,
+  "build_and_worker_roundtrip_passed": true
+}
